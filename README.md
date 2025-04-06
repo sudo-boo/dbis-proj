@@ -4,6 +4,10 @@
 
 This contains all of our solution's source code. The project is a mono repo, meaning all the code is in one repository. This makes managing dependencies and sharing code between different project parts easier.
 
+### ngrok
+
+To run the server on a public URL/IP, we use ngrok. Basically, what it does is redirects the requests from a localhost port to a public API endpoint.
+
 <hr>
 
 ## Directory Structure
