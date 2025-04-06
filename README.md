@@ -17,6 +17,10 @@ To run the server on a public URL/IP, we use ngrok. Basically, what it does is r
 │
 ├── src/
 │   ├── client/                # Frontend Flutter application (customer, vendor, delivery)
+│   │   ├── customer/
+│   │   ├── delivery/
+│   │   └── vendor/
+│   │
 │   └── server/                # Backend Node.js
 │
 ├── test/                      # Contains larger datasets and tests to
