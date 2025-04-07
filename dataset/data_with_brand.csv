@@ -1,0 +1,1649 @@
+product_id,name,brand,category,mrp,discountPercent,availableQuantity,discountedSellingPrice,weightInGms,outOfStock,quantity
+94,Maggi 2 Minute Masala Noodles,Maggi,Cooking Essentials,1200,0,6,1200,70,False,70
+95,iD Idli & Dosa Batter ,iD,Cooking Essentials,8000,15,6,6800,1000,False,1
+96,Tata Salt,Tata,Cooking Essentials,2400,0,6,2400,1000,False,1
+97,Arden Eggs White,Arden,Cooking Essentials,9700,0,4,9700,696,False,12
+98,Arden Eggs White,Arden,Cooking Essentials,6500,15,4,5500,348,False,6
+99,Fortune Sunlite Refined Sunflower (Pouch),Fortune,Cooking Essentials,23000,4,6,21900,1000,False,1
+100,Aashirvaad Superior MP Atta,Aashirvaad,Cooking Essentials,25000,2,6,24500,5000,False,5
+101,Amul Pure Ghee (Pouch),Amul,Cooking Essentials,25500,2,6,24900,500,False,500
+102,Arden Eggs Brown,Arden,Cooking Essentials,8500,7,4,7900,348,False,6
+103,Tata Salt Lite,Tata,Cooking Essentials,4000,10,6,3600,1000,False,1
+104,Saffola Gold Oil (Pouch),Saffola,Cooking Essentials,21500,0,6,21500,1000,False,1
+105,Fortune Sunlite Refined Sunflower (Jar),Fortune,Cooking Essentials,92500,0,6,92500,5000,False,5
+106,Fortune Rice Bran (Pouch),Fortune,Cooking Essentials,22500,11,6,19900,1000,False,1
+107,Saffola Active Oil,Saffola,Cooking Essentials,21000,0,6,21000,1000,False,1
+108,Amul Pure Ghee (Pouch),Amul,Cooking Essentials,50500,1,2,49900,1000,False,1
+109,Aashirvaad Atta,Aashirvaad,Cooking Essentials,46000,13,6,39900,10000,False,10
+110,Popular Essentials Toor Dal (Un-Polished),Popular Essentials,Cooking Essentials,16000,6,4,14900,1000,False,1
+111,Amul Ghee (Tin),Amul,Cooking Essentials,52000,2,6,50900,1000,False,1
+112,Amul Fresh Cream,Amul,Cooking Essentials,19700,3,3,19100,1000,False,1
+113,Popular Essentials Pure Jaggery,Popular Essentials,Cooking Essentials,5000,2,6,4900,450,False,450
+114,Aashirvaad Multigrain Atta,Aashirvaad,Cooking Essentials,6400,3,2,6200,1000,False,1
+115,Fortune Soyabean Oil,Fortune,Cooking Essentials,100500,0,6,99900,5000,False,5
+116,Popular Essentials Sunflower Seeds,Popular Essentials,Cooking Essentials,2500,0,6,2500,50,False,50
+117,Tata Sampann kabuli chana,Tata,Cooking Essentials,18500,1,4,18300,1000,False,500
+118,Dhara Groundnut Oil (Pouch),Dhara,Cooking Essentials,23000,11,6,20300,1000,False,1
+119,Dhara Health Refined Sun Flower Oil Jar,Dhara,Cooking Essentials,120000,18,6,98400,5000,False,5
+120,24 Mantra Organic Jaggery Powder,24 Mantra,Cooking Essentials,8000,15,6,6800,500,False,500
+121,Tata Sampann High Protien Kabuli Chana,Tata,Cooking Essentials,9400,0,1,9400,500,False,500
+122,Dhara Kachi Ghani Mustard Oil Jar,Dhara,Cooking Essentials,125000,8,6,114300,5000,False,5
+123,D'lecta Dairy Cream,D'lecta,Cooking Essentials,5400,5,6,5100,200,False,200
+124,Ching's Secret Instant Hot Garlic Noodles,Ching's,Cooking Essentials,1500,0,3,1500,60,False,60
+125,Dabur Ginger Garlic Paste,Dabur,Cooking Essentials,2500,8,3,2300,100,False,100
+126,Ching's Secret Instant Schezwan Noodles,Ching's,Cooking Essentials,1500,0,6,1500,60,False,60
+127,Gowardhan Ghee/Tuppa Jar,Gowardhan,Cooking Essentials,31500,1,6,30900,500,False,500
+128,Tata Sampann Unpolished Moong Dal ,Tata,Cooking Essentials,9200,4,4,8800,500,False,500
+129,Aashirvaad Select Atta,Aashirvaad,Cooking Essentials,6400,0,6,6400,1000,False,1
+130,Popular Essentials Misri Dana (Diamond Sugar) ,Popular Essentials,Cooking Essentials,1500,0,4,1500,100,False,100
+131,Gowardhan Ghee Jar,Gowardhan,Cooking Essentials,59800,3,6,57900,1000,False,1
+132,Top Ramen  Noodles Curry Veg Pouch,Top Ramen,Cooking Essentials,2000,0,1,2000,70,False,70
+133,Popular Essentials Refined Sugar,Popular Essentials,Cooking Essentials,6000,0,6,6000,1000,False,1
+134,Fortune Kachi Ghani Mustard Oil Bottle,Fortune,Cooking Essentials,21600,7,6,19900,1000,False,1
+135,Saffola Veggie Twist Masala Oats,Saffola,Cooking Essentials,1500,0,6,1500,38,False,38
+136,Satyam Puffed Rice Kurmura (R),Satyam,Cooking Essentials,2300,0,6,2300,200,False,200
+137,Quaker Oats,Quaker Oats,Cooking Essentials,7900,0,2,7900,400,False,400
+138,Aashirvaad Select Sharbati Atta,Aashirvaad,Cooking Essentials,31500,10,6,28300,5000,False,5
+139,Popular Essentials Refined Sugar,Popular Essentials,Cooking Essentials,29500,10,6,26500,5000,False,5
+140,Gowardhan Cow Ghee Pouch,Gowardhan,Cooking Essentials,57900,10,6,52100,1000,False,1
+141,Dhara Nourish Refined Sunflower Oil Pouch,Dhara,Cooking Essentials,21000,5,6,19900,1000,False,1
+142,Parachute Oil ,Parachute,Cooking Essentials,4000,7,3,3700,100,False,100
+143,Popular Essentials Plain Puffed Rice (Murmura/Muri),Popular Essentials,Cooking Essentials,1800,0,6,1800,100,False,100
+144,Amul Mithai Mate Condensed Sweetened Milk,Amul,Cooking Essentials,5600,3,4,5400,200,False,200
+145,Saffola Gold (Jar),Saffola,Cooking Essentials,124000,0,6,124000,5000,False,5
+146,McCain New Mini Samosa with Cheese Pizza Style Filling,McCain,Cooking Essentials,12000,1,3,11800,240,False,240
+147,Fortune Rice Bran Health Oil (Jar),Fortune,Cooking Essentials,105000,1,6,103900,5000,False,5
+148,Arden Desi Eggs,Arden,Cooking Essentials,11000,13,4,9500,348,False,6
+149,Fortune Rozana Basmati Rice,Fortune,Cooking Essentials,58500,21,6,46200,5000,False,5
+150,Fortune Biriyani Special Basmati Rice,Fortune,Cooking Essentials,17500,0,5,17500,1000,False,1
+151,Everest Garam Masala,Everest,Cooking Essentials,7800,7,5,7200,100,False,100
+152,Popular Essentials Pumpkin Seeds,Popular Essentials,Cooking Essentials,9000,16,6,7500,100,False,100
+153,Fortune Soya Health Refined Soybean Oil,Fortune,Cooking Essentials,21000,1,2,20600,1000,False,1
+154,Gowardhan Pure Ghee Pouch,Gowardhan,Cooking Essentials,29500,4,6,28100,500,False,500
+155,Popular Essentials Jeera/Cumin Seeds,Popular Essentials,Cooking Essentials,4000,5,3,3800,100,False,100
+156,Weikfield Baking Soda,Weikfield,Cooking Essentials,3000,3,6,2900,100,False,100
+157,Everest Pav Bhaji Masala,Everest,Cooking Essentials,3700,10,4,3300,50,False,50
+158,Tata Sampann Unpolished Chana Dal,Tata,Cooking Essentials,9500,6,2,8900,1000,False,500
+159,Amul Mithai Mate EOE Tin,Amul,Cooking Essentials,11200,2,6,10900,400,False,400
+160,Pillsbury Chakki Fresh Atta,Pillsbury,Cooking Essentials,45000,16,6,37500,10000,False,10
+161,Everest Chicken Masala,Everest,Cooking Essentials,3900,2,1,3800,50,False,50
+162,Dhara Life Refined Ricebran Oil (Pouch),Dhara,Cooking Essentials,20500,7,6,19000,1000,False,1
+163,Borges Extra Virgin Olive Oil,Borges,Cooking Essentials,40000,25,1,29900,250,False,250
+164,Everest Shahi Biryani Masala,Everest,Cooking Essentials,7000,14,6,6000,50,False,50
+165,Popular Essentials Californian Almond,Popular Essentials,Cooking Essentials,35000,28,6,25100,250,False,250
+166,Popular Essentials Ajwain Whole,Popular Essentials,Cooking Essentials,2500,0,4,2500,50,False,50
+167,Everest Tikhalal Chilli Powder,Everest,Cooking Essentials,23500,9,6,21200,500,False,500
+168,Popular Essentials Kabuli Chana Regular,Popular Essentials,Cooking Essentials,8500,9,6,7700,500,False,500
+169,Pillsbury Chakki Fresh Atta,Pillsbury,Cooking Essentials,5200,0,4,5200,1000,False,1
+170,Popular Essentials Saunf/Fennel Seeds,Popular Essentials,Cooking Essentials,4500,2,6,4400,100,False,100
+171,Popular Essentials Bansi Sooji,Popular Essentials,Cooking Essentials,3500,2,3,3400,500,False,500
+172,Happilo Premium International Queen Kalmi Dates,Happilo Premium,Cooking Essentials,24500,29,6,17200,200,False,200
+173,Tata Sampann Unpolished Urad Whole,Tata,Cooking Essentials,10100,6,4,9400,500,False,500
+174,Popular Essentials Cashew Split,Popular Essentials,Cooking Essentials,32500,12,6,28300,250,False,250
+175,Popular Essentials Chana Dal (Un-Polished),Popular Essentials,Cooking Essentials,6000,10,6,5400,500,False,500
+176,Tata Sampann Unpolished Rajma (Chitra),Tata,Cooking Essentials,13400,6,6,12500,500,False,500
+177,Everest Garam Masala,Everest,Cooking Essentials,4200,2,2,4100,50,False,50
+178,Everest Kitchen King Masala,Everest,Cooking Essentials,7000,14,2,6000,100,False,100
+179,24 Mantra Organic Cumin,24 Mantra,Cooking Essentials,7000,7,2,6500,100,False,100
+180,Nestle Milkmaid,Nestle,Cooking Essentials,13200,3,6,12800,400,False,400
+181,Popular Essentials Sona Masouri Steam Rice,Popular Essentials,Cooking Essentials,6500,9,6,5900,1000,False,1
+182,24 Mantra Organic Tur Dal,24 Mantra,Cooking Essentials,26000,20,6,20800,1000,False,1
+183,Gits Gulab Jamun Instant Dessert Mix,Gits,Cooking Essentials,9900,10,6,8900,200,False,200
+184,Popular Essentials Black Masoor Whole (Un-Polished),Popular Essentials,Cooking Essentials,6500,10,3,5800,500,False,500
+185,24 Mantra Organic Peanuts,24 Mantra,Cooking Essentials,13500,7,1,12500,500,False,500
+186,Everest Hingraj Powder,Everest,Cooking Essentials,9000,10,2,8100,50,False,50
+187,Everest Black Pepper Powder,Everest,Cooking Essentials,13500,14,6,11500,100,False,100
+188,Tata Sampann Masoor Dal Stand,Tata,Cooking Essentials,15000,10,4,13400,1000,False,1
+189,24 Mantra Organic Besan,24 Mantra,Cooking Essentials,9500,7,5,8800,500,False,500
+190,Quaker Oats,Quaker Oats,Cooking Essentials,19900,7,6,18400,1000,False,1
+191,Saffola Gold Refined Cooking Oil (Jar),Saffola,Cooking Essentials,48500,7,6,44900,2000,False,2
+192,Nestle Everyday Dairy Whitener,Nestle,Cooking Essentials,21000,0,4,21000,400,False,400
+193,24 Mantra Organic Red Poha,24 Mantra,Cooking Essentials,7500,8,1,6900,500,False,500
+194,Everest Powder - Tea Masala,Everest,Cooking Essentials,9800,9,5,8900,100,False,100
+195,Tata Sampann Urad Dal Split,Tata,Cooking Essentials,9400,4,6,9000,500,False,500
+196,Popular Essentials Idli Sooji ,Popular Essentials,Cooking Essentials,3000,6,6,2800,500,False,500
+197,Popular Essentials Dessicated Coconut,Popular Essentials,Cooking Essentials,9500,9,6,8600,200,False,200
+198,Sunfeast Yippee! Mood Masala Noodles,Sunfeast,Cooking Essentials,6000,28,3,4300,260,False,260
+199,Chef's Basket Durum Wheat Elbow Pasta,Chef's Basket Durum Wheat,Cooking Essentials,16000,50,6,8000,500,False,500
+200,MTR Breakfast Khatta Meetha Poha Mix,MTR,Cooking Essentials,2500,20,6,2000,60,False,60
+201,Satyam Khobra,Satyam,Cooking Essentials,11300,10,5,10100,200,False,200
+202,Betty Crocker Complete Pancake Mix Original,Betty Crocker,Cooking Essentials,11000,4,6,10500,250,False,500
+203,Borges Durum Wheat Fusilli Pasta ,Borges,Cooking Essentials,25000,0,3,25000,500,False,500
+204,24 Mantra Organic Green Moong Dal - Split,24 Mantra,Cooking Essentials,13500,0,2,13500,500,False,500
+205,Weikfield Vanilla Flavoured Custard Powder,Weikfield,Cooking Essentials,3700,0,6,3700,100,False,100
+206,Tata Sampann Moong Dal Split,Tata,Cooking Essentials,18000,1,5,17800,1000,False,200
+207,Tata Sampann Kala Chana,Tata,Cooking Essentials,6400,0,5,6400,500,False,500
+208,Saffola Soya Chunks Mealmaker,Saffola,Cooking Essentials,5000,0,2,5000,200,False,200
+209,24 Mantra Bura Sugar (Demerara),24 Mantra,Cooking Essentials,8000,10,6,7200,500,False,500
+210,Popular Essentials Green Cardamom (Elaichi),Popular Essentials,Cooking Essentials,20000,1,6,19800,50,False,50
+211,Hershey's Syrup Delicious Strawberry,Hershey's,Cooking Essentials,9500,0,1,9500,200,False,200
+212,Popular Essentials Anjeer,Popular Essentials,Cooking Essentials,19000,11,4,16900,100,False,100
+213,Popular Essentials Mustard Seeds Rai Small,Popular Essentials,Cooking Essentials,2000,0,2,2000,100,False,100
+214,Weikfield Baking Powder,Weikfield,Cooking Essentials,3300,3,6,3200,100,False,100
+215,Dabur Honey Squeezy,Dabur,Cooking Essentials,18500,9,6,16700,225,False,225
+216,Tata Sampann High Protein Kali Urad,Tata,Cooking Essentials,9100,14,6,7800,500,False,500
+217,Everest Kitchen King Masala,Everest,Cooking Essentials,3700,2,6,3600,50,False,50
+218,Chef's Basket Durum Wheat Fusilli Pasta,Chef's Basket Durum Wheat,Cooking Essentials,16000,50,6,8000,500,False,500
+219,TilSona Til Oil,TilSona,Cooking Essentials,18000,10,2,16200,500,False,500
+220,Top Ramen Chicken Noodles,Top Ramen,Cooking Essentials,6000,10,1,5400,280,False,280
+221,Everest Chaat Masala,Everest,Cooking Essentials,3500,2,1,3400,50,False,50
+222,Keya Wonder Red Hot Chilli Flakes,Keya,Cooking Essentials,8900,10,2,8000,40,False,40
+223,Popular Essentials White Peas (Un-Polished),Popular Essentials,Cooking Essentials,8000,10,5,7200,500,False,500
+224,Ching's Secret Chowmein Hakka Noodles Masala ,Ching's,Cooking Essentials,4400,0,2,4400,60,False,60
+225,Dhara Filtered Groundnut Oil (Jar),Dhara,Cooking Essentials,105000,1,6,103500,5000,False,5
+226,Pillsbury Choco Chip Pancake Mix,Pillsbury,Cooking Essentials,9900,5,6,9400,165,False,165
+227,Hershey's Caramel Syrup,Hershey's,Cooking Essentials,23000,0,1,23000,623,False,623
+228,Pillsbury Multi Grain Atta,Pillsbury,Cooking Essentials,6000,6,3,5600,1000,False,1
+229,McCain New Mini Samosa with Cheese Corn Style Filling,McCain,Cooking Essentials,12000,1,2,11800,240,False,240
+230,Satyam Puffed Rice Kurmura (A),Satyam,Cooking Essentials,4300,0,6,4300,200,False,200
+231,MTR 3 Min Poha,MTR,Cooking Essentials,2500,0,6,2500,60,False,60
+232,Ching's Manchurian Instant Noodles,Ching's,Cooking Essentials,1500,0,5,1500,60,False,60
+233,Everest Pav Bhaji Masala,Everest,Cooking Essentials,7000,0,2,7000,100,False,100
+234,Hershey's Chocolate Flavour Syrup,Hershey's,Cooking Essentials,22000,6,6,20500,623,False,680
+235,Popular Essentials Dhania (Coriander Seeds),Popular Essentials,Cooking Essentials,5500,16,4,4600,200,False,200
+236,24 Mantra Red Chilly Whole,24 Mantra,Cooking Essentials,7000,7,1,6500,100,False,100
+237,Dabur Honey - World's No.1,Dabur,Cooking Essentials,12000,0,6,12000,250,False,250
+238,24 Mantra Organic Puffed Rice,24 Mantra,Cooking Essentials,4000,2,6,3900,200,False,200
+239,24 Mantra Organic Wheat Daliya ,24 Mantra,Cooking Essentials,4800,2,2,4700,500,False,500
+240,24 Mantra Organic Ragi Flour,24 Mantra,Cooking Essentials,6500,20,4,5200,500,False,500
+241,Popular Essentials Cinnamon Whole (Dalchini),Popular Essentials,Cooking Essentials,3500,5,6,3300,25,False,25
+242,Sundrop Super Lite Advanced - Sunflower Oil,Sundrop,Cooking Essentials,21500,0,4,21500,1000,False,1
+243,Pillsbury Atta/Godihittu - Chakki Fresh,Pillsbury,Cooking Essentials,10200,7,4,9400,2000,False,2
+244,Popular Essentials Green Moong Chilka/Chilka (Un-Polished),Popular Essentials,Cooking Essentials,8500,7,5,7900,500,False,500
+245,Popular Essentials HMT Kolam Steam,Popular Essentials,Cooking Essentials,7500,0,3,7500,1000,False,1
+246,Popular Essentials Black Urad Split,Popular Essentials,Cooking Essentials,8000,10,4,7200,500,False,500
+247,Keya Oregano,Keya,Cooking Essentials,10900,10,5,9800,9,False,9
+248,Popular Essentials Pink Rajma,Popular Essentials,Cooking Essentials,10000,10,6,9000,500,False,500
+249,Everest Chicken Masala,Everest,Cooking Essentials,7400,2,6,7200,100,False,100
+250,Popular Essentials HMT Kolam Steam,Popular Essentials,Cooking Essentials,37000,10,6,33300,5000,False,5
+251,Everest Shahi Paneer Masala,Everest,Cooking Essentials,4200,4,5,4000,50,False,50
+252,Godrej Yummiez Chicken Nuggets,Godrej,Cooking Essentials,32500,9,1,29300,500,False,500
+253,Flying Bird Vanilla Essence,Flying Bird,Cooking Essentials,3500,2,6,3400,20,False,20
+254,Everest Sabji Masala,Everest,Cooking Essentials,3000,3,6,2900,50,False,50
+255,Popular Essentials Californian Almond,Popular Essentials,Cooking Essentials,69500,32,6,47000,500,False,500
+256,Cornitos Cornitos Taco Shells - 4 Inches,Cornitos,Cooking Essentials,11000,20,6,8800,80,False,80
+257,Everest Rajma Masala,Everest,Cooking Essentials,3300,3,5,3200,50,False,50
+258,Popular Essentials White Til,Popular Essentials,Cooking Essentials,4000,5,1,3800,100,False,100
+259,Amul Dark Compound Chocolate Slab,Amul,Cooking Essentials,12500,2,6,12200,500,False,500
+260,Mothers Recipe Papad Chana Masala,Mothers Recipe,Cooking Essentials,7900,10,6,7100,200,False,200
+261,Ching's Schezwan Masala Instant Noodles,Ching's,Cooking Essentials,6000,0,1,6000,240,False,240
+262,Amul Milk Compound Chocolate Slab,Amul,Cooking Essentials,11000,2,6,10700,500,False,500
+263,Eastern Chicken Masala,Eastern,Cooking Essentials,7000,7,3,6500,100,False,100
+264,Popular Essentials Methi Seeds,Popular Essentials,Cooking Essentials,2500,0,5,2500,100,False,100
+265,Saffola Yummy Masala Noodles ,Saffola,Cooking Essentials,2000,0,2,2000,46,False,46
+266,Cadbury Hot Chocolate,Cadbury,Cooking Essentials,17500,5,6,16600,200,False,200
+267,Ching's Chicken Chilli Masala,Ching's,Cooking Essentials,1000,0,6,1000,20,False,20
+268,Dabur Keora water - Authentic flavour for Biryani's and Desserts,Dabur,Cooking Essentials,6200,6,6,5800,250,False,250
+269,Popular Essentials Black Cardamom/Elaichi ,Popular Essentials,Cooking Essentials,10000,10,6,9000,50,False,50
+270,Popular Essentials Idli Rice,Popular Essentials,Cooking Essentials,6000,10,4,5400,1000,False,1
+271,Everest Chole Masala,Everest,Cooking Essentials,3300,3,1,3200,50,False,50
+272,Dabur Hommade Tamarind Paste,Dabur,Cooking Essentials,4800,6,6,4500,200,False,200
+273,Maggi Magic Cubes (Vegetarian Masala) (Free 2 Cubes Inside),Maggi,Cooking Essentials,3500,2,6,3400,48,False,48
+274,Popular Essentials Cooking Soda,Popular Essentials,Cooking Essentials,3000,10,6,2700,200,False,200
+275,RRO Primio Refined Groundnut Oil Pet Bottle,RRO,Cooking Essentials,25500,6,2,23900,1000,False,1
+276,Everest Pani Puri Masala,Everest,Cooking Essentials,3100,3,6,3000,50,False,50
+277,Nissin Cup Noodles Tangy Tomato,Nissin,Cooking Essentials,5000,10,2,4500,70,False,70
+278,Ching's Veg Manchurian Masala,Ching's,Cooking Essentials,1000,0,2,1000,20,False,20
+279,Ceres Foods Fish Mustard Instant Liquid Masala,Ceres Foods,Cooking Essentials,22000,50,6,11000,200,False,200
+280,Everest Garam Masala,Everest,Cooking Essentials,15800,10,6,14200,200,False,200
+281,24 Mantra Organic Jowar Flour,24 Mantra,Cooking Essentials,7000,7,6,6500,500,False,500
+282,Maggi Coconut Milkpowder,Maggi,Cooking Essentials,10000,0,6,10000,100,False,100
+283,On1y Pepper Grinder,On1y,Cooking Essentials,15900,9,1,14400,50,False,50
+284,Popular Essentials Rice Flour,Popular Essentials,Cooking Essentials,6000,0,3,6000,1000,False,1
+285,Sunfeast Yippee! Pasta Treat - Sour Cream Onion,Sunfeast,Cooking Essentials,2800,10,1,2500,65,False,65
+286,24 Mantra Organic Brown Sona Masoori Rice,24 Mantra,Cooking Essentials,9500,0,6,9500,1000,False,1
+287,Happilo Premium Afghani Anjeer,Happilo Premium,Cooking Essentials,36500,29,2,25600,200,False,200
+288,Popular Essentials Chiroti Sooji,Popular Essentials,Cooking Essentials,3500,2,6,3400,500,False,500
+289,RRO Til Dil Premium Til Oil Bottle,RRO,Cooking Essentials,33000,10,5,29400,1000,False,1
+290,Popular Essentials Red Rajma,Popular Essentials,Cooking Essentials,9000,10,6,8100,500,False,500
+291,Cornitos Peanut - Premium Salted ,Cornitos,Cooking Essentials,12000,10,6,10800,150,False,150
+292,Popular Essentials Black Pepper,Popular Essentials,Cooking Essentials,10000,10,5,9000,100,False,100
+293,24 Mantra Organic Tur Dal - Split,24 Mantra,Cooking Essentials,13000,7,6,12000,500,False,500
+294,Sugarfree Gold Low Calorie Sweetner,Sugarfree,Cooking Essentials,6500,6,3,6100,110,False,100
+295,Ching's Secret Paneer Chilli Masala,Ching's,Cooking Essentials,1000,0,2,1000,20,False,20
+296,Dabur Honey ,Dabur,Cooking Essentials,22000,7,3,20400,500,False,500
+298,Everest Tea Masala,Everest,Cooking Essentials,5500,9,2,5000,50,False,50
+299,Ching's Paneer Chilli Masala,Ching's,Cooking Essentials,4400,0,4,4400,60,False,60
+300,Sunfeast YiPPee! Magic Masala Noodles,Sunfeast,Cooking Essentials,7000,10,3,6300,405,False,405
+301,Everest Meat Masala Powder,Everest,Cooking Essentials,7400,9,3,6700,100,False,100
+302,Pillsbury Atta With Multigrains Wheat Grains,Pillsbury,Cooking Essentials,29500,16,6,24500,5000,False,5
+303,Mother's Recipe Tamarind Paste,Mother's Recipe,Cooking Essentials,5000,2,6,4900,200,False,200
+304,Quaker Oats Breakfast Cereals - With Flavour Mix Nutritious Rich Source Of Energy,Quaker Oats,Cooking Essentials,4900,8,6,4500,200,False,200
+305,Popular Essentials Cloves (Lavang),Popular Essentials,Cooking Essentials,7500,17,6,6200,50,False,50
+306,Sunfeast Yippee! Power Up Atta Noodles,Sunfeast,Cooking Essentials,9600,15,6,8100,280,False,280
+307,Suhana Paneer Tikka Masala Mix,Suhana,Cooking Essentials,4000,5,6,3800,50,False,50
+308,24 Mantra Turmeric Powder,24 Mantra,Cooking Essentials,3500,2,6,3400,100,False,100
+309,24 Mantra Super Grain Quinoa,24 Mantra,Cooking Essentials,19000,0,4,19000,500,False,500
+310,Everest Powder - Egg Curry Masala,Everest,Cooking Essentials,4000,2,6,3900,50,False,50
+311,Popular Essentials Pe Shah Jeera ,Popular Essentials,Cooking Essentials,6000,15,6,5100,50,False,50
+312,24 Mantra Organic Sattu Atta,24 Mantra,Cooking Essentials,9500,0,6,9500,500,False,500
+313,Smith & Jones Pasta Masala,Smith & Jones,Cooking Essentials,4600,0,6,4600,54,False,54
+314,Weikfield Vanilla Custard Powder,Weikfield,Cooking Essentials,14200,9,3,12800,500,False,500
+315,Sugarfree Natura Low Calorie Sweetner ,Sugarfree,Cooking Essentials,30000,10,3,27000,42,False,42
+316,Pillsbury Vanilla Custard Powder,Pillsbury,Cooking Essentials,3700,2,6,3600,100,False,100
+317,24 Mantra Organic Rajma,24 Mantra,Cooking Essentials,14500,0,6,14500,500,False,500
+318,Popular Essentials Broken Wheat/Daliya,Popular Essentials,Cooking Essentials,3500,2,6,3400,500,False,500
+319,Zorabian Chicken Smoked Ham,Zorabian,Cooking Essentials,20500,5,1,19400,250,False,250
+320,Smith & Jones Peri Peri Masala,Smith & Jones,Cooking Essentials,9900,0,6,9900,75,False,75
+321,Saffola Veggie Twist Masala Oats,Saffola,Cooking Essentials,19500,12,2,17100,500,False,500
+322,Popular Essentials Urad Dal Split (Un-Polished),Popular Essentials,Cooking Essentials,8500,9,5,7700,500,False,500
+323,Weikfield Baking Powder,Weikfield,Cooking Essentials,2200,0,6,2200,50,False,50
+324,Popular Essentials Bajra Whole,Popular Essentials,Cooking Essentials,6500,13,6,5600,1000,False,1
+325,Weikfield Veg Jelly Crystals - Strawberry,Weikfield,Cooking Essentials,4500,2,6,4400,90,False,90
+326,Weikfield Veg Jelly Crystals - Raspberry,Weikfield,Cooking Essentials,4500,2,6,4400,90,False,90
+327,Popular Essentials Masoor Dal Split (Un-Polished),Popular Essentials,Cooking Essentials,7000,10,4,6300,500,False,500
+328,Popular Essentials Ajwain Whole,Popular Essentials,Cooking Essentials,5000,12,2,4400,100,False,100
+329,Popular Essentials Pista Salted (With Shell),Popular Essentials,Cooking Essentials,47000,21,5,37100,250,False,250
+330,The Bake Shop Bread Crumbs,The,Cooking Essentials,5000,6,3,4700,400,False,400
+331,Popular Essentials Horse Gram,Popular Essentials,Cooking Essentials,4000,10,4,3600,500,False,500
+332,Hershey's Chocolate Syrup,Hershey's,Cooking Essentials,9500,0,4,9500,200,False,200
+333,Godrej Yummiez Chilli Chicken Sausages ,Godrej,Cooking Essentials,16000,10,3,14400,250,False,250
+334,Everest Kasuri Methi,Everest,Cooking Essentials,2500,0,6,2500,25,False,25
+335,Satyam Makhana,Satyam,Cooking Essentials,20800,0,6,20800,100,False,100
+336,Everest Tandoori Chicken Masala,Everest,Cooking Essentials,3900,2,5,3800,50,False,50
+337,Weikfield Falooda Mix - Kesar Pista,Weikfield,Cooking Essentials,4900,2,3,4800,200,False,200
+338,Weikfield Cocoa Powder,Weikfield,Cooking Essentials,7000,7,6,6500,50,False,50
+339,Pantai Coconut Cream,Pantai,Cooking Essentials,15000,4,4,14300,400,False,400
+340,Popular Essentials Coriander Seeds,Popular Essentials,Cooking Essentials,1500,0,5,1500,50,False,50
+341,Ching's Singapore Curry Instant Noodles,Ching's,Cooking Essentials,6000,0,4,6000,240,False,240
+342,Eastern Fish Masala,Eastern,Cooking Essentials,4800,2,5,4700,100,False,100
+343,Pillsbury Atta/Godihittu - Chakki Fresh,Pillsbury,Cooking Essentials,27500,0,6,27500,5000,False,5
+344,Oleev Smart Oil Fortified with VIT ADEK (Pouch),Oleev,Cooking Essentials,21500,9,4,19400,1000,False,1
+345,Everest Dry Ginger Powder,Everest,Cooking Essentials,7500,9,4,6800,100,False,100
+346,Pillsbury Cooker Cake Mix - Choco,Pillsbury,Cooking Essentials,10000,11,6,8900,159,False,159
+347,Hershey's Chocolate Almond Syrup,Hershey's,Cooking Essentials,20000,0,2,20000,450,False,450
+348,Satyam Nighties Spices  Chilli Pandi,Satyam,Cooking Essentials,5600,7,5,5200,100,False,100
+349,Popular Essentials Popular Essential Pista Salted (With Shell),Popular Essentials,Cooking Essentials,19000,10,6,17100,100,False,100
+350,Godrej Yummiez Chicken Punjabi Tikka ,Godrej,Cooking Essentials,29500,9,6,26600,360,False,360
+351,Popular Essentials Rozana Sona Masuri Raw Rice,Popular Essentials,Cooking Essentials,35000,10,5,31200,5000,False,5
+352,24 Mantra Mustard Oil (Cold Pressed) ,24 Mantra,Cooking Essentials,35000,10,6,31200,1000,False,1
+353,24 Mantra Organic Black Pepper,24 Mantra,Cooking Essentials,17000,7,6,15700,100,False,100
+354,Popular Essentials Green Moong Whole,Popular Essentials,Cooking Essentials,9000,16,3,7500,500,False,500
+355,24 Mantra Organic Masoor Dal - Split,24 Mantra,Cooking Essentials,9500,7,6,8800,500,False,500
+356,Praakritik Organic Natural Rock Salt,Praakritik,Cooking Essentials,6000,6,3,5600,500,False,500
+357,24 Mantra Sunflower Oil (Cold Pressed) Pet Bottle,24 Mantra,Cooking Essentials,39000,11,5,34700,1000,False,1
+358,Ching's Secret Instant Noodles (Hot Garlic),Ching's,Cooking Essentials,6000,0,4,6000,240,False,240
+359,Saffola Everyday Peppy Tomato Masala Oats,Saffola,Cooking Essentials,19500,12,6,17100,500,False,500
+360,Dabur 100% Pure Honey - Worlds No.1,Dabur,Cooking Essentials,43000,10,6,38700,1000,False,1
+361,Popular Essentials Star Anise,Popular Essentials,Cooking Essentials,7000,10,5,6300,25,False,25
+362,Ching's Secret Chicken 65 Masala - Chicken,Ching's,Cooking Essentials,1000,0,5,1000,20,False,20
+363,Cadbury Cocoa Powder,Cadbury,Cooking Essentials,22300,5,6,21100,150,False,150
+364,Praakritik Natural Desi Gir Cow A2 Ghee,Praakritik,Cooking Essentials,145000,10,6,130500,540,False,540
+365,Praakritik Organic Poha,Praakritik,Cooking Essentials,12000,6,5,11200,500,False,500
+366,Praakritik Organic Natural Wild Forest Honey,Praakritik,Cooking Essentials,16000,6,4,15000,200,False,200
+367,Popular Essentials Dry Dates (Kharak),Popular Essentials,Cooking Essentials,14000,15,6,11800,250,False,250
+368,Popular Essentials Kashmiri Red Rajma,Popular Essentials,Cooking Essentials,9500,6,4,8900,500,False,500
+369,Dabur Hommade - Garlic Paste,Dabur,Cooking Essentials,5000,6,6,4700,200,False,200
+370,Dabur 100% Pure Honey,Dabur,Cooking Essentials,33000,10,1,29700,400,False,400
+371,Ching's Schezwan Fried Rice(Miracle Masala),Ching's,Cooking Essentials,4400,0,5,4400,60,False,60
+372,Maggi Magic Cubes (Vegetarian Masala),Maggi,Cooking Essentials,3500,2,1,3400,40,False,40
+373,Everest Tandoori Chicken Masala,Everest,Cooking Essentials,7400,9,3,6700,100,False,100
+374,Popular Essentials Red Poha,Popular Essentials,Cooking Essentials,4500,4,6,4300,500,False,500
+375,Everest Kitchen King Masala,Everest,Cooking Essentials,14200,9,6,12800,200,False,200
+376,Pillsbury Oven Cake Mix - Rich Chocolate,Pillsbury,Cooking Essentials,16500,10,5,14700,285,False,285
+377,Eastern Super Garam Masala,Eastern,Cooking Essentials,7400,6,2,6900,200,False,200
+378,Maggi Magic Cubes Extra Chicken,Maggi,Cooking Essentials,4000,2,6,3900,48,False,48
+379,Satyam Nighties Spices  Chilli Kashmiri,Satyam,Cooking Essentials,10200,6,6,9500,100,False,100
+380,Eastern Cumin Powder,Eastern,Cooking Essentials,4900,2,6,4800,100,False,100
+381,Popular Essentials Urad Gola White(Un-Polished),Popular Essentials,Cooking Essentials,9000,10,6,8100,500,False,500
+382,24 Mantra Organic Chana Dal,24 Mantra,Cooking Essentials,9500,6,5,8900,500,False,500
+383,Delight Nuts Cashew Roasted & Salted,Delight Nuts,Cooking Essentials,42500,20,6,34000,200,False,200
+384,Popular Essentials Mace/Javitri,Popular Essentials,Cooking Essentials,9000,10,3,8100,20,False,20
+385,Dlicia Whip Topping Bottle,Dlicia,Cooking Essentials,23500,27,5,17100,1000,False,1
+386,Mother's Recipe Paste Ginger & Garlic,Mother's Recipe,Cooking Essentials,7600,10,4,6800,300,False,300
+387,24 Mantra Groundnut Oil (Cold Pressed) Pet Bottle,24 Mantra,Cooking Essentials,41000,10,6,36900,1000,False,1
+388,Satyam Pulses Masur Dal,Satyam,Cooking Essentials,8700,6,6,8100,500,False,500
+389,Delight Nuts Pista Roasted & Salted,Delight Nuts,Cooking Essentials,42500,20,6,34000,200,False,200
+390,Top Ramen Noodles (Atta),Top Ramen,Cooking Essentials,8000,0,1,8000,280,False,280
+391,Hershey's Cocoa Powder,Hershey's,Cooking Essentials,9500,0,5,9500,70,False,70
+392,Praakritik Organic Singhara Atta,Praakritik,Cooking Essentials,24000,6,4,22500,500,False,500
+393,Gits Veg Biryani Ready to Eat,Gits,Cooking Essentials,11000,10,6,9900,265,False,265
+394,Delight Nuts Cranberries Sliced ,Delight Nuts,Cooking Essentials,29900,20,6,23900,200,False,200
+395,Borges Durum Wheat Pasta Superior Quality,Borges,Cooking Essentials,25000,40,6,14900,500,False,500
+396,Ceres Foods Laal Maas Instant Liquid Masala,Ceres Foods,Cooking Essentials,22000,50,5,11000,200,False,200
+397,Popular Essentials Sattu Atta,Popular Essentials,Cooking Essentials,9000,12,3,7900,500,False,500
+398,Popular Essentials Mustard Seeds Rai Yellow,Popular Essentials,Cooking Essentials,2500,0,5,2500,100,False,100
+399,Praakritik Organic Extra Virgin Coconut Oil,Praakritik,Cooking Essentials,15000,10,5,13400,100,False,100
+400,Praakritik Organic Garlic Powder,Praakritik,Cooking Essentials,11000,1,5,10800,100,False,100
+401,Sugarfree Gold Low Calorie Sweetner ,Sugarfree,Cooking Essentials,12500,5,6,11800,100,False,100
+402,Aashirvaad Breakfast Instant Mix - Rice Idli,Aashirvaad,Cooking Essentials,7500,30,6,5200,200,False,200
+403,Kitchens Of India Mutter Paneer,Kitchens,Cooking Essentials,13000,4,6,12400,285,False,285
+404,Ching's Secret Veg Manchurian Masala,Ching's,Cooking Essentials,4400,0,6,4400,60,False,60
+405,Popular Essentials Jowa Flour,Popular Essentials,Cooking Essentials,5000,2,5,4900,500,False,500
+406,Everest Shahi Biryani Masala,Everest,Cooking Essentials,24500,0,6,24500,200,False,200
+407,Popular Essentials Black Til,Popular Essentials,Cooking Essentials,5000,6,4,4700,100,False,100
+408,Popular Essentials Pancharatna Dal,Popular Essentials,Cooking Essentials,8000,10,6,7200,500,False,500
+409,Saffola 100% Pure Honey,Saffola,Cooking Essentials,47500,8,2,43700,1000,False,750
+410,Popular Essentials Tamarind,Popular Essentials,Cooking Essentials,15000,14,6,12800,500,False,500
+411,Gits Rice Dosa Instant Breakfast Mix,Gits,Cooking Essentials,6000,5,5,5700,200,False,200
+412,Popular Essentials Poppy Seeds (Gasagase),Popular Essentials,Cooking Essentials,28000,7,6,26000,100,False,100
+413,Hershey's Hot Chocolate Powder,Hershey's,Cooking Essentials,21000,0,4,21000,250,False,250
+414,Borges Farfalle Durum Wheat Pasta ,Borges,Cooking Essentials,25000,0,5,25000,500,False,500
+415,Satyam Chilli  Bedgi,Satyam,Cooking Essentials,8200,10,5,7300,100,False,100
+416,Aashirvaad Instant Mix - Rice Dosa,Aashirvaad,Cooking Essentials,7500,30,6,5200,200,False,200
+417,Hershey's Cocoa - Natural Unsweetened,Hershey's,Cooking Essentials,27000,10,4,24300,225,False,225
+418,Weikfield Veg Jelly Crystals - Mango,Weikfield,Cooking Essentials,4500,2,6,4400,90,False,90
+419,Praakritik Orrganic Cold Pressed Sesame Oil,Praakritik,Cooking Essentials,13000,10,5,11700,100,False,100
+421,ITC Master Chef Hyderabadi Biryani,ITC Master Chef,Cooking Essentials,7500,30,5,5200,80,False,80
+422,Flying Bird Butter Scotch Essence,Flying Bird,Cooking Essentials,5000,2,6,4900,20,False,20
+423,Dabur Hommade - Ginger Paste,Dabur,Cooking Essentials,5000,6,6,4700,200,False,200
+424,Popular Essentials Green Peas (Un-Polished),Popular Essentials,Cooking Essentials,12000,10,5,10800,500,False,500
+425,Quaker Oats Pouch,Quaker Oats,Cooking Essentials,27600,10,6,24800,1500,False,1
+426,24 Mantra Organic Urad White Whole,24 Mantra,Cooking Essentials,14500,15,4,12200,500,False,500
+427,Popular Essentials Guntur Chilli Stemless,Popular Essentials,Cooking Essentials,4000,2,2,3900,100,False,100
+428,Popular Essentials Moth Whole,Popular Essentials,Cooking Essentials,9000,10,6,8100,500,False,500
+429,Keya Pizza Seasoning,Keya,Cooking Essentials,10900,17,6,9000,45,False,45
+430,Keya Piri Piri | Exotic Spices Mix,Keya,Cooking Essentials,10900,20,6,8700,80,False,80
+431,24 Mantra Organic Moong Dal,24 Mantra,Cooking Essentials,13500,7,6,12500,500,False,500
+432,Betty Crocker French Vanilla Cake Mix,Betty Crocker,Cooking Essentials,31000,10,6,27600,520,False,520
+433,Delight Nuts Dried Cranberries ,Delight Nuts,Cooking Essentials,34000,20,6,27200,200,False,200
+434,Everest Kesari Milk Masala,Everest,Cooking Essentials,20500,0,2,20500,50,False,50
+435,Tong Garden Salted Cocktail Nuts,Tong Garden,Cooking Essentials,29500,9,5,26600,160,False,160
+436,MTR Uttapam Mix,MTR,Cooking Essentials,16500,5,6,15600,500,False,500
+437,Gits Khaman Dhokla Instant Snack Mix,Gits,Cooking Essentials,6500,6,6,6100,180,False,180
+438,Happilo Premium 100% Natural Whole Cashews,Happilo Premium,Cooking Essentials,33500,29,6,23500,200,False,200
+439,Everest Dry Mango Powder,Everest,Cooking Essentials,8000,0,5,8000,100,False,100
+440,Dabur Hommade - Ginger Garlic Past Tub,Dabur,Cooking Essentials,11000,5,6,10400,400,False,400
+441,Everest Chicken Masala,Everest,Cooking Essentials,14700,10,6,13200,200,False,200
+442,Gits Medu Vada Instant Snack Mix,Gits,Cooking Essentials,9000,4,6,8600,200,False,200
+443,Weikfield Drinking Chocolate Powder,Weikfield,Cooking Essentials,6500,10,6,5800,100,False,100
+444,Popular Essentials Regular White Lobia,Popular Essentials,Cooking Essentials,7000,10,6,6300,500,False,500
+445,Puro Healthy Salt Crystal,Puro Healthy,Cooking Essentials,13500,7,6,12500,1000,False,1
+446,Popular Essentials Premium Jeera Rice,Popular Essentials,Cooking Essentials,14000,0,5,14000,1000,False,1
+447,Smith & Jones Shahi Paneer Masala Mix,Smith & Jones,Cooking Essentials,4400,0,6,4400,60,False,60
+448,Betty Crocker Mug Treats - Chocolate Mix - Pack of 4,Betty Crocker,Cooking Essentials,20000,11,6,17800,264,False,264
+449,Smith & Jones Pasta Masala,Smith & Jones,Cooking Essentials,6000,10,5,5400,108,False,108
+450,Catch Black Pepper Sprinkler,Catch,Cooking Essentials,10000,0,1,10000,50,False,50
+451,Weikfield Cooker Cake Mix - Chocolate,Weikfield,Cooking Essentials,9500,6,6,8900,150,False,150
+452,ITC Master Chef Butter Chicken,ITC Master Chef,Cooking Essentials,7500,30,6,5200,80,False,80
+454,Smith & Jones Mutter Paneer Masala,Smith & Jones,Cooking Essentials,4200,0,6,4200,60,False,60
+455,Kitchens of India Dal Bukhara Gravy Mix,Kitchens,Cooking Essentials,11000,30,6,7700,285,False,285
+456,Popular Essentials Fried Gram (Bengal Gram),Popular Essentials,Cooking Essentials,7000,10,6,6300,500,False,500
+457,Gits Jalebi with Maker Dessert Mix,Gits,Cooking Essentials,7500,16,6,6300,100,False,100
+458,Popular Essentials Soya Beans ,Popular Essentials,Cooking Essentials,8000,6,6,7500,500,False,500
+459,24 Mantra Organic Roasted Bengal Gram Dal,24 Mantra,Cooking Essentials,10500,7,6,9700,500,False,500
+460,Keya Italian Seasoning,Keya,Cooking Essentials,10900,10,6,9800,35,False,35
+461,MTR Idli/Dosa/Chilly Chutney Powder,MTR,Cooking Essentials,11500,0,3,11500,200,False,200
+462,Delight Nuts Trail Mix ,Delight Nuts,Cooking Essentials,39900,25,6,29900,200,False,200
+463,Praakritik Organic Chilka Moong Dal,Praakritik,Cooking Essentials,12000,10,6,10800,500,False,500
+464,Smith & Jones Garlic & Herbs Masala Mix,Smith & Jones,Cooking Essentials,9900,0,6,9900,75,False,75
+465,Eastern Tamarind,Eastern,Cooking Essentials,6300,0,6,6300,200,False,200
+466,Tong Garden Wasabi Coated Greenpeas Tin,Tong Garden,Cooking Essentials,20000,11,6,17800,180,False,180
+467,Flying Bird Pineapple Artifical Food Essence,Flying Bird,Cooking Essentials,5000,2,6,4900,20,False,20
+469,Japanese Choice Udon Noodles,Japanese Choice,Cooking Essentials,29500,9,6,26600,250,False,250
+470,Pantai Coconut Milk,Pantai,Cooking Essentials,15000,0,4,15000,400,False,400
+471,Praakritik Organic Masoor Dal,Praakritik,Cooking Essentials,13000,10,6,11600,500,False,500
+472,Popular Essentials Classic Sona Masuri Rice,Popular Essentials,Cooking Essentials,43000,10,6,38700,5000,False,5
+473,Popular Essentials Salted Murmure ,Popular Essentials,Cooking Essentials,7000,18,6,5700,400,False,400
+474,Oleev Active Oil (Pouch),Oleev,Cooking Essentials,26500,9,6,23900,1000,False,1
+475,Delight Nuts Dried Blueberries ,Delight Nuts,Cooking Essentials,54000,20,6,43200,150,False,150
+476,Popular Essentials Double Beans White,Popular Essentials,Cooking Essentials,6000,10,6,5400,250,False,250
+477,Delight Nuts Almond Natural ,Delight Nuts,Cooking Essentials,34900,20,6,27900,200,False,200
+478,Praakritik Organic Jaggery,Praakritik,Cooking Essentials,16000,6,6,15000,900,False,900
+479,Praakritik Organic Raw Sugar,Praakritik,Cooking Essentials,9000,6,6,8400,500,False,500
+480,MTR Masala - Sambar Powder,MTR,Cooking Essentials,11500,0,4,11500,200,False,200
+481,RRO Til Dil Premium Til Oil Bottle,RRO,Cooking Essentials,17300,6,6,16200,500,False,500
+482,ITC Master Chef Vegetable Biryani Cooking Paste,ITC Master Chef,Cooking Essentials,7500,30,5,5200,80,False,80
+483,Jivana Jaggery,Jivana,Cooking Essentials,10000,0,2,10000,950,False,950
+484,Praakritik Organic Besan,Praakritik,Cooking Essentials,17000,6,6,15900,500,False,500
+485,MTR Instant Gulab Jamun Mix,MTR,Cooking Essentials,19500,9,6,17600,500,False,500
+486,Maggi Magic Cubes Extra Chicken,Maggi,Cooking Essentials,19900,0,2,19900,240,False,240
+487,On1y Mixed Herbs,On1y,Cooking Essentials,9900,0,6,9900,14,False,14
+488,Popular Essentials Urad Gola Black (Un-Polished),Popular Essentials,Cooking Essentials,8000,10,6,7200,500,False,500
+489,Gits Dessert Mix China Grass Bombay Halwa,Gits,Cooking Essentials,5500,0,4,5500,80,False,80
+490,Praakritik Organic Basmati Rice,Praakritik,Cooking Essentials,17000,0,5,17000,500,False,500
+491,Ceres Foods Nalli Nihari Instant Liquid Masala,Ceres Foods,Cooking Essentials,22000,50,6,11000,200,False,200
+492,Borges Canola Oil Pet Bottle,Borges,Cooking Essentials,39900,0,6,39900,1000,False,1
+493,Suhana Biryani Masala,Suhana,Cooking Essentials,6600,0,6,6600,50,False,50
+494,On1y Black Salt Grinder,On1y,Cooking Essentials,9900,0,6,9900,100,False,100
+495,Popular Essentials Nylon Til,Popular Essentials,Cooking Essentials,4000,2,6,3900,100,False,100
+496,Pillsbury Rich Choco Oven Cake Mix - Egg Free,Pillsbury,Cooking Essentials,17000,6,6,15900,270,False,270
+497,Weikfield Tomato Salsa Instant Pasta,Weikfield,Cooking Essentials,2500,0,1,2500,77,False,77
+498,Praakritik Organic Jowar Atta,Praakritik,Cooking Essentials,11000,6,6,10300,500,False,500
+499,Sugarfree Gold Low Calorie Sweetner ,Sugarfree,Cooking Essentials,27000,7,6,25100,50,False,50
+500,Epicurea Thai Jasmine Rice,Epicurea,Cooking Essentials,29500,0,4,29500,500,False,500
+501,Yummiez Chicken Garlic Fingers Pouch,Yummiez,Cooking Essentials,25000,0,5,25000,400,False,400
+502,RRO Primio Refined Groundnut (Jar),RRO,Cooking Essentials,49000,11,6,43600,2000,False,2
+503,Praakritik Organic Tuvar Dal,Praakritik,Cooking Essentials,14000,0,6,14000,500,False,500
+504,Sugarfree Gold Low Calorie Sweetner,Sugarfree,Cooking Essentials,18500,5,3,17500,300,False,300
+505,Cantina Beans Mexican Beans,Cantina,Cooking Essentials,25000,14,6,21300,410,False,410
+506,Pillsbury Oven Cake Mix - Vanilla,Pillsbury,Cooking Essentials,17500,10,6,15600,225,False,225
+507,Hershey's Chocolate Milk Booster,Hershey's,Cooking Essentials,20000,0,6,20000,450,False,450
+508,Popular Essentials Byadagi Chilli Stemless,Popular Essentials,Cooking Essentials,8000,0,6,8000,100,False,100
+509,Suhana Spice Mix - Chicken Biryani,Suhana,Cooking Essentials,6600,0,6,6600,50,False,50
+510,Praakritik Organic Yellow Moon Dal,Praakritik,Cooking Essentials,13500,0,6,13500,500,False,500
+513,24 Mantra Sona Masuri Brown Rice,24 Mantra,Cooking Essentials,47500,10,6,42300,5000,False,5
+514,24 Mantra Organic Pancharatna Dal - Split,24 Mantra,Cooking Essentials,13000,7,6,12000,500,False,500
+515,24 Mantra Organic Cumin Powder,24 Mantra,Cooking Essentials,7000,0,6,7000,100,False,100
+516,Popular Essentials Samba Broken Wheat,Popular Essentials,Cooking Essentials,10000,11,6,8900,500,False,500
+517,Betty Crocker Chocolate Fudge Cake Mix,Betty Crocker,Cooking Essentials,29500,0,6,29500,475,False,475
+518,Borges Extra Light Olive Oil Bottle ,Borges,Cooking Essentials,260000,46,6,139900,2000,False,2
+519,Flying Bird Premium Orange Artificial Food Essence,Flying Bird,Cooking Essentials,6000,0,6,6000,20,False,20
+520,Popular Essentials Red Cherry/Gundu Chilli,Popular Essentials,Cooking Essentials,9500,0,6,9500,100,False,100
+522,Flying Bird Food Essence - Kewra,Flying Bird,Cooking Essentials,5000,0,6,5000,20,False,20
+523,MTR Vada Breakfast,MTR,Cooking Essentials,20000,0,1,20000,500,False,500
+524,On1y Pasta Seasoning,On1y,Cooking Essentials,9900,0,6,9900,30,False,30
+525,Praakritik Organic Indrayani Rice,Praakritik,Cooking Essentials,7000,0,6,7000,500,False,500
+526,On1y Pizza Seasoning,On1y,Cooking Essentials,9900,0,6,9900,28,False,28
+527,Kitchens of India Mutter Paneer Mix,Kitchens,Cooking Essentials,12000,30,4,8400,285,False,285
+528,Aashirvaad Svasti Cow Ghee Tetra Pack,Aashirvaad,Cooking Essentials,29500,0,6,29500,500,False,500
+529,Weikfield Cooker Cake Mix - Vanilla,Weikfield,Cooking Essentials,9500,0,6,9500,150,False,150
+530,Praakritik Organic Kapli Wheat Atta,Praakritik,Cooking Essentials,16500,10,6,14700,1000,False,1
+531,Epicurea Sushi Rice,Epicurea,Cooking Essentials,29500,0,6,29500,500,False,500
+532,Sugarfree Natural Green Stevia Leaves Zero Calorie,Sugarfree,Cooking Essentials,7500,0,2,7500,100,False,100
+533,Smith & Jones Italian Spices Masala Mix,Smith & Jones,Cooking Essentials,9900,0,6,9900,75,False,75
+534,Satyam Nighties Spices  Chilli Bore,Satyam,Cooking Essentials,8900,10,6,8000,100,False,100
+535,Weikfield Veg Jelly Crystals - Orange,Weikfield,Cooking Essentials,4500,2,6,4400,90,False,90
+536,Praakritik Organic Jumbo Rolled Oats,Praakritik,Cooking Essentials,19000,11,6,16900,500,False,500
+537,On1y Sea Salt Grinder,On1y,Cooking Essentials,8900,0,6,8900,100,False,100
+538,Delight Nuts Berries Mix ,Delight Nuts,Cooking Essentials,39900,20,6,31900,200,False,200
+540,Praakritik Organic Ginger Powder,Praakritik,Cooking Essentials,13900,10,6,12500,100,False,100
+541,Suhana Mutton Gravy Mix,Suhana,Cooking Essentials,4500,0,4,4500,80,False,80
+542,On1y Salad Seasoning Grinder,On1y,Cooking Essentials,13900,0,6,13900,45,False,45
+543,Figaro Pure Olive Oil,Figaro,Cooking Essentials,32500,8,1,29900,200,False,200
+544,Madhur Sugar,Madhur,Cooking Essentials,6000,6,0,5600,1000,True,1
+545,Amul Fresh Cream,Amul,Cooking Essentials,6300,0,0,6300,250,True,250
+546,Madhur Pure And Hygienic Sugar,Madhur,Cooking Essentials,29500,9,0,26600,5000,True,5
+547,Satyam Poha Jada,Satyam,Cooking Essentials,3500,8,0,3200,500,True,500
+548,Aashirvaad Superior MP Whole Wheat Atta,Aashirvaad,Cooking Essentials,5300,1,0,5200,1000,True,1
+549,Fortune Soyabean Oil,Fortune,Cooking Essentials,21000,13,0,18100,1000,True,1
+550,Maggi Masala Ae Magic,Maggi,Cooking Essentials,5800,6,0,5400,72,True,72
+551,Aashirvaad Iodised Salt ,Aashirvaad,Cooking Essentials,2200,13,0,1900,1000,True,1
+552,Maggi 2-Minute Instant Noodles - Masala,Maggi,Cooking Essentials,4400,0,0,4400,280,True,280
+553,Popular Essentials Phool Makhana (Jumbo Size),Popular Essentials,Cooking Essentials,15000,14,0,12800,100,True,100
+554,Aashirvaad Atta With Mutigrains,Aashirvaad,Cooking Essentials,31500,8,0,28700,5000,True,5
+555,Tata Sampann Poha,Tata,Cooking Essentials,4400,6,0,4100,500,True,500
+556,Fortune Besan Flour,Fortune,Cooking Essentials,12000,0,0,12000,1000,True,1
+557,Popular Essentials Toor Dal (Un-Polished),Popular Essentials,Cooking Essentials,8000,7,0,7400,500,True,500
+558,Everest Tikhalal Hot & Red Chilly Powder,Everest,Cooking Essentials,4700,2,0,4600,100,True,100
+559,Popular Essentials Chia Seeds,Popular Essentials,Cooking Essentials,5000,2,0,4900,100,True,100
+560,Tata Sampann Unpolished Toor Dal/Arhar Dal,Tata,Cooking Essentials,17900,1,0,17700,1000,True,200
+561,Everest Coriander Powder,Everest,Cooking Essentials,3200,3,0,3100,100,True,100
+562,Satyam Thin Poha Patla,Satyam,Cooking Essentials,3800,7,0,3500,500,True,500
+563,Popular Essentials Sona Masouri Raw Rice,Popular Essentials,Cooking Essentials,7500,0,0,7500,1000,True,1
+564,Tata Sampann High Protien Chana Dal - Split,Tata,Cooking Essentials,6400,0,0,6400,500,True,500
+565,Satyam Singdana ,Satyam,Cooking Essentials,11900,6,0,11100,500,True,500
+566,Tata Sampann Moong Chilka ,Tata,Cooking Essentials,8800,6,0,8200,500,True,500
+567,Tata Sampann High Protien Toor Dal - Split,Tata,Cooking Essentials,9100,2,0,8900,500,True,500
+568,Ching's Chow Mein Hakka Noodles Masala,Ching's,Cooking Essentials,1000,0,0,1000,20,True,20
+569,Everest Chat Masala,Everest,Cooking Essentials,6500,9,0,5900,100,True,100
+570,Popular Essentials Black Brown Chana (Un-Polished),Popular Essentials,Cooking Essentials,5500,9,0,5000,500,True,500
+571,Dabur Ginger Garlic Paste,Dabur,Cooking Essentials,5000,6,0,4700,200,True,200
+572,Ching's Secret Veg Hakka Noodles,Ching's,Cooking Essentials,10700,0,0,10700,600,True,600
+573,Saffola Oats 100 % Natural,Saffola,Cooking Essentials,1500,0,0,1500,38,True,38
+574,Everest Kashmiri Lal Chilli Powder,Everest,Cooking Essentials,31000,10,0,27900,500,True,500
+575,Popular Essentials Black Raisins Seedless,Popular Essentials,Cooking Essentials,6000,10,0,5400,100,True,100
+576,Daawat Rozana Super Basmati Rice,Daawat,Cooking Essentials,7900,0,0,7900,1000,True,1
+577,Everest Cumin Powder (Jeera),Everest,Cooking Essentials,3000,3,0,2900,50,True,50
+578,Everest Sambhar Masala,Everest,Cooking Essentials,3400,2,0,3300,50,True,50
+579,Maggi Chilly Chow Cuppa Noodles,Maggi,Cooking Essentials,5000,0,0,5000,70,True,70
+580,Popular Essentials Mustard Seeds Rai Big,Popular Essentials,Cooking Essentials,2000,0,0,2000,100,True,100
+581,Patanjali Cow's Ghee,Patanjali,Cooking Essentials,56500,0,0,56500,1000,True,1
+582,Everest Amchur Powder,Everest,Cooking Essentials,4200,2,0,4100,50,True,50
+583,Daawat Super Basmati Rice,Daawat,Cooking Essentials,18500,8,0,16900,1000,True,1
+584,Popular Essentials Sabudana,Popular Essentials,Cooking Essentials,6000,10,0,5400,500,True,500
+585,Popular Essentials Brown Sugar,Popular Essentials,Cooking Essentials,4000,0,0,4000,500,True,500
+586,Everest Coriander Powder,Everest,Cooking Essentials,7000,10,0,6300,200,True,200
+587,Sunfeast Yippee! Magic Masala Noodles,Sunfeast,Cooking Essentials,4800,6,0,4500,240,True,240
+588,Tata Tea Gold,Tata,Cooking Essentials,3500,0,0,3500,100,True,200
+589,Daawat Rozana Gold Basmati Rice,Daawat,Cooking Essentials,9000,1,0,8900,1000,True,1
+590,Top Ramen Masala,Top Ramen,Cooking Essentials,9100,9,0,8200,560,True,560
+591,Everest Turmeric Powder,Everest,Cooking Essentials,6700,10,0,6000,200,True,200
+592,Popular Essentials Buckwheat Flour (Kuttu Atta),Popular Essentials,Cooking Essentials,12500,9,0,11300,500,True,500
+593,Keya Italian Pizza Oregano,Keya,Cooking Essentials,10900,11,0,9700,80,True,80
+594,Chef's Basket Durum Wheat Penne Pasta,Chef's Basket Durum Wheat,Cooking Essentials,16000,50,0,8000,500,True,500
+595,Tata Sampann Kala Chana,Tata,Cooking Essentials,12500,0,0,12500,1000,True,1
+596,India Gate Basmati Rice,India Gate,Cooking Essentials,21000,0,0,21000,1000,True,1
+597,24 Mantra Organic Whole Wheat Atta,24 Mantra,Cooking Essentials,6400,7,0,5900,1000,True,1
+598,Zorabian Chicken Kheema Parathas,Zorabian,Cooking Essentials,19000,0,0,19000,300,True,300
+599,Sunfeast Pasta Treat Pack of Tomato Cheese,Sunfeast,Cooking Essentials,2800,17,0,2300,65,True,65
+600,Sugarlite 50% Less Calories Sugar Pouch,Sugarlite,Cooking Essentials,9900,40,0,5900,500,True,500
+601,Popular Essentials Sabja/Basil Seeds,Popular Essentials,Cooking Essentials,6000,15,0,5100,100,True,100
+602,Patanjali Pure Honey,Patanjali,Cooking Essentials,9500,0,0,9500,250,True,250
+603,Weikfield Falooda Mix - Mango,Weikfield,Cooking Essentials,4900,2,0,4800,200,True,200
+605,Maggi Special Masala Spicy Yummy Noodles,Maggi,Cooking Essentials,7200,0,0,7200,280,True,280
+606,Godrej Yummiez Chicken Breakfast Salami,Godrej,Cooking Essentials,15000,4,0,14300,250,True,250
+607,Everest Saffron Kesar,Everest,Cooking Essentials,12000,0,0,12000,1,True,0
+787,Maggi Magic Cubes (Vegetarian Masala) (Free 2 Cubes),Maggi,Munchies,3500,2,6,3400,48,False,48
+1122,Mother Dairy Toned Milk Pouch,Mother Dairy,"Dairy, Bread & Batter",2500,0,4,2500,500,False,500
+1123,Mother Dairy Classic Curd,Mother Dairy,"Dairy, Bread & Batter",3000,3,6,2900,400,False,400
+1124,Mother Dairy Ultra Full Cream Milk,Mother Dairy,"Dairy, Bread & Batter",3100,0,4,3100,500,False,500
+1125,Amul Butter - Pasteurised,Amul,"Dairy, Bread & Batter",5000,2,6,4900,100,False,100
+1126,Britannia Sandwich White Bread,Britannia,"Dairy, Bread & Batter",3300,0,4,3300,350,False,350
+1127,iD Curd Pouch,iD,"Dairy, Bread & Batter",3500,2,6,3400,400,False,400
+1129,Britannia 100% Whole Wheat Bread,Britannia,"Dairy, Bread & Batter",4500,0,4,4500,450,False,450
+1130,Britannia Healthy Slice Sandwich Bread,Britannia,"Dairy, Bread & Batter",4000,0,4,4000,450,False,450
+1131,Gowardhan Classic Block Fresh Paneer,Gowardhan,"Dairy, Bread & Batter",8900,8,6,8100,200,False,200
+1132,Amul Processed Cheese Cubes,Amul,"Dairy, Bread & Batter",10600,4,6,10100,200,False,200
+1133,Britannia Pav,Britannia,"Dairy, Bread & Batter",2200,0,4,2200,250,False,250
+1134,Amul Butter - Pasteurised,Amul,"Dairy, Bread & Batter",24500,2,6,24000,500,False,500
+1137,Nestle A+ Nourish Dahi,Nestle,"Dairy, Bread & Batter",3500,2,6,3400,200,False,200
+1138,Britannia Burger Bun with Sesame Seed,Britannia,"Dairy, Bread & Batter",1500,0,4,1500,100,False,100
+1139,Amul Frozen Malai Paneer,Amul,"Dairy, Bread & Batter",7500,2,6,7300,200,False,200
+1140,iD Natural Paneer,iD,"Dairy, Bread & Batter",10500,5,6,9900,200,False,200
+1141,Britannia Fruit Bun,Britannia,"Dairy, Bread & Batter",1700,0,3,1700,100,False,100
+1142,Amul Cheese - Processed Slices,Amul,"Dairy, Bread & Batter",12200,1,6,12000,200,False,200
+1143,iD Curd Cup,iD,"Dairy, Bread & Batter",6000,0,6,6000,400,False,400
+1144,The Bake Shop Premium White Sandwich Bread,The,"Dairy, Bread & Batter",3000,0,1,3000,400,False,400
+1145,Britannia Multigrain Bread ,Britannia,"Dairy, Bread & Batter",5500,0,4,5500,400,False,400
+1146,Amul Processed Cheese Block,Amul,"Dairy, Bread & Batter",10600,0,6,10600,200,False,200
+1147,Nestle A+ Nourish Dahi,Nestle,"Dairy, Bread & Batter",7000,2,6,6800,400,False,400
+1149,Epigamia Misti Doi,Epigamia,"Dairy, Bread & Batter",3000,0,6,3000,85,False,85
+1150,Amul Cheese - Block,Amul,"Dairy, Bread & Batter",24500,2,6,24000,500,False,500
+1151,Amul Butter - Pasteurised (School Pack),Amul,"Dairy, Bread & Batter",5900,3,6,5700,100,False,100
+1152,Britannia Brown Bread ,Britannia,"Dairy, Bread & Batter",4200,0,4,4200,400,False,400
+1154,Epigamia Natural Greek Yogurt,Epigamia,"Dairy, Bread & Batter",4500,0,6,4500,90,False,90
+1155,The Bake Shop Pizza Base,The,"Dairy, Bread & Batter",3000,0,1,3000,150,False,150
+1156,Amul Delicious Fat Spread - Cholesterol Free,Amul,"Dairy, Bread & Batter",1800,5,6,1700,100,False,100
+1158,Nestle A+ Actiplus Probiotic Dahi Plain Curd,Nestle,"Dairy, Bread & Batter",7800,3,5,7500,400,False,400
+1160,Amul Delicious Fat Spread - Cholesterol Free,Amul,"Dairy, Bread & Batter",8800,2,2,8600,500,False,500
+1163,Amul Cheese - Pepper,Amul,"Dairy, Bread & Batter",8500,3,6,8200,200,False,200
+1164,Amul Cheese Spread Creamy,Amul,"Dairy, Bread & Batter",8500,5,6,8000,180,False,180
+1165,The Bake Shop Foot Long,The,"Dairy, Bread & Batter",4000,0,1,4000,200,False,200
+1166,Amul Cheese Slices,Amul,"Dairy, Bread & Batter",36000,0,1,35900,750,False,750
+1167,Suguna Sharp Egg ,Suguna,"Dairy, Bread & Batter",7200,13,3,6200,348,False,6
+1168,Amul Cheese Sauce Mexican Salsa,Amul,"Dairy, Bread & Batter",7500,4,1,7200,200,False,200
+1170,Amul Pizza Cheese Processed,Amul,"Dairy, Bread & Batter",10900,4,6,10400,200,False,200
+1172,Amul Lite Spread,Amul,"Dairy, Bread & Batter",4000,2,5,3900,100,False,100
+1173,Go Cheese Slice - Plain,Go,"Dairy, Bread & Batter",14000,5,6,13300,200,False,200
+1175,RRO Sour Cream,RRO,"Dairy, Bread & Batter",27500,50,4,13700,200,False,200
+1176,D'lecta Natural Feta Cheese Block,D'lecta,"Dairy, Bread & Batter",10000,5,4,9500,100,False,100
+1177,Suguna Active - DHA,Suguna,"Dairy, Bread & Batter",7200,13,4,6200,348,False,6
+1178,Go Cheese Processed Angles Plain,Go,"Dairy, Bread & Batter",10000,5,6,9500,160,False,160
+1179,Epigamia Greek Yogurt - Natural,Epigamia,"Dairy, Bread & Batter",20000,0,1,20000,400,False,400
+1180,Amul Unsalted Cooking Butter,Amul,"Dairy, Bread & Batter",24500,2,6,23800,500,False,500
+1181,The Whole Truth Dark Chocolate Peanut Butter - Creamy,The,"Dairy, Bread & Batter",23500,25,6,17400,325,False,325
+1182,The Laughing Cow Cheese Slices,The,"Dairy, Bread & Batter",15500,0,2,15500,200,False,200
+1183,Epigamia Almond Milk Unsweetened Dairy Free,Epigamia,"Dairy, Bread & Batter",30000,33,4,19900,1000,False,1
+1184,Go Cheese  Spread Plain,Go,"Dairy, Bread & Batter",9900,5,6,9400,200,False,200
+1186,Amul Cheese Sauce Jalapeno,Amul,"Dairy, Bread & Batter",7500,0,5,7500,200,False,200
+1187,D'lecta Cream Cheese,D'lecta,"Dairy, Bread & Batter",16900,4,4,16100,150,False,150
+1188,D'lecta Natural Cheddar Slices,D'lecta,"Dairy, Bread & Batter",19900,5,6,18900,200,False,200
+1189,Suguna Heart- Omega3,Suguna,"Dairy, Bread & Batter",7200,13,4,6200,348,False,6
+1190,Go Cheese Spread - Garlic,Go,"Dairy, Bread & Batter",9900,5,6,9400,200,False,200
+1191,Go Pizza Cheese,Go,"Dairy, Bread & Batter",14000,5,6,13300,200,False,200
+1192,RRO Cheddar Block Cheese,RRO,"Dairy, Bread & Batter",29500,50,6,14700,200,False,200
+1193,The Whole Truth Peanut Butter With Dates - Creamy No Sugar,The,"Dairy, Bread & Batter",21500,9,6,19400,325,False,325
+1194,Suguna Fit Egg,Suguna,"Dairy, Bread & Batter",12000,43,4,6800,348,False,6
+1196,RRO Fresh Ricotta,RRO,"Dairy, Bread & Batter",27500,50,6,13700,200,False,200
+1197,D'lecta Cheese Cubes 2,D'lecta,"Dairy, Bread & Batter",14500,5,6,13700,200,False,200
+1198,RRO Mozzarella Pizza Cheese,RRO,"Dairy, Bread & Batter",27500,50,6,13700,200,False,200
+1199,The Laughing Cow Cheese Cubes,The,"Dairy, Bread & Batter",15000,0,4,15000,200,False,200
+1200,Yogabar 100% Pure Peanut Butter Creamy & Yummy Unsweetened,Yogabar,"Dairy, Bread & Batter",22900,10,6,20600,400,False,400
+1201,RRO Burrata Cheese,RRO,"Dairy, Bread & Batter",25000,50,4,12500,200,False,200
+1202,The Whole Truth Dark Chocolate Peanut Butter - Crunchy,The,"Dairy, Bread & Batter",23500,20,5,18800,325,False,325
+1203,Go Cheese Processed Squares,Go,"Dairy, Bread & Batter",12500,5,6,11800,200,False,200
+1204,Funfoods Peanut Butter Crunchy,Funfoods Peanut Butter,"Dairy, Bread & Batter",16900,7,1,15600,400,False,400
+1205,Amul Safed Makkhan,Amul,"Dairy, Bread & Batter",23500,1,6,23200,500,False,500
+1206,Go Cheese Spread - Four Pepper (Soft & Creamy),Go,"Dairy, Bread & Batter",9900,5,6,9400,200,False,200
+1210,The Whole Truth Peanut Butter - Sweetened & Crunchy,The,"Dairy, Bread & Batter",21500,20,6,17200,325,False,325
+1211,Go Processed Cheese Block,Go,"Dairy, Bread & Batter",12500,4,6,11900,200,False,200
+1212,Go Cheese Processed Block,Go,"Dairy, Bread & Batter",24900,4,6,23700,400,False,400
+1213,RRO Goat Milk Fetta Cheee,RRO,"Dairy, Bread & Batter",34500,31,6,23700,100,False,100
+1214,RRO Mascarpone Cheese,RRO,"Dairy, Bread & Batter",35500,50,6,17700,200,False,200
+1215,D'lecta Cheddar Cheese,D'lecta,"Dairy, Bread & Batter",19900,5,6,18900,200,False,200
+1216,Funfoods Peanut Butter Creamy,Funfoods Peanut Butter,"Dairy, Bread & Batter",16900,0,1,16900,400,False,400
+1218,D'lecta Cheese Block,D'lecta,"Dairy, Bread & Batter",14500,0,6,14500,200,False,200
+1220,The Laughing Cow Plain Processed Cheese Block,The,"Dairy, Bread & Batter",15000,0,6,15000,200,False,200
+1221,Yoga Bar Peanut Butter Dark Chocolate Jar,Yoga Bar,"Dairy, Bread & Batter",24900,0,4,24900,400,False,400
+1222,The Laughing Cow Cheese Spread Plain,The,"Dairy, Bread & Batter",11000,0,6,11000,180,False,180
+1223,Amul Malai Paneer Fresh ,Amul,"Dairy, Bread & Batter",7600,3,0,7300,200,True,200
+1224,Amul Taaza Toned Homogenised Milk,Amul,"Dairy, Bread & Batter",6600,3,0,6400,1000,True,1
+1226,Amul Lactose Free Milk,Amul,"Dairy, Bread & Batter",2500,4,0,2400,250,True,250
+1227,The Bake Shop Whole Wheat Bread,The,"Dairy, Bread & Batter",4000,0,0,4000,400,True,400
+1228,Amul Slim Trim Skimmed Milk,Amul,"Dairy, Bread & Batter",7500,0,0,7500,1000,True,1
+1229,Amul Cheese Slices,Amul,"Dairy, Bread & Batter",7100,1,0,7000,100,True,100
+1230,Amul Pizza Cheese - Mozzarella,Amul,"Dairy, Bread & Batter",10000,1,0,9900,200,True,200
+1231,The Bake Shop Pizza Base Whole Wheat,The,"Dairy, Bread & Batter",3000,0,0,3000,150,True,150
+1232,Nestle A+ Slim Dahi - Low Fat,Nestle,"Dairy, Bread & Batter",7800,3,0,7500,400,True,400
+1233,Britannia Cheese Garlic Bread,Britannia,"Dairy, Bread & Batter",3500,0,0,3500,300,True,300
+1234,The Bake Shop Whole Wheat Ladi Pav,The,"Dairy, Bread & Batter",4000,0,0,4000,200,True,200
+1235,Amul Cheese Spread Yummy Plain,Amul,"Dairy, Bread & Batter",8500,0,0,8500,200,True,200
+1236,Britannia Atta Kulcha,Britannia,"Dairy, Bread & Batter",3000,0,0,3000,250,True,250
+1237,Suguna Nourish Egg,Suguna,"Dairy, Bread & Batter",6200,0,0,6200,696,True,12
+1238,The Bake Shop Multi Grain Bread,The,"Dairy, Bread & Batter",6500,0,0,6500,400,True,400
+1239,Nestle A+ Slim Milk,Nestle,"Dairy, Bread & Batter",8900,0,0,8900,1000,True,1
+1240,Go Cheese Pizza Blend Mozzarella + Cheddar,Go,"Dairy, Bread & Batter",12500,5,0,11800,200,True,200
+1241,The Whole Truth Peanut Butter - Unsweetened & Crunchy,The,"Dairy, Bread & Batter",18500,20,0,14800,325,True,325
+1242,Amul Cheese Spread Spicy Garlic,Amul,"Dairy, Bread & Batter",8500,3,0,8200,200,True,200
+1243,The Bake Shop Burger Buns,The,"Dairy, Bread & Batter",2000,0,0,2000,100,True,100
+1244,D'lecta Shredded Mozzarella Cheese,D'lecta,"Dairy, Bread & Batter",10000,5,0,9500,140,True,140
+1245,Britannia Burger Bun with Sesame Seed,Britannia,"Dairy, Bread & Batter",3000,0,0,3000,200,True,200
+1246,Suguna Vitamin D Egg,Suguna,"Dairy, Bread & Batter",7500,17,0,6200,348,True,6
+1247,Pillsbury Pancake Mix - Funfetti,Pillsbury,"Dairy, Bread & Batter",9900,11,0,8800,162,True,162
+1249,Suguna Nourish Egg ,Suguna,"Dairy, Bread & Batter",7200,16,0,6000,348,True,6
+1250,RRO Mozzarella Block Cheese,RRO,"Dairy, Bread & Batter",29500,50,0,14700,200,True,200
+1382,iD Malabar Parota ,iD,Packaged Food,8000,10,4,7200,400,False,400
+1383,iD Wheat Lachha Paratha,iD,Packaged Food,8000,12,6,7000,400,False,400
+1384,McCain Aloo Tikki,McCain,Packaged Food,11000,4,6,10500,400,False,400
+1385,McCain Smiles Cripsy Happy Potatoes,McCain,Packaged Food,12000,5,6,11400,415,False,415
+1386,McCain Veggie Burger Patty,McCain,Packaged Food,11500,3,6,11100,360,False,360
+1387,McCain Veggie Fingers,McCain,Packaged Food,11700,5,6,11100,400,False,400
+1389,Whiskas Wet Meal (Adult - Cat Food) (Chicken in Gravy),Whiskas,Packaged Food,3500,2,2,3400,85,False,85
+1390,McCain Chilli Garlic Potato Bites Crunchy Potato Nuggets,McCain,Packaged Food,12500,5,1,11800,420,False,420
+1392,Veeba Eggless Mayonnaise,Veeba,Packaged Food,7900,11,5,7000,250,False,250
+1394,Veeba Pasta And Pizza Sauce,Veeba,Packaged Food,7500,13,5,6500,280,False,280
+1397,Unibic Almond & Oats Protein Bar,Unibic,Packaged Food,4000,17,4,3300,30,False,30
+1400,McCain French Fries,McCain,Packaged Food,12000,5,1,11400,420,False,420
+1401,Ching's Secret Manchow Instant Soup,Ching's,Packaged Food,1000,0,1,1000,15,False,15
+1402,McCain Potato Cheese Shotz,McCain,Packaged Food,13000,4,6,12400,250,False,250
+1403,McCain Masala - Fries,McCain,Packaged Food,12000,5,3,11400,375,False,375
+1404,Ching's Secret Schezwan Fried Rice Masala,Ching's,Packaged Food,1500,0,6,1500,20,False,20
+1406,McCain Chilli Cheesy Nuggets,McCain,Packaged Food,13000,4,1,12400,250,False,250
+1407,Whiskas Adult (+1 Year) Dry Cat Food (Ocean Fish Flavour),Whiskas,Packaged Food,43000,10,6,38700,1200,False,1
+1408,Ching's Instant Soup - Hot & Sour,Ching's,Packaged Food,1000,0,1,1000,15,False,15
+1409,Amul Spray Infant Milk Food,Amul,Packaged Food,19700,2,6,19300,500,False,500
+1410,McCain Smiles - Pudina Chatka,McCain,Packaged Food,12000,5,3,11400,375,False,375
+1411,McCain French Fries Crisp & Delicious,McCain,Packaged Food,17500,4,3,16700,750,False,750
+1412,Ferrero Nutella Hazelnut Spread,Ferrero Nutella,Packaged Food,22000,5,2,20700,180,False,180
+1413,Lijjat Garlic Papad,Lijjat,Packaged Food,6000,5,5,5700,200,False,200
+1414,Switz Samosa Dough Sheets,Switz,Packaged Food,9000,4,6,8600,50,False,50
+1416,Maggi Imli Sauce Pichkoo,Maggi,Packaged Food,2200,0,6,2200,90,False,90
+1417,Whiskas Kitten (2-12 months) Dry Cat Food Food Ocean Fish,Whiskas,Packaged Food,38500,9,5,34700,1100,False,1100
+1418,Ching's Instant Soup - Sweet Corn Veg,Ching's,Packaged Food,1000,0,2,1000,15,False,15
+1419,Whiskas Wet Meal (Kitten - Cat Food) (Chicken in Gravy),Whiskas,Packaged Food,3500,5,2,3300,85,False,85
+1420,McCain Crazy Fries Masala MixHot 'n' Tangy,McCain,Packaged Food,12000,5,6,11400,400,False,400
+1421,The Whole Truth Double Cocoa Protein Bar No Sugar,The,Packaged Food,10000,10,6,9000,52,False,52
+1422,Amul Happy Treats French Fries,Amul,Packaged Food,6800,4,1,6500,425,False,425
+1423,Ferrero Nutella Hazeulnut Spread,Ferrero Nutella,Packaged Food,38000,6,5,35700,350,False,350
+1424,Veeba Chipolte Southwest Dressing,Veeba,Packaged Food,16100,7,4,14900,300,False,300
+1425,Ching's Secret Manchow Noodles Instant Soup,Ching's,Packaged Food,1500,0,6,1500,20,False,20
+1426,Yoga Bar Breakfast Protein Bar - Blueberry Pie,Yoga Bar,Packaged Food,5000,12,1,4400,50,False,50
+1428,The Whole Truth Mini Protein Bar - Coconut Cocoa No Added Sugar,The,Packaged Food,5500,25,6,4100,27,False,27
+1429,Switz Spring Roll Dough Sheets,Switz,Packaged Food,9000,4,6,8600,1160,False,20
+1430,Unibic Fruit & Nut Real Cranberries & Almonds Protein Bar,Unibic,Packaged Food,4000,17,6,3300,30,False,30
+1431,Ching's Secret Tomato Instant Soup,Ching's,Packaged Food,1000,0,1,1000,16,False,15
+1435,Kellogg's Crunchy Fruit & Nut Breakfast Cereals Muesli,Kellogg's,Packaged Food,44500,9,6,40100,750,False,750
+1436,Ching's Secret Chilli Vinegar,Ching's,Packaged Food,5000,0,4,5000,170,False,170
+1437,Ching's Red Chilli Sauce,Ching's,Packaged Food,5500,0,6,5500,200,False,200
+1440,The Whole Truth Cranberry Mini Protein Bar No Sugar,The,Packaged Food,5500,20,6,4400,27,False,27
+1441,The Whole Truth Mini Protein Bar - Coffee Cocoa No Added Sugar,The,Packaged Food,5500,20,6,4400,27,False,27
+1442,Maggi Hot & Sweet Tomato Chilli Sauce,Maggi,Packaged Food,11500,0,1,11500,500,False,500
+1443,Sunfeast YiPPee! Noodles - Magic Masala,Sunfeast,Packaged Food,9600,5,4,9100,540,False,540
+1446,Veeba Cheese and Chilli Sandwich Spread,Veeba,Packaged Food,8900,11,6,7900,275,False,275
+1448,Safal Frozen - Mixed Vegetables,Safal Frozen,Packaged Food,11000,4,2,10500,1000,False,1
+1451,The Whole Truth Peanut Cocoa Mini Protein Bar No Sugar ,The,Packaged Food,5500,25,6,4100,27,False,27
+1452,Gits Pav Bhaji Ready to Eat,Gits,Packaged Food,11000,22,6,8500,300,False,300
+1454,Lijjat Udad Mini Papad,Lijjat,Packaged Food,6000,6,6,5600,200,False,200
+1455,McCain Herb & Garlic Crazy Fries Masala Mix ,McCain,Packaged Food,12000,5,5,11400,400,False,400
+1456,Yoga Bar Multigrain Energy Bar Nuts And Seeds,Yoga Bar,Packaged Food,4000,12,4,3500,38,False,38
+1457,Ching's Secret Sauce (Green Chilli),Ching's,Packaged Food,5500,0,5,5500,190,False,190
+1458,Veeba Pizza Topping,Veeba,Packaged Food,7500,6,4,7000,280,False,280
+1459,Switz Paratha Puff,Switz,Packaged Food,11000,4,6,10500,400,False,400
+1460,"New Kellogg's Muesli with 21% Fruit, Nut & Seeds",New Kellogg's Muesli with 21%,Packaged Food,32500,6,6,30500,500,False,500
+1461,The Whole Truth Double Cocoa Mini Protein Bar No Sugar,The,Packaged Food,5500,20,5,4400,27,False,27
+1462,Sunfeast Yippee Tricolor Pasta Seasoning,Sunfeast,Packaged Food,2800,17,1,2300,65,False,65
+1463,Wingreens Cheesy Chipotle Sauce,Wingreens,Packaged Food,9900,49,1,5000,130,False,130
+1464,Maggi Rich Tomato Ketchup,Maggi,Packaged Food,10500,4,2,10000,500,False,500
+1468,Kellogg's Real Almond & Honey Corn Flakes,Kellogg's,Packaged Food,17500,9,6,15800,300,False,300
+1469,The Whole Truth Vegan Almond Choco Fudge Energy Bar No Sugar,The,Packaged Food,6000,20,6,4800,40,False,40
+1470,Prasuma Vegetable Momos,Prasuma,Packaged Food,27000,0,5,27000,24,False,24
+1471,MTR Upma,MTR,Packaged Food,5000,10,6,4500,160,False,160
+1473,The Whole Truth Cranberry Protein Bar No Sugar,The,Packaged Food,10000,26,6,7400,52,False,52
+1475,Veeba English Mustard,Veeba,Packaged Food,7400,6,2,6900,300,False,300
+1477,Yoga Bar Breakfast Muesli - Almond Caramel (No Added Sugar),Yoga Bar,Packaged Food,32500,4,6,30900,400,False,400
+1478,The Whole Truth Mini Protein Bar - Peanut Butter No Added Sugar,The,Packaged Food,5500,25,6,4100,27,False,27
+1479,ITC Master Chef Crispy Chicken Fries ,ITC Master Chef,Packaged Food,17000,4,3,16200,280,False,280
+1480,Kellogg's Corn Flakes,Kellogg's,Packaged Food,9900,13,6,8600,250,False,250
+1482,Smith & Jones White Pasta Sauce Mix,Smith & Jones,Packaged Food,4000,0,3,4000,46,False,46
+1484,Mothers Recipe Tamrind Date Chutney ,Mothers Recipe,Packaged Food,5500,9,2,5000,200,False,200
+1485,Veeba Mint Mayonnaise,Veeba,Packaged Food,16900,8,4,15500,300,False,300
+1486,McCain Emotibites - Crispy Happy Potato Snack,McCain,Packaged Food,13000,0,6,12900,415,False,415
+1487,The Whole Truth Energy Bar Choco Cranberry Fudge,The,Packaged Food,6000,26,6,4400,40,False,40
+1488,Godrej Yummiez Chicken Lucknowi Seekh Kebab,Godrej,Packaged Food,26000,10,4,23400,400,False,400
+1489,Prasuma Vegetable Momos,Prasuma,Packaged Food,15000,0,5,15000,580,False,10
+1490,Mother's Recipe Mixed Pickle,Mother's Recipe,Packaged Food,8500,9,2,7700,300,False,300
+1492,The Whole Truth Peanut Cocoa Protein Bar No Sugar,The,Packaged Food,10000,26,6,7400,52,False,52
+1493,Yoga Bar Breakfast Muesli - Chocolate & Cranberry ,Yoga Bar,Packaged Food,32500,4,6,30900,400,False,400
+1495,Veeba Sweet Onion Sauce,Veeba,Packaged Food,14100,14,4,12100,350,False,350
+1498,Yogabar No Added Sugar Protein Bar Brownie,Yogabar,Packaged Food,12500,15,4,10600,60,False,60
+1500,Ching's Secret Mix Veg Instant Soup,Ching's,Packaged Food,1000,0,3,1000,15,False,15
+1501,Mother's Recipe Pickle - Red Stuffed Chilli,Mother's Recipe,Packaged Food,14500,11,3,12900,400,False,400
+1502,Kellogg's No Added Sugar Muesli,Kellogg's,Packaged Food,33500,11,6,29800,500,False,500
+1503,Veeba Salsa Dip,Veeba,Packaged Food,11900,6,6,11100,360,False,360
+1504,Veeba Thousand Island Dressing,Veeba,Packaged Food,14900,8,6,13700,300,False,300
+1506,Knorr Chinese Hot And Sour Veg Soup,Knorr,Packaged Food,5500,3,1,5300,43,False,43
+1510,Kissan Pineapple Jam,Kissan,Packaged Food,16500,9,1,14900,500,False,500
+1511,Smith & Jones Masala Noodles,Smith & Jones,Packaged Food,8900,0,5,8900,480,False,480
+1512,Nestle Nestle Nan Pro Follow-Up Formula,Nestle,Packaged Food,65000,0,6,65000,400,False,400
+1514,McCain Super Wedges,McCain,Packaged Food,12000,7,6,11100,400,False,400
+1515,Kellogg's Crunchy Granola Honey Almonds Strawberries & Pumpkin Seeds,Kellogg's,Packaged Food,33000,10,1,29400,450,False,450
+1516,Kellogg's Chocos,Kellogg's,Packaged Food,13000,10,6,11700,250,False,250
+1517,Ching's Secret Just Soak - Whole Wheat Veg Hakka Noodle,Ching's,Packaged Food,3200,0,3,3200,150,False,150
+1518,The Whole Truth Vegan Fig Apricot & Orange Energy Bar No Sugar,The,Packaged Food,6000,20,6,4800,40,False,40
+1520,ITC Master Chef Classic Aloo Tikki,ITC Master Chef,Packaged Food,8000,10,3,7200,320,False,320
+1521,Smith & Jones Pink Pasta Sauce Mix,Smith & Jones,Packaged Food,4000,0,4,4000,46,False,46
+1522,Wingreens Farms Chipotle Dip,Wingreens,Packaged Food,20000,25,1,15000,180,False,180
+1523,Kellogg's Real Almond & Honey Corn Flakes,Kellogg's,Packaged Food,55000,5,3,52000,1000,False,1
+1524,Kellogg's Crunchy Granola Chocolate & Almonds,Kellogg's,Packaged Food,33000,10,3,29400,450,False,450
+1525,Cornitos Cornitos Taco Shells - 6 Inches,Cornitos,Packaged Food,16000,20,4,12800,180,False,180
+1526,Ching's Secret Singapore Curry Instant Noodles,Ching's,Packaged Food,1500,0,3,1500,60,False,60
+1527,Mother's Recipe Pickle - Mango,Mother's Recipe,Packaged Food,12500,9,6,11300,400,False,500
+1529,Pedigree Dentastix  Dog Treat Oral Care for Adult Medium Breed ,Pedigree,Packaged Food,17500,20,6,14000,180,False,180
+1530,Maggi Hot & Sweet - Tomato Chilli Sauce,Maggi,Packaged Food,17000,10,1,15300,1000,False,1
+1531,Ching's Secret Asian Hot Instant Soup,Ching's,Packaged Food,1500,0,3,1500,15,False,15
+1532,Kellogg's Chocos Protein And Fibre Of 1 Roti,Kellogg's,Packaged Food,49900,11,6,44400,1200,False,1
+1533,Mother's Recipe Pickle - Mango,Mother's Recipe,Packaged Food,14900,26,4,10900,500,False,500
+1534,Ching's Secret Manchurian Instant Noodle,Ching's,Packaged Food,6000,0,6,6000,240,False,240
+1535,Kellogg's Original Corn Flakes,Kellogg's,Packaged Food,31000,6,6,29000,875,False,875
+1537,Kellogg's Almonds And Cranberries Granola,Kellogg's,Packaged Food,33000,6,6,31000,460,False,460
+1538,Nestle Ceregrow Multigrain Cereal with Milk and Fruits - 3 to 6 years,Nestle,Packaged Food,29200,0,6,29200,300,False,300
+1539,MTR 3 Minute Breakfast - Magic Masala Upma,MTR,Packaged Food,2500,0,6,2500,60,False,60
+1540,Smith & Jones Masala Noodles,Smith & Jones,Packaged Food,6800,10,5,6100,360,False,360
+1541,"Knorr Classic Tomato Soup With 100% Real Vegetabls, No Added Preservatives",Knorr,Packaged Food,5500,0,6,5500,53,False,53
+1543,Kellogg's Corn Flakes,Kellogg's,Packaged Food,42500,9,1,38300,1000,False,1
+1544,Kellogg's Chocos,Kellogg's,Packaged Food,17000,5,4,16000,385,False,385
+1545,Pedigree Puppy Dry Dog Food Food Chicken & Milk,Pedigree,Packaged Food,29000,20,6,23200,1200,False,1200
+1546,Ching's Secret Lemon Coriander Instant Soup,Ching's,Packaged Food,1500,0,5,1500,15,False,15
+1547,Nestle Cerelac Baby Cereal With Milk Wheat-Rice Mixed Fruit,Nestle,Packaged Food,26100,0,6,26100,300,False,300
+1548,Kellogg's Chocos - Moons & Stars,Kellogg's,Packaged Food,66000,40,4,39600,1200,False,1
+1549,ITC Master Chef Chicken Galouti Kebab,ITC Master Chef,Packaged Food,17000,4,2,16200,210,False,210
+1551,Kitchens Of India Palak Paneer,Kitchens,Packaged Food,13000,30,6,9100,285,False,285
+1552,Kellogg's Chocos Fills Double Chocolat,Kellogg's,Packaged Food,9900,11,6,8800,175,False,175
+1553,Soulfull Ragi Bites Choco Fills,Soulfull,Packaged Food,16900,5,4,16000,250,False,250
+1554,Figaro Sliced Black Olive ,Figaro,Packaged Food,17900,0,6,17900,450,False,450
+1555,Veeba Barbeque Sauce,Veeba,Packaged Food,14900,8,6,13700,330,False,330
+1556,The Whole Truth Vegan Mocha Almond Fudge Energy Bar No Sugar,The,Packaged Food,6000,20,6,4800,40,False,40
+1557,"The Whole Truth - Nuts, Fruits & Seeds Muesli",The,Packaged Food,32500,20,6,26000,350,False,350
+1558,Pantai Green Curry Paste,Pantai,Packaged Food,15000,14,5,12800,114,False,114
+1559,Kellogg's Special K,Kellogg's,Packaged Food,21000,8,5,19200,435,False,435
+1560,Moi Soi Sichuan Chilli Oil- For Stir Fry Marinade Spread & Dip,Moi Soi,Packaged Food,28000,50,5,14000,175,False,175
+1561,Mother's Recipe Madras Appalam,Mother's Recipe,Packaged Food,5000,10,6,4500,100,False,100
+1562,Top Ramen Masala Oat Masala,Top Ramen,Packaged Food,8000,10,6,7200,280,False,280
+1565,Kitchens Of India Chicken Chettinad,Kitchens,Packaged Food,20000,30,1,14000,285,False,285
+1566,Nestle Cerelac Wheat - Stage 1,Nestle,Packaged Food,19000,0,6,19000,300,False,300
+1568,ITC Master Chef Veggie Pizza Pocket,ITC Master Chef,Packaged Food,17000,4,4,16200,340,False,340
+1569,Wingreens Farms Tangy Cheese Pita Chips & Mexican Salsa Dip,Wingreens,Packaged Food,6000,15,1,5100,70,False,70
+1570,Ching's Secret Manchow Soup,Ching's,Packaged Food,5500,0,3,5500,55,False,55
+1571,Veeba Carrot & Cucumber Sandwich Spread,Veeba,Packaged Food,8500,10,6,7600,250,False,250
+1572,Kellogg's Real Almond & Honey Corn Flakes,Kellogg's,Packaged Food,37000,12,3,32400,650,False,650
+1573,Kitchens Of India Mughlai Paneer,Kitchens,Packaged Food,16000,30,4,11200,285,False,285
+1574,Ching's Secret Just Soak - Veg Hakka Noodles,Ching's,Packaged Food,3000,0,5,3000,150,False,150
+1575,Ching's Secret Chowmein Hakka Noodles Masala,Ching's,Packaged Food,6000,10,2,5400,100,False,100
+1577,Mother's Recipe Bhel Puri Chutney,Mother's Recipe,Packaged Food,5500,9,4,5000,200,False,200
+1578,Kellogg's Chocos Moon & Stars,Kellogg's,Packaged Food,33000,10,6,29400,680,False,680
+1579,Mother's Recipe Lime Pickle ,Mother's Recipe,Packaged Food,12000,5,1,11400,400,False,400
+1580,Kitchens of India Dal Makhani,Kitchens,Packaged Food,11000,30,2,7700,285,False,285
+1581,Pantai Light Soy Sauce,Pantai,Packaged Food,27500,14,5,23400,200,False,200
+1582,Ching's Secret Sweet Corn Soup,Ching's,Packaged Food,5500,0,6,5500,55,False,55
+1583,"Top Ramen Noodles, Atta",Top Ramen,Packaged Food,8000,0,1,8000,280,False,280
+1584,Cantina Tortilla Dip Sauce Sour Creamy Tex Mex,Cantina,Packaged Food,22500,15,5,19100,190,False,190
+1585,Dabur Hommade - Rajasthan Ki Garlic Chutne,Dabur,Packaged Food,6500,6,6,6100,200,False,200
+1586,MTR Seviyan Vermicelli ,MTR,Packaged Food,4200,0,2,4200,400,False,400
+1587,Pantai Oyster Sauce,Pantai,Packaged Food,27500,14,4,23400,200,False,200
+1589,MTR Ready To Eat Paneer Butter Masala,MTR,Packaged Food,13500,9,2,12200,300,False,300
+1590,Nestle Lactogen Stage 2 Follow-up Formula Powder,Nestle,Packaged Food,34000,0,2,34000,400,False,400
+1591,Kellogg's Crunchy Bites Chocos,Kellogg's,Packaged Food,19000,10,6,17100,375,False,375
+1592,Veeba Hot Sweet Tomato Chilli Sauce,Veeba,Packaged Food,10400,20,3,8300,500,False,500
+1595,Pantai Red Curry Paste,Pantai,Packaged Food,6000,0,4,6000,50,False,50
+1596,ITC Master Chef Chicken Seekh Kabab,ITC Master Chef,Packaged Food,32500,0,6,32500,500,False,500
+1597,Del Monte Pizza & Pasta Sauce Spout Pack,Del Monte,Packaged Food,9900,0,3,9900,400,False,400
+1598,Pantai Sriracha Red Chilli Sauce,Pantai,Packaged Food,22500,15,6,19100,200,False,200
+1599,Hershey's Cocoa Spread,Hershey's,Packaged Food,29500,0,3,29500,350,False,350
+1600,Maggi Ghee Tadka Upma Express Pouch,Maggi,Packaged Food,2500,0,6,2500,65,False,65
+1601,Ching's Secret Manchurian Noodles,Ching's,Packaged Food,9100,0,5,9100,360,False,360
+1602,Kellogg's All Bran Wheat Flakes,Kellogg's,Packaged Food,22000,6,5,20500,425,False,425
+1603,Yummiez Chicken Breakfast Sausages,Yummiez,Packaged Food,15000,0,3,15000,250,False,250
+1604,Pantai Red Curry Paste,Pantai,Packaged Food,15000,14,3,12800,114,False,114
+1605,Bagrrys Muesli Crunchy Fruit & Nut With Cranberries,Bagrrys,Packaged Food,33000,10,6,29700,400,False,400
+1607,Prasuma Momos -  Cheesy Spicy Veg,Prasuma,Packaged Food,29500,0,6,29500,24,False,24
+1608,Veeba Sriracha Chilli Garlic Sauce,Veeba,Packaged Food,14900,8,5,13700,320,False,320
+1609,Ching's Secret Just Soak - Veg Hakka Noodles,Ching's,Packaged Food,11500,0,6,11500,600,False,600
+1610,Moi Soi Kung Pao Sauce - For Stir Fry Marinade Spread & Dip,Moi Soi,Packaged Food,28000,50,5,14000,175,False,175
+1611,Figaro Plain Green Olive ,Figaro,Packaged Food,17900,0,6,17900,450,False,450
+1612,Mother's Recipe Gujrati Gorkeri Pickle,Mother's Recipe,Packaged Food,14000,10,3,12600,500,False,500
+1613,Kellogg's Muesli 20% Nuts Delight,Kellogg's,Packaged Food,32000,0,6,32000,500,False,500
+1615,Kellogg's Chocos,Kellogg's,Packaged Food,29900,10,4,26900,700,False,700
+1616,Nestle Nan Pro 4 Follow Up Formula Powder For Older Infants ,Nestle,Packaged Food,62000,0,1,62000,400,False,400
+1617,Veeba Truly Tomato Ketchup,Veeba,Packaged Food,9900,20,6,7900,500,False,500
+1618,Ching's Secret Green Chilli Sauce,Ching's,Packaged Food,8500,4,1,8100,680,False,680
+1619,MTR Roasted Vermicelli ,MTR,Packaged Food,5500,0,1,5500,400,False,400
+1620,Mother's Recipe Punjabi Teekha Mang Pickle,Mother's Recipe,Packaged Food,12000,10,4,10800,400,False,400
+1621,Ching's Secret Hot Garlic Instant Noodles,Ching's,Packaged Food,11400,0,6,11400,480,False,480
+1622,Kellogg's Real Honey Corn Flakes,Kellogg's,Packaged Food,29000,7,5,26700,630,False,630
+1623,ITC Master Chef Lebanese Falafel Kebab,ITC Master Chef,Packaged Food,13000,4,4,12400,230,False,230
+1624,Kellogg's Chocos Fills Double Chocolaty,Kellogg's,Packaged Food,18500,10,5,16500,250,False,250
+1625,Organic India Apple Cider Vinegar,Organic India,Packaged Food,59500,9,2,53600,500,False,500
+1627,Ching's Secret  Noodles - Pad Thai Lemongras,Ching's,Packaged Food,20000,0,5,20000,130,False,130
+1628,Bagrrys Fruit and Nut Muesli with Cranberries,Bagrrys,Packaged Food,49900,0,5,49900,750,False,750
+1629,Kitchens Of India Yellow Dal Tadka,Kitchens,Packaged Food,11000,30,6,7700,285,False,285
+1630,Soulfull Vanilla Fills - Ragi Bites,Soulfull,Packaged Food,16900,5,6,16000,250,False,250
+1631,Pantai Teriyaki Sauce with Garlic,Pantai,Packaged Food,32500,15,6,27600,200,False,200
+1632,Whiskas Adult Pocket Tuna Cat Food,Whiskas,Packaged Food,41000,0,1,41000,1200,False,1
+1633,Kitchens Of India Chicken Darbari ,Kitchens,Packaged Food,20000,30,4,14000,285,False,285
+1634,Soulfull Millet Muesli Fruit & Nut Almonds & Real Fruits,Soulfull,Packaged Food,29900,10,6,26900,400,False,400
+1635,Smith & Jones Red Pasta Sauce Mix,Smith & Jones,Packaged Food,4000,0,6,4000,46,False,46
+1636,Kellogg's Muesli Nuts Delight,Kellogg's,Packaged Food,42500,9,3,38300,750,False,750
+1639,Remia Mayonnaise,Remia,Packaged Food,23000,0,6,23000,241,False,241
+1640,Ching's Secret Green Chilli Sauce,Ching's,Packaged Food,10500,0,6,10500,425,False,425
+1641,Bagrrys Fruit N Fibre Muesli - Strawberry,Bagrrys,Packaged Food,59500,0,1,59500,1000,False,1
+1642,Ching's Secret Tomato Oats Instant Soup,Ching's,Packaged Food,1500,0,3,1500,20,False,20
+1643,Kellogg's Special K Original Corn Flakes,Kellogg's,Packaged Food,14000,5,1,13300,290,False,290
+1644,Moi Soi  Black Bean Sauce - Dip Spread Stir Fry & Marinade,Moi Soi,Packaged Food,28000,50,5,14000,175,False,175
+1645,Tong Garden Wasabi Green Peas,Tong Garden,Packaged Food,17500,4,6,16700,150,False,150
+1646,Ching's Secret Red Chilli Sauce,Ching's,Packaged Food,10500,0,4,10500,440,False,440
+1647,Ching's Instant Hot and Sour Soup,Ching's,Packaged Food,5500,0,5,5500,55,False,55
+1648,Ching's Secret Noodles - Pad Thai Original,Ching's,Packaged Food,20000,0,6,20000,130,False,130
+1649,Aashirvaad Instant Meals - Khatta Meetha Pohaa With Millets,Aashirvaad,Packaged Food,5500,30,5,3800,80,False,80
+1650,Del Monte Black Sliced Olives,Del Monte,Packaged Food,25000,0,1,25000,450,False,450
+1651,Kitchens Of India Murgh Methi,Kitchens,Packaged Food,22000,30,5,15400,285,False,285
+1652,Nestle Cerelac 5 Grains & Fruits Cereal,Nestle,Packaged Food,28800,0,6,28800,300,False,300
+1653,The Whole Truth - 5 Grain Muesli No Added Sugar,The,Packaged Food,32500,20,6,26000,350,False,350
+1654,Ching's Secret  Pad Thai Noodles Green Curry,Ching's,Packaged Food,20000,0,6,20000,130,False,130
+1655,Aashirvaad Suji Halwa With Jaggery,Aashirvaad,Packaged Food,7500,0,6,7500,70,False,70
+1656,Mother's Recipe Mango Pickle ,Mother's Recipe,Packaged Food,12000,0,1,12000,400,False,400
+1657,Ching's Secret Pad Thai Noodles - Extra Hot Thai Chilli,Ching's,Packaged Food,20000,0,6,20000,130,False,130
+1658,Kellogg's Special K Original Corn Flakes,Kellogg's,Packaged Food,39900,11,6,35500,900,False,900
+1659,Knorr Sweet Corn Chicken Soup,Knorr,Packaged Food,5500,0,2,5500,42,False,42
+1660,Ching's Secret Tomato Soup,Ching's,Packaged Food,5500,0,6,5500,55,False,55
+1663,Kellogg's Muesli - With 22% Fruit Magic,Kellogg's,Packaged Food,32000,10,5,28800,500,False,500
+1664,Dabur Hommade - Kalonji Tamatar Ki Chutney,Dabur,Packaged Food,6500,6,6,6100,200,False,200
+1665,Kitchens Of India Dal Makhani,Kitchens,Packaged Food,11000,30,1,7700,285,False,285
+1666,Aashirvaad Suji Halwa With Jaggery,Aashirvaad,Packaged Food,5500,30,6,3800,80,False,80
+1667,Del Monte Green Chili Sauce,Del Monte,Packaged Food,5500,0,3,5500,190,False,190
+1668,Pedigree Dog Food Adult Chicken & Veg,Pedigree,Packaged Food,66000,10,1,59400,3000,False,3
+1669,Kellogg's Original Corn Flakes,Kellogg's,Packaged Food,18500,5,6,17500,475,False,475
+1670,Pedigree Puppy Dry Dog Food Food Chicken & Milk,Pedigree,Packaged Food,69000,6,2,64800,3000,False,3
+1671,Kitchens Of India Rajma Masala,Kitchens,Packaged Food,11000,30,5,7700,285,False,285
+1672,Kitchens of India Ready-To-Eat Pindi Channa,Kitchens,Packaged Food,11000,30,2,7700,285,False,285
+1673,Figaro Pitted Black Olive ,Figaro,Packaged Food,17900,0,6,17900,450,False,450
+1674,Cantina Tabasco Red Sauce,Cantina,Packaged Food,14000,15,6,11900,60,False,60
+1675,Mother's Recipe Pickle - Mixed,Mother's Recipe,Packaged Food,14900,26,6,10900,500,False,500
+1676,Nestle Cerelac Baby Cereal with Milk 5 Grains & Vegetables from 18 to 24 Month,Nestle,Packaged Food,27900,0,5,27900,300,False,300
+1678,Pedigree Meat Jerky Adult Dog Treat Barbecued Chicken,Pedigree,Packaged Food,14000,20,6,11200,80,False,80
+1679,Veeba Peri Peri Sauce,Veeba,Packaged Food,16100,0,6,16100,300,False,300
+1680,Pantai Sriracha Yellow Chilli Sauce,Pantai,Packaged Food,22500,15,6,19100,200,False,200
+1682,Ching's Secret Just Soak - Whole Wheat Veg Hakka Noodles,Ching's,Packaged Food,12300,0,6,12300,600,False,600
+1683,Pantai Spring Roll Sauce,Pantai,Packaged Food,27500,10,6,24500,200,False,200
+1684,MTR Vermicelli Payasam,MTR,Packaged Food,7500,0,6,7500,180,False,180
+1685,Bagrrys Corn Flakes,Bagrrys,Packaged Food,35000,0,6,35000,880,False,800
+1686,MTR Ready To Eat Palak Paneer ,MTR,Packaged Food,13500,11,6,12000,300,False,300
+1687,Del Monte Red Chili Sauce,Del Monte,Packaged Food,5500,0,5,5500,190,False,190
+1689,Pantai Green Curry Paste,Pantai,Packaged Food,6000,6,6,5600,50,False,50
+1691,MTR Dal Fry,MTR,Packaged Food,11000,0,5,11000,300,False,300
+1692,Pantai Fish Sauce,Pantai,Packaged Food,27500,14,6,23400,200,False,200
+1694,Ching's Secret Manchurian Instant Noodle,Ching's,Packaged Food,11400,0,6,11400,480,False,480
+1695,Remia Salad Italian Dressing ,Remia,Packaged Food,23000,0,6,23000,250,False,250
+1696,Yummiez Veg Cheese Fingers Pouch,Yummiez,Packaged Food,23000,0,4,23000,400,False,400
+1697,MTR Dal Makhani,MTR,Packaged Food,11000,0,4,11000,300,False,300
+1698,MTR Ready to Eat Pav Bhaji,MTR,Packaged Food,11000,0,6,11000,300,False,300
+1700,Nestle CERELAC Baby Cereal with Milk,Nestle,Packaged Food,27200,0,1,27200,300,False,300
+1701,Remia Salad Caesar Dressing,Remia,Packaged Food,25000,0,6,25000,250,False,250
+1702,Bagrrys Fruit N Fibre Muesli Mixed Fruit,Bagrrys,Packaged Food,33000,0,6,33000,500,False,500
+1703,MTR Paneer Butter Masala & Veg Pulao,MTR,Packaged Food,17500,9,4,15800,375,False,375
+1704,Sundrop Cocoa Nut Hazelnut Chocolatey Spread,Sundrop,Packaged Food,12000,0,6,12000,160,False,160
+1705,Moi Soi Manchurian Sauce - For Stir Fry Marinade Spread & Dip,Moi Soi,Packaged Food,28000,50,6,14000,175,False,175
+1706,Pedigree Dog Food Adult Meat & Rice,Pedigree,Packaged Food,66000,7,2,60800,3000,False,3
+1707,Pantai Sriracha Green Chilli Sauce,Pantai,Packaged Food,22500,15,6,19100,200,False,200
+1708,Pantai Chilli Garlic Sauce,Pantai,Packaged Food,27500,14,6,23400,200,False,200
+1709,Pantai Dark Soy Sauce,Pantai,Packaged Food,27500,14,6,23400,200,False,200
+1711,Cantina Tabasco Green Sauce,Cantina,Packaged Food,14000,15,6,11900,60,False,60
+1712,Pantai Pad Thai Sauce (Non-Veg),Pantai,Packaged Food,32500,9,5,29300,200,False,200
+1713,Pantai Sweet Chilli Sauce,Pantai,Packaged Food,27500,14,6,23400,200,False,200
+1714,Ching's Secret Schezwan Instant Noodle,Ching's,Packaged Food,11400,0,6,11400,480,False,480
+1717,Ching's Secret Hot Garlic Instant Noodles,Ching's,Packaged Food,9100,0,6,9100,60,False,60
+1718,Godrej Yummiez Cheese Corn Nuggets ,Godrej,Packaged Food,23000,0,4,23000,400,False,400
+1719,Pantai Hot Chilli Sauce,Pantai,Packaged Food,27500,14,6,23400,200,False,200
+1720,Knorr International Mexican Tomato Corn Soup ,Knorr,Packaged Food,6500,6,3,6100,52,False,52
+1722,MTR Roasted Vermicelli ,MTR,Packaged Food,10500,0,4,10500,850,False,850
+1725,Kellogg's Chocos Combo Pack,Kellogg's,Packaged Food,6000,6,0,5600,156,True,156
+1726,Kissan Mixed Fruit Jam ,Kissan,Packaged Food,15500,0,0,15500,500,True,500
+1727,Lijjat Urad Papad,Lijjat,Packaged Food,6000,5,0,5700,200,True,200
+1729,Mother's Recipe Ginger And Garlic Paste,Mother's Recipe,Packaged Food,5000,24,0,3800,200,True,200
+1730,Maggi Magic Cubes Chicken,Maggi,Packaged Food,4000,2,0,3900,40,True,40
+1731,Pedigree Puppy Chicken Chunks in Gravy ,Pedigree,Packaged Food,3500,2,0,3400,70,True,70
+1734,Safal Frozen Mixed Vegetables,Safal Frozen,Packaged Food,6000,5,0,5700,500,True,500
+1735,Safal Frozen Corn,Safal Frozen,Packaged Food,4100,4,0,3900,200,True,200
+1739,Lijjat Moong Papad,Lijjat,Packaged Food,6000,5,0,5700,200,True,200
+1740,Mothers Recipe Papad - Sabudana With Rock Salt,Mothers Recipe,Packaged Food,3100,9,0,2800,70,True,70
+1742,Veeba Favourites Eggless Burger Mayonnaise,Veeba,Packaged Food,6900,8,0,6300,250,True,250
+1745,Kellogg's Corn Flakes With Real Strawberry Pure,Kellogg's,Packaged Food,26500,10,0,23600,575,True,575
+1746,Mother's Recipe Potato Papad,Mother's Recipe,Packaged Food,3100,9,0,2800,70,True,75
+1747,Mothers Recipe Rice Papad Ajwain,Mothers Recipe,Packaged Food,2400,0,0,2400,75,True,75
+1749,Dabur Hommade - Imli Sauce Saunth,Dabur,Packaged Food,2000,10,0,1800,100,True,100
+1752,Safal Frozen - Sweet Corn,Safal Frozen,Packaged Food,16000,5,0,15200,1000,True,1
+1753,MTR Vegetable Upma,MTR,Packaged Food,2500,0,0,2500,60,True,60
+1754,Del Monte Original Blend Tomato Ketchup Pouch,Del Monte,Packaged Food,12000,7,0,11100,950,True,950
+1755,Del Monte Natural Vinegar ,Del Monte,Packaged Food,5500,3,0,5300,180,True,180
+1756,Del Monte Eggless Mayo,Del Monte,Packaged Food,13500,6,0,12600,500,True,500
+1757,ITC Master Chef Cheesy Corn Triangles,ITC Master Chef,Packaged Food,16000,5,0,15200,320,True,320
+1758,Mother's Recipe Mixed Pickle ,Mother's Recipe,Packaged Food,11500,4,0,11000,400,True,400
+1760,Hershey's Cocoa + Almond Spread,Hershey's,Packaged Food,29500,9,0,26600,350,True,350
+1762,Del Monte Schezwan Sauce,Del Monte,Packaged Food,5500,0,0,5500,190,True,190
+1763,Yummiez Green Peas,Yummiez,Packaged Food,13500,0,0,13500,500,True,500
+1764,Yummiez Green Peas,Yummiez,Packaged Food,25000,0,0,25000,1000,True,1
+1765,Yummiez American Sweet Corn,Yummiez,Packaged Food,8500,0,0,8500,400,True,400
+1767,Del Monte Pitted Green Olives,Del Monte,Packaged Food,25000,0,0,25000,450,True,450
+1805,Whiskas Kitten (2-12 months) Dry Cat (Ocean Fish Flavour),Whiskas,Ice Cream & Desserts,38500,9,5,34700,1100,False,1100
+1848,New Kellogg's Muesli with 21% Fruit Nut & Seeds,New Kellogg's Muesli with 21%,Ice Cream & Desserts,32500,6,6,30500,500,False,500
+1903,"Kellogg's Crunchy Granola Honey, Almonds, Strawberries & Pumpkin Seeds",Kellogg's,Ice Cream & Desserts,33000,10,1,29400,450,False,450
+1929,Knorr Classic Tomato Soup With 100% Real Vegetabls,Knorr,Ice Cream & Desserts,5500,0,6,5500,53,False,53
+1945,The Whole Truth - Nuts Fruits & Seeds Muesli,The,Ice Cream & Desserts,32500,20,6,26000,350,False,350
+2165,Whiskas Wet Meal (Adult - Cat Food) Chicken in Gravy,Whiskas,Chocolates & Candies,3500,2,2,3400,85,False,85
+2195,Whiskas Wet Meal (Kitten - Cat Food) Chicken in Gravy,Whiskas,Chocolates & Candies,3500,5,2,3300,85,False,85
+2547,Godrej Real Good Chicken Whole Pre-Cut,Godrej,"Meats, Fish & Eggs",30000,10,4,27000,1000,False,1
+2548,Zorabian Chicken Breast Boneless,Zorabian,"Meats, Fish & Eggs",14500,8,3,13300,250,False,250
+2549,Godrej Real Good Chicken Curry Cut,Godrej,"Meats, Fish & Eggs",17500,9,3,15800,500,False,500
+2550,TGFC Chicken Curry Cut Fresh,TGFC,"Meats, Fish & Eggs",24900,25,1,18600,500,False,500
+2552,Godrej Real Good Chicken Breast Boneless,Godrej,"Meats, Fish & Eggs",27500,9,6,24800,450,False,450
+2553,Fresh Chicken Boneless Cubes (Halal),Fresh,"Meats, Fish & Eggs",21500,5,1,20400,500,False,500
+2554,Godrej Real Good Chicken Kheema,Godrej,"Meats, Fish & Eggs",25500,9,3,23000,450,False,450
+2556,TGFC Bombay Duck Whole Cleaned,TGFC,"Meats, Fish & Eggs",31900,14,1,27400,500,False,500
+2557,Zorabian Pre Cut Chicken Skinless (Half),Zorabian,"Meats, Fish & Eggs",16500,0,1,16500,500,False,500
+2558,Godrej Real Good Chicken Drumstick ,Godrej,"Meats, Fish & Eggs",26500,9,2,23900,500,False,500
+2560,Godrej Real Good Chicken Marinated Lollipop ,Godrej,"Meats, Fish & Eggs",20000,10,2,18000,580,False,10
+2564,Fresh Chicken Whole Leg - Skinless (Halal),Fresh,"Meats, Fish & Eggs",16500,4,1,15700,500,False,500
+2566,TGFC Tilapia Curry Cut,TGFC,"Meats, Fish & Eggs",25900,43,1,14700,500,False,500
+2568,Godrej Real Good Marinated Hot & Grill Chicken,Godrej,"Meats, Fish & Eggs",24500,9,2,22100,450,False,450
+2572,TGFC Chicken Boneless Fresh Whole,TGFC,"Meats, Fish & Eggs",26100,14,1,22200,500,False,500
+2579,TGFC Catla Bengali Cut,TGFC,"Meats, Fish & Eggs",29000,29,1,20400,500,False,500
+2580,Godrej Real Good Chicken Leg Boneless,Godrej,"Meats, Fish & Eggs",27500,9,3,24800,450,False,450
+2581,TGFC Rohu Bengali Cut,TGFC,"Meats, Fish & Eggs",24900,28,1,17900,500,False,500
+2582,Godrej Real Good Chicken Lollypop,Godrej,"Meats, Fish & Eggs",17500,9,1,15800,580,False,10
+2583,Godrej Real Good Chicken Liver Sealed ,Godrej,"Meats, Fish & Eggs",7500,9,1,6800,200,False,200
+2585,Fresh Mutton Mince - Kheema (Halal),Fresh,"Meats, Fish & Eggs",51500,3,1,49500,500,False,500
+2586,Fresh Mutton Curry Cut Cubes (Halal),Fresh,"Meats, Fish & Eggs",46500,4,1,44200,500,False,500
+2588,Godrej Real Good Chicken Legs ,Godrej,"Meats, Fish & Eggs",21000,10,1,18900,116,False,2
+2590,TGFC Basa Fillets,TGFC,"Meats, Fish & Eggs",32900,24,1,24700,500,False,500
+2591,Zorabian Chicken Legs Skinless,Zorabian,"Meats, Fish & Eggs",21000,0,1,21000,450,False,450
+2596,Fresh Chicken Curry Cut - Skinless (Halal),Fresh,"Meats, Fish & Eggs",14000,0,0,14000,500,True,500
+2597,Zorabian Chicken Breast Boneless ,Zorabian,"Meats, Fish & Eggs",14500,0,0,14500,450,True,450
+2599,Fresh Chicken Mince - Kheema (Halal),Fresh,"Meats, Fish & Eggs",21500,5,0,20400,500,True,500
+2600,Godrej Real Good Chicken Boneless Cubes ,Godrej,"Meats, Fish & Eggs",27500,9,0,24800,450,True,450
+2603,Zorabian Chicken Mince,Zorabian,"Meats, Fish & Eggs",25000,0,0,25000,450,True,450
+2604,Zorabian Chicken Leg Boneless ,Zorabian,"Meats, Fish & Eggs",25000,0,0,25000,450,True,450
+2606,Zorabian Chicken Cubes,Zorabian,"Meats, Fish & Eggs",27000,0,0,27000,500,True,500
+2607,Britannia Good Day Cashew Cookies,Britannia,Biscuits,1000,0,6,1000,60,False,58
+2608,Britannia 50-50 Maska Chaska Biscuits,Britannia,Biscuits,3200,3,6,3100,120,False,120
+2609,Dukes Waffy Chocolate Wafers,Dukes,Biscuits,4500,51,4,2200,60,False,75
+2610,Britannia Nutri Choice Digestive Biscuit,Britannia,Biscuits,4500,0,1,4500,200,False,150
+2611,Britannia Goodday Chocochip Cookies,Britannia,Biscuits,12000,17,5,9900,400,False,400
+2612,Britannia Good Day Pista Badam,Britannia,Biscuits,4500,2,1,4400,200,False,200
+2613,Cadbury Chocobakes Chocolate Filled Cookies ,Cadbury,Biscuits,3000,0,5,3000,75,False,75
+2614,Dukes Waffy Strawberry Roll,Dukes,Biscuits,15000,50,3,7500,250,False,250
+2615,Parle Monaco Classic Salty Biscuits,Parle,Biscuits,7000,0,4,7000,400,False,400
+2616,Dukes Waffy Orange Wafers,Dukes,Biscuits,4500,51,5,2200,60,False,75
+2617,Britannia Good Day Pista Badam,Britannia,Biscuits,2000,0,6,2000,100,False,100
+2618,Britannia Milk Bikis Biscuits Packet,Britannia,Biscuits,2000,0,3,2000,200,False,200
+2619,Britannia Toastea (Premium Bake Rusk),Britannia,Biscuits,6500,0,6,6500,400,False,400
+2620,Dukes Waffy Strawberry Wafers,Dukes,Biscuits,4500,51,2,2200,60,False,75
+2621,Britannia Toastea Premium Bake Rusk,Britannia,Biscuits,3500,0,3,3500,182,False,182
+2622,Lotte Choco Pie ,Lotte Choco Pie,Biscuits,8000,10,3,7200,168,False,168
+2623,Bauli Moonfils Choco Veg Puff Roll,Bauli,Biscuits,1500,0,2,1500,45,False,45
+2624,Sunfeast Dark Fantasy Choco Fills Cookies Packet,Sunfeast,Biscuits,15000,15,3,12700,300,False,300
+2625,Britannia 50-50 Maska Chaska Biscuit,Britannia,Biscuits,7500,10,6,6750,300,False,300
+2626,Britannia 50-50 Sweet & Salty Biscuit,Britannia,Biscuits,2500,0,4,2500,200,False,200
+2627,Britannia Good Day Chunky Cookies,Britannia,Biscuits,5000,15,6,4250,120,False,120
+2628,Sunfeast Marie Light,Sunfeast,Biscuits,2300,13,1,2000,200,False,200
+2629,Britannia Bourbon Biscuit Buy 4 Get 1 Free,Britannia,Biscuits,8000,10,2,7200,500,False,500
+2630,The Bake Shop Whole Wheat Oats Khari,The,Biscuits,6500,6,5,6100,200,False,200
+2631,Britannia Nutri Choice Oats Milk Almond Biscuit,Britannia,Biscuits,2500,10,6,2250,75,False,75
+2632,Sunfeast Dark Fantasy Choco Creme,Sunfeast,Biscuits,8000,27,4,5800,300,False,300
+2633,Lotte Choco Pie Chocolate Cake,Lotte Choco Pie,Biscuits,2500,0,6,2500,56,False,56
+2634,Sunfeast Mom's Magic Cashew & Almond Cookies Packet,Sunfeast,Biscuits,3000,10,3,2700,200,False,200
+2635,Unibic SugarFree - Oatmeal Cookies,Unibic,Biscuits,5000,16,3,4200,75,False,75
+2636,Parle Hide & Seek Cookies With Added Almonds,Parle,Biscuits,3000,3,1,2900,100,False,100
+2637,Unibic Fruit & Nut Cookies,Unibic,Biscuits,2500,8,3,2300,67,False,67
+2638,Sunfeast Yumfills Whoopie Pie,Sunfeast,Biscuits,14000,25,5,10500,253,False,276
+2639,Britannia Toastea Premium Bake Rusk,Britannia,Biscuits,11000,14,1,9400,700,False,700
+2640,McVitie's Marie biscuits with Goodness of Calcium,McVitie's,Biscuits,3000,0,6,3000,250,False,250
+2641,Britannia Treat Croissant Vanilla Creme Roll,Britannia,Biscuits,2000,10,2,1800,47,False,47
+2642,Unibic Honey Oatmeal Cookies,Unibic,Biscuits,2500,8,6,2300,75,False,75
+2643,Britannia Good Day Choco Chip Cookies,Britannia,Biscuits,3000,3,6,2900,100,False,100
+2644,The Bake Shop Masala Cheese Crackers,The,Biscuits,9500,6,3,8900,100,False,100
+2645,Britannia Pure Magic Vanilla Creme Biscuit,Britannia,Biscuits,3500,17,4,2900,100,False,100
+2646,Open Secret Assorted Story Box,Open Secret,Biscuits,10500,22,4,8100,75,False,75
+2647,Cadbury Oreo Dipped Biscuit,Cadbury,Biscuits,7000,10,1,6300,150,False,150
+2648,Sunfeast Farmlite Oats & Almonds Biscuits Packet,Sunfeast,Biscuits,6000,10,3,5400,150,False,150
+2649,Unibic SugarFree - Butter Cookies,Unibic,Biscuits,5000,16,6,4200,75,False,75
+2650,Britannia Good Day Cashew Cookies Packet,Britannia,Biscuits,12000,12,6,10560,600,False,600
+2651,Dukes Sour & Cream Onion Nibbles Baked,Dukes,Biscuits,5500,25,3,4100,150,False,150
+2653,Parle Hide & Seek Choco Rolls,Parle,Biscuits,5000,2,4,4900,120,False,120
+2654,Britannia Treat Creme Wafers - Vanilla,Britannia,Biscuits,4500,11,6,4000,60,False,1
+2655,Parle Rusk Elaichi,Parle,Biscuits,4800,2,6,4700,300,False,300
+2656,Lotte Choco Pie ,Lotte Choco Pie,Biscuits,14000,6,2,13100,336,False,336
+2657,Sunfeast Mom's Magic Cashew & Almond Biscuits,Sunfeast,Biscuits,12000,15,6,10200,600,False,600
+2658,Unibic Cashew Cookies,Unibic,Biscuits,2500,8,6,2300,75,False,75
+2659,Parle Monaco Jeffs Zeera Biscuit,Parle,Biscuits,6000,10,4,5400,200,False,200
+2660,"Unibic Snack Bar - Multigrain, Choco",Unibic,Biscuits,4000,17,6,3300,30,False,30
+2661,The Bake Shop Methi Khari Simply Delicious,The,Biscuits,6500,6,2,6100,200,False,200
+2662,Britannia Treat Jimjam Family Pack (Buy 4 Get 1 Free),Britannia,Biscuits,10000,0,6,10000,500,False,500
+2663,Open Secret Choco Almond Tiffin Pack,Open Secret,Biscuits,3500,22,3,2700,25,False,25
+2664,Lotte Choco Pie ,Lotte Choco Pie,Biscuits,15000,20,6,12000,696,False,12
+2666,Parle Hide & Seek Choco Rolls,Parle,Biscuits,3000,0,1,3000,75,False,75
+2667,Sunfeast Dark Fantasy Vanilla Creme,Sunfeast,Biscuits,8000,15,6,6800,300,False,300
+2668,Britannia Treat Burst Choco Creme Fills,Britannia,Biscuits,3000,0,3,3000,120,False,120
+2669,Parle Milano Mixed Berries Cookies,Parle,Biscuits,3500,2,3,3400,75,False,75
+2671,Britannia Pure Magic Choco Lush Cookies,Britannia,Biscuits,12000,20,4,9600,300,False,300
+2672,Britannia Treart Creme Wafers Chocolate,Britannia,Biscuits,4500,11,6,4000,60,False,1
+2673,Unibic Daily Digestive (Multigrain Cookies),Unibic,Biscuits,3000,6,6,2800,75,False,75
+2674,Cadbury Chocobakes Choc Filled Cookies,Cadbury,Biscuits,6000,0,6,6000,150,False,150
+2675,The Bake Shop Whole Wheat Multigrain Toast (Rusk),The,Biscuits,6000,6,2,5600,200,False,200
+2676,Unibic Choco Kiss Cookies,Unibic,Biscuits,4500,15,5,3800,75,False,75
+2677,Britannia Treat Creme Wafers - Orange,Britannia,Biscuits,4500,11,6,4000,60,False,60
+2678,Bauli Moonfills Pack of 4,Bauli,Biscuits,6000,10,6,5400,180,False,190
+2679,Unibic Oatmeal Digestive Cookies ,Unibic,Biscuits,5000,6,6,4700,150,False,150
+2681,Britannia Good Day Cashew Cookies Pack Of 6,Britannia,Biscuits,12000,10,6,10800,120,False,120
+2682,Parle Fab Bourbon,Parle,Biscuits,3000,0,3,3000,150,False,150
+2683,Open Secret White Choco Tiffin Pack,Open Secret,Biscuits,3500,22,1,2700,25,False,25
+2684,The Bake Shop Whole Wheat Bread Sticks,The,Biscuits,6000,6,1,5600,100,False,100
+2685,Unibic Assorted Cookies ,Unibic,Biscuits,14900,8,6,13700,450,False,450
+2686,The Bake Shop Milk & Raisin Toast (Rusk),The,Biscuits,6000,6,4,5600,200,False,200
+2687,Lotte Choco Pie Cocoa Pie,Lotte Choco Pie,Biscuits,9000,10,6,8100,168,False,168
+2688,Bauli Moonfils Veg - Strawberry,Bauli,Biscuits,1500,0,5,1500,45,False,47
+2689,The Bake Shop Masala Lavash,The,Biscuits,7500,6,6,7000,100,False,200
+2690,Britannia Good Day Nut Cookies,Britannia,Biscuits,3000,0,6,3000,120,False,120
+2691,Sunfeast Mom's Magic Rich Butter Cookies,Sunfeast,Biscuits,3000,10,6,2700,200,False,200
+2692,The Bake Shop Whole Wheat Toast (Rusk) ,The,Biscuits,6000,6,4,5600,200,False,200
+2693,Open Secret Peanut Butter Story Box,Open Secret,Biscuits,10500,22,6,8100,75,False,75
+2694,Open Secret White Choco Story Box,Open Secret,Biscuits,10500,22,6,8100,75,False,75
+2695,The Bake Shop Whole Wheat Multigrain Lavash,The,Biscuits,7500,6,3,7000,100,False,200
+2696,McVitie's Oat Cookies,McVitie's,Biscuits,4500,0,2,4500,120,False,120
+2697,Britannia Tiger Krunch Biscuits,Britannia,Biscuits,12000,0,4,12000,400,False,400
+2698,McVitie's Butter Cookies,McVitie's,Biscuits,3000,10,6,2700,200,False,200
+2699,Bauli Moonfils Strawberry,Bauli,Biscuits,1500,0,5,1500,45,False,45
+2700,Britannia Good Day Butter Cookies,Britannia,Biscuits,8000,10,6,7200,600,False,600
+2702,The Bake Shop Jeera Ajwain Bread Sticks,The,Biscuits,6000,6,6,5600,100,False,100
+2703,Parle Fab!o Vanilla Creme Sandwich Biscuit,Parle,Biscuits,3000,3,6,2900,120,False,120
+2704,Sunfeast Farmlite Nuts Digestive,Sunfeast,Biscuits,7000,11,6,6200,250,False,250
+2705,Britannia Pure Magic - Chocolush,Britannia,Biscuits,3500,2,6,3400,100,False,100
+2706,The Bake Shop Maska & Multigrain Cheese Crackers,The,Biscuits,13000,10,3,11600,100,False,150
+2707,Britannia Nutri Choice Ragi Cookies,Britannia,Biscuits,7000,10,6,6300,150,False,150
+2708,Sunfeast Farmlite 5 Seed Digestive,Sunfeast,Biscuits,6000,0,2,6000,250,False,250
+2709,Dukes Nibbles - Ranch Crackers,Dukes,Biscuits,5000,0,6,5000,150,False,150
+2711,The Bake Shop Sesame Seed Crackers,The,Biscuits,13000,10,4,11600,100,False,150
+2712,Good Day Butter Cookies,Good,Biscuits,1000,0,0,1000,75,True,75
+2713,Britannia Marie Gold Biscuits Packet,Britannia,Biscuits,3000,0,0,3000,250,True,250
+2714,Britannia Good Day Cashew Cookies,Britannia,Biscuits,2000,0,0,2000,100,True,100
+2715,Sunfeast Dark Fantasy Choco Fills,Sunfeast,Biscuits,3500,8,0,3200,75,True,75
+2716,Britannia Nutri Choice Digestive Biscuits Packet,Britannia,Biscuits,2500,0,0,2500,100,True,100
+2717,Britannia Classic Little Hearts ,Britannia,Biscuits,2500,0,0,2500,75,True,75
+2718,Britannia Good Day Cashew Cookies Packet,Britannia,Biscuits,4000,5,0,3800,200,True,200
+2719,Britannia Nice Time Biscuit,Britannia,Biscuits,2500,0,0,2500,150,True,150
+2720,Britannia Milk Bikis Cream Biscuit,Britannia,Biscuits,4500,0,0,4500,200,True,200
+2721,Britannia Bourbon Chocolate Cream Biscuits,Britannia,Biscuits,3500,2,0,3400,150,True,150
+2722,Dukes Waffy Chocolate Wafer Rolls ,Dukes,Biscuits,15000,50,0,7500,250,True,250
+2723,Britannia Milk Bikis Milky Sandwich,Britannia,Biscuits,2500,0,0,2500,120,True,120
+2724,Britannia Marie Gold Biscuit,Britannia,Biscuits,2800,0,0,2800,200,True,200
+2725,Britannia Marie Gold (Buy 4 Get 1 Free),Britannia,Biscuits,8000,0,0,8000,600,True,600
+2726,Britannia 50-50 Maska Chaska Biscuit,Britannia,Biscuits,1000,0,0,1000,46,True,45
+2727,Unibic Choco Nut Cookies,Unibic,Biscuits,2500,8,0,2300,75,True,75
+2728,Britannia Vita Marie Gold Biscuit,Britannia,Biscuits,4500,0,0,4500,300,True,300
+2729,The Bake Shop Maska Khari,The,Biscuits,6500,6,0,6100,200,True,100
+2730,Parle Fab! Jam-In Cream Filled ,Parle,Biscuits,3500,2,0,3400,150,True,150
+2731,Sunfeast Nice Biscuit,Sunfeast,Biscuits,2500,12,0,2200,150,True,150
+2732,Britannia Nutrichoice 5 Grain Digestive Biscuits,Britannia,Biscuits,7500,0,0,7500,200,True,200
+2733,Cadbury Oreo Strawberry Bicuits,Cadbury,Biscuits,3000,3,0,2900,120,True,120
+2734,Sunfeast Mom's Magic Cashew & Almond Biscuit,Sunfeast,Biscuits,1000,0,0,1000,60,True,60
+2735,Britannia Roll Yo! Strawberry Swiss Roll,Britannia,Biscuits,1000,0,0,1000,28,True,28
+2736,Bauli Moonfils Choco Cream (With Egg),Bauli,Biscuits,1500,0,0,1500,45,True,45
+2737,Britannia Nutri Choice Oats Choco Almond Biscuit,Britannia,Biscuits,2500,10,0,2250,100,True,75
+2738,Britannia Nutri Choice Cracker Sugar Free Biscuit,Britannia,Biscuits,3500,0,0,3500,300,True,300
+2739,Cadbury Oreo Chocolatey Sandwich Biscuits Family Pack,Cadbury,Biscuits,8000,0,0,8000,300,True,300
+2740,Bauli Moonfils Orange Puff Roll,Bauli,Biscuits,1500,0,0,1500,45,True,45
+2741,Britannia Treat Jimjam Cream Biscuits ,Britannia,Biscuits,2500,0,0,2500,100,True,100
+2742,Britannia Toastea Premium Bake Rusk,Britannia,Biscuits,5000,6,0,4700,300,True,300
+2743,The Bake Shop Jeera Khari,The,Biscuits,6500,0,0,6500,200,True,200
+2744,"Cadbury Oreo Creme Biscuit - Vanilla, Original 120 g",Cadbury,Biscuits,3000,3,0,2900,120,True,120
+2745,Britannia Good Day Cashew Cookies,Britannia,Biscuits,23000,25,0,17200,1000,True,1
+2746,Bauli Moonfils - Vanilla,Bauli,Biscuits,1500,0,0,1500,45,True,45
+2747,Britannia Roll Yo! Choco Swiss Roll (With Egg),Britannia,Biscuits,1000,0,0,1000,28,True,28
+2748,Britannia Milk Bikis Cream Biscuit,Britannia,Biscuits,7000,0,0,7000,500,True,500
+2749,Open Secret Choco Almond Story Box,Open Secret,Biscuits,10500,22,0,8100,75,True,75
+2750,Parle Monaco Sixer Salted Biscuits ,Parle,Biscuits,6000,10,0,5400,200,True,200
+2751,Sunfeast Dark Fantasy Bourbon Bliss,Sunfeast,Biscuits,3500,17,0,2900,150,True,150
+2752,Patanjali Atta Doodh Rusk,Patanjali,Biscuits,4000,0,0,4000,300,True,300
+2755,Dettol Original Germ Protection Alcohol Based Hand Sanitizer,Dettol,Personal Care,2500,0,6,2500,50,False,50
+2756,Colgate Visible White Toothpaste,Colgate,Personal Care,11500,10,6,10300,100,False,100
+2757,Dettol SKincare Handwash Value Refill,Dettol,Personal Care,10900,3,6,10500,750,False,750
+2758,Savlon Herbal Sensitive Liquid Handwash Refill Pouch,Savlon,Personal Care,11500,4,6,11000,750,False,500
+2759,Colgate Total 12 Whole Mouth Protection Toothpaste,Colgate,Personal Care,12000,10,6,10800,120,False,120
+2761,Colgate Herbal Toothpaste,Colgate,Personal Care,11400,18,2,9300,200,False,200
+2762,Nivea Men Deodorant Fresh Active 48h Long lasting Freshness,Nivea,Personal Care,22500,24,6,16900,150,False,150
+2763,Dabur Meswak Toothpaste,Dabur,Personal Care,5800,5,6,5500,100,False,100
+2764,Colgate Max Fresh Cooling Crystals Toothpaste,Colgate,Personal Care,10100,5,2,9500,150,False,150
+2766,Colgate Sensitive Soft Bristles Toothbrush,Colgate,Personal Care,5000,0,6,5000,58,False,1
+2767,Pears Pure & Gentle Glycerin Bath Soap,Pears Pure,Personal Care,7500,0,6,7500,125,False,125
+2768,Vaseline Skin Protecting Jelly,Vaseline,Personal Care,7900,13,6,6800,50,False,50
+2769,Dettol Original Germ Protection Bathing Soap Bar,Dettol,Personal Care,16600,5,4,15700,375,False,375
+2770,Dettol Intense Cool Soap (B4G1),Dettol,Personal Care,26000,5,6,24700,625,False,625
+2774,Godrej Nupur – 100% Pure Henna (Mehendi),Godrej,Personal Care,1000,0,6,1000,18,False,18
+2776,Set Wet Style Vertical Hold Hair Gel,Set Wet,Personal Care,5000,10,4,4500,50,False,50
+2777,"Godrej Expert Rich Crème, Natural Black",Godrej,Personal Care,3000,0,6,3000,20,False,20
+2779,Godrej Expert Creme Hair Natural Brown Colour ,Godrej,Personal Care,3000,0,6,3000,20,False,20
+2780,Veet Sensitive Skin Hair Removal Cream,Veet,Personal Care,13500,5,6,12800,50,False,50
+2782,Pears Pure And Gentle Value Pack Of 3 Bathing Soap,Pears Pure,Personal Care,19900,6,5,18600,375,False,375
+2783,Gillette Presto Ready Shaver 5 Cartridges ,Gillette,Personal Care,8800,6,6,8200,290,False,5
+2785,"Godrej Expert Rich Crème, Dark Brown",Godrej,Personal Care,3000,0,4,3000,20,False,20
+2786,Nivea Soft Light Moisturizer for Face Hand & Body Non-Sticky Cream with Vitamin E & Jojoba Oil ,Nivea,Personal Care,18500,15,3,15700,100,False,100
+2787,Fiama Gel Bar Celebration Pack Buy 4 Get 1 Free,Fiama,Personal Care,29000,10,6,26100,625,False,625
+2788,Gillette Sensitive Shaving Foam,Gillette,Personal Care,22500,6,4,21000,418,False,418
+2789,Dove Hair Fall Rescue Shampoo,Dove,Personal Care,15000,6,5,14100,180,False,180
+2790,Gillette Mach 3 Mens Razor Blades,Gillette,Personal Care,49900,7,4,46000,232,False,4
+2791,Palmolive Aroma Absolute Relax Shower Gel,Palmolive,Personal Care,19900,20,2,15900,250,False,250
+2792,Godrej Protekt Germ Fighter Handwash,Godrej,Personal Care,9900,0,6,9900,750,False,750
+2793,Dettol Hand Sanitizer,Dettol,Personal Care,10000,5,6,9500,200,False,200
+2794,Dabur Amla Hair Oil,Dabur,Personal Care,8800,0,2,8800,180,False,180
+2795,Dettol Original Liquid Handwash,Dettol,Personal Care,8900,4,6,8500,200,False,200
+2796,L'Oreal Paris Total Repair 5 Conditioner,L'Oreal,Personal Care,19900,0,6,19900,192,False,180
+2797,Patanjali Saundarya Aloe Vera Gel,Patanjali,Personal Care,9000,0,5,9000,150,False,150
+2798,Head & Shoulders 2 In 1 Anti Dandruff Shampoo Conditioner ,Head &,Personal Care,19500,10,4,17400,180,False,180
+2799,Clean & Clear Pimple Clearing Face Wash,Clean & Clear,Personal Care,13000,10,2,11700,80,False,80
+2800,Himalaya Anti Dandruff Shampoo,Himalaya,Personal Care,14000,8,2,12800,200,False,200
+2801,Stayfree Secure Dry Cover Regular Sanitary Pad With Wings,Stayfree,Personal Care,3000,3,6,2900,406,False,7
+2802,Savlon Moisture Shield Hand Wash,Savlon,Personal Care,9900,4,6,9500,750,False,750
+2803,Dove Intense Repair Conditioner,Dove,Personal Care,19000,14,6,16200,175,False,80
+2804,Dabur Gulabari Rose Glow Face Cleanse,Dabur,Personal Care,7500,5,4,7100,100,False,100
+2805,Parachute Jasmine Hair Oil,Parachute,Personal Care,8200,9,6,7400,190,False,190
+2806,Johnson's Baby Skincare Wipes,Johnson's Baby,Personal Care,7900,6,6,7400,1160,False,20
+2807,Dettol Skincare Liquid Hand Wash,Dettol,Personal Care,7900,0,6,7900,200,False,200
+2808,Old Spice Original Lather Shaving Cream,Old Spice,Personal Care,7500,9,6,6800,70,False,70
+2809,Veet Hair Removal Cream Dry Skin,Veet,Personal Care,13500,5,5,12800,50,False,50
+2810,L'Oreal Paris Total Repair 5 Shampoo,L'Oreal,Personal Care,26500,0,2,26500,396,False,360
+2811,Fiama Menthol & Magnolia Cooling Gel Bar Soap,Fiama,Personal Care,16000,11,6,14100,375,False,375
+2812,Nivea Lip Balm Original Care for 24h Moisture with Shea Butter & Natural Oils,Nivea,Personal Care,14000,15,6,11900,5,False,4
+2813,Oral-B Charcoal Deep Clean Stain Removal Toothbrush Soft,Oral-B,Personal Care,9900,0,3,9900,232,False,4
+2814,Neutrogena Ultra Sheer Dry Touch SPF 50+ Sunblock Sunscreen Lotion,Neutrogena,Personal Care,25000,10,3,22500,30,False,30
+2815,Clinic Plus Strong & Long Health Shampoo,Clinic Plus,Personal Care,49900,10,3,44900,650,False,650
+2816,Johnson's Baby No More Tears Baby Shampoo,Johnson's Baby,Personal Care,9800,0,5,9800,100,False,100
+2817,Colgate Zig Zag Toothbrush,Colgate,Personal Care,12000,0,3,12000,348,False,6
+2818,Savlon Moisture Shield Germ Protection Handwash Refill (Buy 1 Get 1 Free),Savlon,Personal Care,18900,0,6,18900,1500,False,1500
+2819,Colgate Sensitive Everyday Protection Anticavity Toothpaste,Colgate,Personal Care,7500,0,6,7500,40,False,40
+2820,Whisper Ultra Soft XL+ Sanitary Pads,Whisper,Personal Care,33000,2,6,32300,30,False,30
+2821,Garnier Colour Naturals Hair Colour - 1 Natural Black,Garnier,Personal Care,8000,0,1,8000,60,False,60
+2822,Axe Pulse Men's Deodorant,Axe,Personal Care,21000,0,6,21000,150,False,150
+2823,Colgate Zigzag Charcoal Soft Bristle Toothbrush - 4 Pcs,Colgate,Personal Care,9900,0,6,9900,232,False,4
+2824,Whisper Ultra Clean Wings XL+  Pouch,Whisper,Personal Care,44900,7,6,41500,44,False,44
+2825,Whisper Choice Regular Sanitary Pads,Whisper,Personal Care,9000,0,6,9000,1160,False,20
+2826,Axe Dark Temptation Men's Deodorant,Axe,Personal Care,21000,7,5,19400,150,False,150
+2827,Head & Shoulders Anti-Dandruff Smooth & Silky Shampoo,Head &,Personal Care,15000,0,4,15000,180,False,180
+2828,Clinic Plus Strength & Shine Shampoo With Egg Protein ,Clinic Plus,Personal Care,10500,0,2,10500,175,False,175
+2829,Engage M1 Perfume Spray for Men ,Engage,Personal Care,21000,7,6,19400,120,False,120
+2831,"Garnier Color Naturals Crème Hair Color, Shade 5 Light Brown",Garnier,Personal Care,18000,0,1,18000,100,False,100
+2832,Origami Aloe Vera Wipes,Origami,Personal Care,7500,13,4,6500,25,False,25
+2833,"Engage Drizzle Deodorant For Women, Floral And Lavender, Skin Friendly",Engage,Personal Care,19500,10,6,17400,150,False,150
+2835,Colgate Max Fresh Plax Mouthwash - Fresh Mint,Colgate,Personal Care,15000,20,5,12000,250,False,250
+2836,Colgate Zig Zag Charcoal Medium Toothbrush 4 Pcs,Colgate,Personal Care,9900,0,6,9900,232,False,4
+2837,Godrej Protekt,Godrej,Personal Care,9900,0,3,9900,750,False,750
+2838,Colgate Total Charcoal Anticavity Toothpaste,Colgate,Personal Care,11000,10,3,9900,120,False,120
+2839,Colgate Kids 0-2 Extra Soft Tooth Brush,Colgate,Personal Care,3000,16,6,2500,58,False,1
+2841,Maybelline New York Colossal Kajal Black,Maybelline New York Colossal Kajal,Personal Care,14900,0,2,14900,0,False,0
+2842,Godrej Cinthol Lime Talc,Godrej,Personal Care,5500,0,3,5500,100,False,100
+2844,"Godrej Expert Rich Crème, Burgundy",Godrej,Personal Care,3300,0,6,3300,20,False,20
+2845,Colgate Gentle Sensitive+ Toothbrush Pack Of 4,Colgate,Personal Care,12000,10,4,10800,232,False,4
+2846,Nivea Creme All Season Multi-Purpose Cream ,Nivea,Personal Care,17500,10,4,15700,100,False,100
+2847,Oral-B Charcoal Deep Clean Stain Removal Toothbrush Medium,Oral-B,Personal Care,9900,0,1,9900,232,False,4
+2848,Mamaearth 100% Natural Berry Blast Kids Toothpaste,Mamaearth,Personal Care,14900,10,4,13400,50,False,50
+2850,Stayfree Dry Max All Night XL Dry Cover Sanitary Pads,Stayfree,Personal Care,34000,12,6,29800,28,False,28
+2851,"L'Oreal Paris Excellence Creme Hair Color, 1 Black",L'Oreal,Personal Care,62000,0,1,62000,172,False,172
+2852,Fem Fairness Naturals Saffron Skin Bleach,Fem Fairness,Personal Care,8500,15,4,7200,64,False,64
+2853,Engage Woman Blush Body Deo Spray,Engage,Personal Care,19500,10,5,17400,150,False,150
+2854,Dove Pink Rosa Beauty Bathinhg Bar,Dove,Personal Care,6000,0,6,6000,100,False,100
+2855,Sebamed Cleansing Bar,Sebamed,Personal Care,9900,10,4,8900,100,False,100
+2856,Pampers Premium Care Pants - Large,Pampers,Personal Care,109900,18,2,89900,44,False,44
+2857,Nivea Women Deodorant Fresh Natural Long Lasting Freshness & 48h Protection,Nivea,Personal Care,19900,20,2,15900,150,False,150
+2858,"L'Oreal Paris Excellence Creme Hair Color, 3 Dark Brown/Natural Darkest Brown",L'Oreal,Personal Care,62000,0,6,62000,172,False,172
+2859,Patanjali Kesh Kanti Natural Hair Cleanser,Patanjali,Personal Care,7500,9,4,6800,200,False,200
+2860,Godrej No.1 Bathing Soap – Lime & Aloe Vera,Godrej,Personal Care,14900,0,6,14900,600,False,600
+2861,Pantene Advanced Control Hair Fall Solution Shampoo,Pantene,Personal Care,12000,6,5,11200,180,False,180
+2862,Veet Full Body Waxing Kit For Dry Skin,Veet,Personal Care,23500,7,6,21800,1160,False,20
+2863,Johnson's Baby Skincare Wipes,Johnson's Baby,Personal Care,24500,9,6,22100,72,False,72
+2864,Gillette Lemon Lime Shaving Foam,Gillette,Personal Care,19900,11,4,17700,196,False,196
+2865,Old Spice After Shave Lotion Musk,Old Spice,Personal Care,21500,6,3,20000,100,False,100
+2866,Whisper Ultra Soft Air Fresh Sanitary Pads (XL) with Wings,Whisper,Personal Care,31500,0,4,31500,30,False,30
+2867,Himalaya Baby Powder,Himalaya,Personal Care,8000,8,4,7300,100,False,100
+2868,Fiama Men's Refreshing Pulse Shower Gel,Fiama,Personal Care,22500,20,4,18000,250,False,250
+2869,Whisper Ultra Clean XL Plus Sanitary Pad,Whisper,Personal Care,17500,0,5,17500,870,False,15
+2870,Johnson's Baby Powder,Johnson's Baby,Personal Care,14300,0,6,14300,200,False,200
+2871,Dove Cream Beauty Bathing Bar,Dove,Personal Care,23500,9,6,21200,125,False,125
+2872,Patanjali Kesh Kanti Shikakai Hair Cleanser,Patanjali,Personal Care,9500,0,4,9500,200,False,200
+2873,L'Oreal Paris Color Protect Conditioner,L'Oreal,Personal Care,19900,0,3,19900,192,False,192
+2874,Nivea Men Active Clean with Active Charcoal Shower Gel for Body Face & Hair,Nivea,Personal Care,19900,4,5,19100,250,False,250
+2875,L'Oreal 6 Oil Nourish Conditioner,L'Oreal,Personal Care,13500,0,1,13500,192,False,192
+2876,Godrej Easy Natural Black Hair Colour,Godrej,Personal Care,2500,0,5,2500,20,False,20
+2877,Dabur Gulabari Rose Water Daily Glow,Dabur,Personal Care,8000,6,2,7500,250,False,250
+2878,Himalaya Purifying Neem Face Wash,Himalaya,Personal Care,17000,10,6,15300,150,False,150
+2879,Fem Fairness Naturals Gold Skin Bleach,Fem Fairness,Personal Care,6500,9,3,5900,24,False,24
+2880,Whisper Choice Ultra XL Sanitary Pad,Whisper,Personal Care,13300,2,5,13000,1160,False,20
+2881,Dove Dandruff Care Shampoo,Dove,Personal Care,15800,6,5,14700,180,False,180
+2882,Head & Shoulders Anti Dandruff Anti Hairfall Shampoo,Head &,Personal Care,28500,0,5,28500,340,False,240
+2883,L'Oreal Casting Creme Ebony Black Hair Color,L'Oreal,Personal Care,55000,0,6,55000,159,False,87
+2884,Mamaearth Onion Hair Oil,Mamaearth,Personal Care,39900,10,6,35900,150,False,150
+2885,L'Oreal Paris Casting Creme Gloss Hair Color (Dark Brown 400),L'Oreal,Personal Care,55000,0,4,55000,159,False,159
+2886,Palmolive Naturals Sea Minerals Liquid Hand Wash,Palmolive,Personal Care,9900,10,6,8900,250,False,250
+2887,Oral-B Extra Soft Bristles Sensitive ,Oral-B,Personal Care,9800,0,4,9800,232,False,4
+2888,Engage M3 Perfume Spray for Men,Engage,Personal Care,20000,10,3,18000,120,False,120
+2889,Mamaearth Deeply Nourishing wash for Babies,Mamaearth,Personal Care,19900,0,4,19900,200,False,200
+2890,Dettol Original Soap (B4G1),Dettol,Personal Care,26000,5,6,24700,625,False,625
+2892,"MamyPoko Pants Extra Absorb Diapers, New Born",MamyPoko Pants,Personal Care,29900,6,5,27900,28,False,28
+2893,Johnson's Baby Soap,Johnson's Baby,Personal Care,7000,0,6,7000,100,False,100
+2894,Engage M4 Perfume Spray For Men,Engage,Personal Care,20000,10,6,18000,120,False,120
+2895,Fem Fairness Naturals Hair Removal Cream Fair & Soft - Gold,Fem Fairness,Personal Care,6500,10,4,5800,40,False,40
+2896,Dove Hair Fall Rescue Conditioner,Dove,Personal Care,19000,0,4,19000,175,False,175
+2897,Himalaya Anti Hair Fall Shampoo,Himalaya,Personal Care,13000,12,2,11400,200,False,200
+2898,Fiama Peach & Avocado Gel Bar,Fiama,Personal Care,17600,10,3,15800,375,False,375
+2899,Pears Pure & Gentle Value Pack Of 4 Bathing Soap ,Pears Pure,Personal Care,12500,0,6,12500,75,False,75
+2900,Fiama Fresh Hand Wash,Fiama,Personal Care,15000,6,3,14000,400,False,400
+2901,Palmolive Black Orchid And Milk Liquid Hand Wash,Palmolive,Personal Care,9900,10,6,8900,250,False,250
+2902,Oral-B Criss Cross Medium Toothbrush (Buy 2 Get 2 Free),Oral-B,Personal Care,16000,0,5,16000,232,False,4
+2903,Gillette Mach 3 Turbo Razor,Gillette,Personal Care,34900,6,5,32500,58,False,1
+2904,Himalaya Baby Lotion,Himalaya,Personal Care,16500,12,3,14500,200,False,200
+2905,Head & Shoulders 2-in-1 Cool Menthol Anti Dandruff Shampoo + Conditioner,Head &,Personal Care,37500,0,1,37500,340,False,180
+2906,Sunsilk Lusciously Thick & Long Shampoo,Sunsilk,Personal Care,24900,6,6,23400,340,False,340
+2907,Fiama Di Wills Men's Refreshing Pulse Shower Gel,Fiama,Personal Care,22500,4,3,21400,250,False,250
+2908,Sebamed Anti - Dandruff Shampoo,Sebamed,Personal Care,60000,10,2,54000,200,False,200
+2909,Listerine Cool Mint Mouthwash - Mild Taste,Listerine,Personal Care,15000,10,6,13500,250,False,250
+2910,"L'Oreal Paris Excellence Creme Hair Color, 4.25 Aishwarya's Brown",L'Oreal,Personal Care,62000,0,6,62000,172,False,172
+2911,Himalaya Gentle Baby Bath,Himalaya,Personal Care,16500,9,6,15000,200,False,200
+2912,"L'Oreal Paris Casting Creme Gloss Hair Color, Medium Brown 500",L'Oreal,Personal Care,55000,0,4,55000,160,False,159
+2913,L'Oreal Paris Color Protect Shampoo,L'Oreal,Personal Care,28200,0,3,28200,360,False,360
+2914,Fiama Di Wills Lemongrass & Jojoba Gel Bar,Fiama,Personal Care,17600,10,6,15800,375,False,375
+2915,Colgate Plax Peppermint Mouthwash,Colgate,Personal Care,15000,20,5,12000,250,False,250
+2916,Dove Daily Shine Conditioner,Dove,Personal Care,9000,10,1,8100,80,False,80
+2917,Patanjali Kesh Kanti Anti Dandruff Hair Cleanser,Patanjali,Personal Care,11000,0,6,11000,200,False,200
+2918,Old Spice Original After Shave Lotion,Old Spice,Personal Care,25000,0,1,25000,150,False,150
+2920,Dettol Clinical Strength Hand Sanitizer Liquid,Dettol,Personal Care,25000,10,6,22500,500,False,500
+2921,Nivea Soft Light Moisturizer for Face Hand & Body Non-Sticky Cream with Vitamin E & Jojoba Oil,Nivea,Personal Care,39900,20,3,31900,300,False,300
+2923,Dettol Liquid Handwash With Free Liquid,Dettol,Personal Care,9900,0,6,9900,200,False,200
+2924,Nivea Body Milk Lotion for Very Dry Skin,Nivea,Personal Care,39900,20,6,31900,400,False,400
+2926,Head & shoulders Anti Dandruff Shampoo Cool Menthol,Head &,Personal Care,17000,0,6,17000,180,False,180
+2927,Godrej Nupur Henna,Godrej,Personal Care,7500,0,5,7500,150,False,120
+2928,Johnson's Baby Lotion,Johnson's Baby,Personal Care,10000,0,4,10000,100,False,100
+2930,Maybelline New York Colossal Kajal Super Black,Maybelline New York Colossal Kajal,Personal Care,30000,8,3,27500,0,False,0
+2931,Stayfree Dry-Max All Night Ultra-Dry Sanitary Pad,Stayfree,Personal Care,9000,10,6,8100,406,False,7
+2932,Dove Daily Shine Shampoo,Dove,Personal Care,64500,5,3,61200,650,False,650
+2933,Godrej Easy 5 Minute Natural Brown 4 Hair Colour,Godrej,Personal Care,2900,0,5,2900,20,False,20
+2934,Colgate Sensitive Plus Enamel Toothpaste Tube,Colgate,Personal Care,14000,0,6,14000,160,False,160
+2935,Colgate Max Fresh Peppermint Toothpaste ,Colgate,Personal Care,18200,15,6,15400,300,False,300
+2937,Engage Mate For Man Deo Spray,Engage,Personal Care,19500,10,5,17400,150,False,150
+2938,Pantene Advanced Hair Fall Solution Shampoo - Total Damage Care,Pantene,Personal Care,12000,0,5,12000,180,False,180
+2939,Whisper Choice Regular Wing Sanitary Pad,Whisper,Personal Care,3000,0,2,3000,406,False,7
+2940,Colgate Slim Soft Charcoal Toothbrush,Colgate,Personal Care,15000,18,4,12300,232,False,4
+2941,Fiama Scents Juniper & Geranium Body Wash,Fiama,Personal Care,19900,6,5,18600,250,False,250
+2942,Mamaearth Ubtan Body Lotion,Mamaearth,Personal Care,39900,15,4,33900,400,False,400
+2943,Godrej Aer Power Pocket - Long Lasting Bathroom Fragrance Floral Delight,Godrej,Personal Care,5500,0,6,5500,10,False,10
+2944,Himalaya Anti-Hair Fall Shampoo,Himalaya,Personal Care,23000,18,1,18800,400,False,400
+2945,Nivea Soft Light Moisturizer for Face Hand & Body Non-Sticky Cream with Vitamin E & Jojoba Oil,Nivea,Personal Care,31000,15,6,26300,200,False,200
+2946,Engage M2 Perfume Spray For Men,Engage,Personal Care,20000,10,6,18000,120,False,120
+2948,Mamaearth Ubtan Face Scrub Turmeric & Walnut,Mamaearth,Personal Care,34900,10,1,31400,100,False,100
+2949,Himalaya Purifying Neem Face Wash Tube,Himalaya,Personal Care,27000,15,6,22900,300,False,300
+2950,Johnson's Baby Top To Toe Bath Body Wash,Johnson's Baby,Personal Care,16500,0,4,16500,210,False,210
+2951,Gillette Mach 3 Start,Gillette,Personal Care,24900,0,6,24900,116,False,2
+2953,Johnson's Baby Cream,Johnson's Baby,Personal Care,15000,0,6,15000,100,False,100
+2954,Johnson's Baby Soap,Johnson's Baby,Personal Care,10500,0,6,10500,150,False,150
+2955,Himalaya Gentle Baby Shampoo,Himalaya,Personal Care,32000,17,6,26500,400,False,400
+2956,L'Oreal Paris Shine Masque Royal Jelly Hair Colour,L'Oreal,Personal Care,55000,0,3,55000,88,False,87
+2957,Engage Rush Deodorant For Men,Engage,Personal Care,19000,11,6,16900,150,False,150
+2958,Clean & Clear Foaming Face Wash,Clean & Clear,Personal Care,14000,10,4,12600,100,False,100
+2959,Dettol Lather Shaving Cream,Dettol,Personal Care,7500,5,6,7100,78,False,78
+2960,Gillette Classic Regular Pre Shave Foam,Gillette,Personal Care,19900,0,4,19900,196,False,196
+2961,Dove Daily Shine Conditioner,Dove,Personal Care,19000,0,6,19000,175,False,180
+2962,Johnson's Baby Shampoo,Johnson's Baby,Personal Care,18000,0,6,18000,200,False,200
+2964,Pantene Advanced Hair Fall Solution Silky Smooth Care Shampoo,Pantene,Personal Care,12000,6,6,11200,180,False,180
+2965,Fem Fairness Naturals Hair Removal Cream Fair & Soft - Rose,Fem Fairness,Personal Care,6500,10,6,5800,40,False,40
+2966,Sunsilk Stunning Black Shine Shampoo,Sunsilk,Personal Care,55500,6,6,52100,650,False,650
+2967,Dabur Meswak Toothpaste,Dabur,Personal Care,10000,0,1,10000,200,False,200
+2968,Patanjali Kesh Kanti Reetha Hair Cleanser,Patanjali,Personal Care,8500,0,5,8500,200,False,200
+2969,Nivea Lip Balm Soft Rose for 24h Moisture with Natural Oils Delicate Rose Shine,Nivea,Personal Care,18500,8,6,16900,5,False,4
+2970,Santoor Total Skin Care Soap With Sandal & Turmeric,Santoor,Personal Care,18000,0,6,18000,600,False,600
+2971,"L'Oreal Paris Excellence Creme Hair Color, 4 Natural Brown/Natural Dark Brown",L'Oreal,Personal Care,62000,0,1,62000,172,False,172
+2972,Gillette Pre Shave Foam - Classic Regular Skin,Gillette,Personal Care,22500,0,6,22500,418,False,418
+2973,Fiama Di Wills Shower Gel Patchouli & Macadamia,Fiama,Personal Care,19900,10,6,17900,250,False,250
+2974,Listerine Fresh Burst Mouthwash,Listerine,Personal Care,14000,10,4,12600,250,False,250
+2975,Nivea Cocoa Nourish Body Lotion With Coconut Oil & Cocoa Butter For Very Dry Skin ,Nivea,Personal Care,29900,17,5,24700,200,False,200
+2976,Pantene Hair Fall Control Shampoo,Pantene,Personal Care,24000,7,2,22100,340,False,340
+2977,Fogg Master - Royal Intense,Fogg,Personal Care,25000,0,5,25000,120,False,120
+2980,"Colgate Kids Toothpaste - 6+ Years, Strawberry Flavour",Colgate,Personal Care,9300,5,6,8800,80,False,80
+2981,Nivea Soft Moisturizing Cream,Nivea,Personal Care,31000,12,1,27200,200,False,200
+2982,Patanjali Kesh Kanti Aloe Vera Hair Cleanser,Patanjali,Personal Care,8500,0,5,8500,200,False,200
+2983,Neutrogena Deep Clean Foaming Cleanser,Neutrogena,Personal Care,13000,11,2,11500,50,False,50
+2984,Clean & Clear Morning Energy Berry Face Wash,Clean & Clear,Personal Care,15500,6,6,14500,100,False,100
+2985,Pampers Premium Care New Baby Pants,Pampers,Personal Care,32000,0,4,32000,24,False,24
+2986,Vaseline Intensive Care Aloe Fresh,Vaseline,Personal Care,22500,9,6,20300,200,False,200
+2987,L'Oreal Paris Dream Lengths Shampoo,L'Oreal,Personal Care,14900,0,6,14900,192,False,192
+2988,Johnson's Baby Oil,Johnson's Baby,Personal Care,11500,0,4,11500,100,False,100
+2989,Engage Man Rush Deodorant,Engage,Personal Care,19500,9,6,17600,150,False,150
+2990,Pantene Advanced Hair Fall Solution Shampoo - Total Damage Care,Pantene,Personal Care,26400,0,6,26400,340,False,340
+2991,Whisper Daily Liners Clean and Fresh,Whisper,Personal Care,10500,0,4,10500,1160,False,20
+2992,Himalaya Men Pimple Clear Neem Face Wash,Himalaya,Personal Care,18000,9,2,16300,100,False,100
+2993,Pantene Adv Hairfall Solution Conditioner Silky Smooth,Pantene,Personal Care,19000,0,5,19000,200,False,200
+2994,Himalaya Prickly Heat Baby Powder,Himalaya,Personal Care,9000,10,6,8100,100,False,100
+2995,Mamaearth Daily Moisturizing Lotion For Babies,Mamaearth,Personal Care,19900,0,6,19900,200,False,200
+2996,Stayfree Advanced XL Ultra Comfort Sanitary napkins with Wings,Stayfree,Personal Care,17500,0,3,17500,812,False,14
+2997,Pampers Premium Care Pants - Medium,Pampers,Personal Care,109900,18,6,89900,54,False,54
+2999,Vaseline Original Skin Protecting Jelly,Vaseline,Personal Care,12500,10,6,11200,100,False,100
+3000,Clean & Clear Foaming Face Wash,Clean & Clear,Personal Care,18000,10,6,16200,150,False,150
+3001,Fiama Lemongrass and Jojoba Shower Gel,Fiama,Personal Care,22500,20,6,18000,250,False,250
+3002,Oral-B Charcoal Cross Cross Extra Soft Toothbrush (Buy 2 Get 1 Free),Oral-B,Personal Care,18000,0,1,18000,174,False,3
+3003,Listerine Fresh Burst Mouthwash,Listerine,Personal Care,28500,7,6,26300,500,False,500
+3004,Veet Full Body Waxing Kit,Veet,Personal Care,23500,7,6,21800,1160,False,20
+3005,Listerine Original Mouthwash,Listerine,Personal Care,5500,9,6,5000,80,False,80
+3006,Santoor Almond Soft With Sandal & Almond Milk,Santoor,Personal Care,18000,0,2,18000,625,False,625
+3007,Nivea Body Shea Smooth with Shea Butter for Dry Skin,Nivea,Personal Care,42500,20,5,34000,400,False,9
+3008,Neutrogena Deep Clean Facial Cleanser,Neutrogena,Personal Care,13000,0,4,13000,50,False,50
+3009,"L'Oreal Paris Excellence Creme Hair Color, 3.16 Burgundy",L'Oreal,Personal Care,55000,0,3,55000,159,False,172
+3010,Johnson's Baby Powder,Johnson's Baby,Personal Care,23500,0,6,23500,400,False,400
+3011,Bombay Shaving Company Charcoal Face Wash,Bombay Shaving Company,Personal Care,24900,0,4,24900,100,False,100
+3012,Colgate Kids 2+ Years Extra Soft Toothbrush,Colgate,Personal Care,2000,0,3,2000,58,False,1
+3013,Veet Hair Removal Cream (Normal Skin),Veet,Personal Care,13500,5,6,12800,50,False,50
+3014,Dove Daily Shine Shampoo,Dove,Personal Care,24000,0,4,24000,340,False,340
+3015,L'Oreal Anti Hair Fall Conditioner,L'Oreal,Personal Care,19900,0,6,19900,192,False,192
+3016,Nivea Body Lotion Aloe Hydration For Normal Skin ,Nivea,Personal Care,27500,10,6,24700,200,False,200
+3017,Pampers Pants - Large,Pampers,Personal Care,154900,45,3,84900,82,False,82
+3018,"Engage Urge Deodorant For Men, Citrus And Woody, Skin Friendly",Engage,Personal Care,19500,10,6,17400,150,False,150
+3019,Head & Shoulders 2 In 1 Anti Dandruff Smooth & Silky Shampoo+Conditioner,Head &,Personal Care,37500,10,6,33400,340,False,340
+3020,Fem Fairness Natural Gold Skin Bleach,Fem Fairness,Personal Care,8500,7,4,7900,64,False,64
+3021,Engage Deo Frost,Engage,Personal Care,19500,9,6,17600,150,False,150
+3022,Stayfree Secure XL Size Sanitary Napkins,Stayfree,Personal Care,11500,0,5,11500,1160,False,20
+3023,Pampers Pants - Medium,Pampers,Personal Care,69900,21,1,54900,50,False,50
+3024,Pampers Active Baby Diapers New Born Extra Small ,Pampers,Personal Care,109900,22,3,84900,72,False,72
+3025,"Nivea Creme, All Season Multi-Purpose Cream",Nivea,Personal Care,17500,9,6,15800,100,False,100
+3027,Clean & Clear Morning Energy Aqua Splash Face Wash,Clean & Clear,Personal Care,14500,9,5,13100,100,False,100
+3028,Sunsilk Lusciously Thick & Long Shampoo,Sunsilk,Personal Care,55500,6,6,52100,650,False,650
+3029,Mamaearth Skin Correct Face Serum,Mamaearth,Personal Care,59900,15,1,50900,30,False,30
+3031,Pantene Silky Smooth Care Shampoo,Pantene,Personal Care,22500,6,3,21000,340,False,340
+3032,"Garnier Skin Naturals, Micellar Cleansing Water",Garnier,Personal Care,19900,5,4,18900,125,False,125
+3033,Set Wet Swag Avatar Deodorant & Body Spray Perfume For Men,Set Wet,Personal Care,19900,0,1,19900,150,False,150
+3034,Pampers All Round Protection Pants - Medium,Pampers,Personal Care,69900,17,6,57500,50,False,50
+3035,Set Wet Deodrant Charm Avatar,Set Wet,Personal Care,19900,0,1,19900,150,False,150
+3037,Head & Shoulders 2-in-1 Active Protect Shampoo,Head &,Personal Care,37500,9,6,33800,340,False,340
+3038,Gillette Mach 3 Turbo Cartridges,Gillette,Personal Care,64900,10,6,57800,232,False,4
+3040,Bombay Shaving Company Sensitive Cartridges,Bombay Shaving Company,Personal Care,37500,0,2,37500,116,False,2
+3041,Himalaya Baby Lotion,Himalaya,Personal Care,30000,12,1,26400,400,False,400
+3042,Old Spice Lime Lather Shaving Cream,Old Spice,Personal Care,7500,0,6,7500,70,False,70
+3043,Colgate Sensitive Plus Anticavity Toothpaste ,Colgate,Personal Care,14000,10,6,12600,70,False,70
+3044,Colgate Toothpaste For Kids Motu Oatlu,Colgate,Personal Care,9300,0,6,9300,80,False,80
+3045,Pantene Total Damage Care Shampoo,Pantene,Personal Care,12000,0,6,12000,180,False,180
+3046,Himalaya Moisturising Aloe Vera Facial Wipes,Himalaya,Personal Care,10000,10,6,9000,25,False,25
+3047,Savlon Moisture Shield Hand Wash,Savlon,Personal Care,6900,0,5,6900,200,False,200
+3048,Pampers Active Baby Diapers New Born Extra Small,Pampers,Personal Care,36000,10,6,32400,24,False,24
+3049,Himalaya Anti Dandruff Shampoo,Himalaya,Personal Care,26000,18,1,21300,400,False,400
+3050,Himalaya Anti Hair Fall Shampoo,Himalaya,Personal Care,49000,25,4,36700,700,False,700
+3051,Johnson's Baby Oil,Johnson's Baby,Personal Care,20000,0,6,20000,200,False,200
+3052,Vaseline Intensive Care Deep Moisture Body Lotion,Vaseline,Personal Care,32500,0,4,32500,400,False,400
+3053,L'Oreal Paris Dream Lengths Conditioner,L'Oreal,Personal Care,19900,0,1,19900,193,False,193
+3054,Nivea Soft Light Moisturizing Cream,Nivea,Personal Care,18500,15,6,15700,100,False,100
+3055,Whisper Ultra Soft XL+ Sanitary Pads,Whisper,Personal Care,55500,0,1,55500,60,False,60
+3056,Palmolive Feel The Massage Shower Gel,Palmolive,Personal Care,24900,20,6,19900,250,False,250
+3058,Head & Shoulders Anti-Dandruff Smooth & Silky Shampoo,Head &,Personal Care,28500,6,6,26600,340,False,340
+3059,Mamaearth Moisturizing Baby Bath Soap,Mamaearth,Personal Care,24900,0,4,24900,150,False,150
+3060,Listerine Original Mouthwash,Listerine,Personal Care,15000,10,6,13500,250,False,250
+3061,Himalaya Gentle Baby Shampoo,Himalaya,Personal Care,17000,14,6,14600,200,False,200
+3062,Dove Dryness Care Shampoo,Dove,Personal Care,26800,5,1,25200,340,False,340
+3063,Dove Hair Fall Rescue Shampoo,Dove,Personal Care,28000,15,6,23600,340,False,340
+3064,Head & Shoulders Anti Dandruff Shampoo Cool Menthol,Head &,Personal Care,29500,9,6,26600,340,False,340
+3065,Bombay Shaving Company Defender Razor,Bombay Shaving Company,Personal Care,34500,0,6,34500,58,False,1
+3066,"Head & Shoulders Shampoo + Conditioner - 2-In-1, Cool Menthol",Head &,Personal Care,36500,0,1,36500,340,False,340
+3067,Himalaya Baby Nourishing Massage Oil,Himalaya,Personal Care,20000,20,2,16000,200,False,250
+3068,Himalaya Baby Powder,Himalaya,Personal Care,23500,20,6,18800,400,False,400
+3069,Fogg Paradise Fragrant Body Spray For Women ,Fogg,Personal Care,25000,0,6,25000,150,False,150
+3071,Pantene Hairfall Control Conditioner,Pantene,Personal Care,19000,6,6,17800,200,False,200
+3072,Mamaearth Vitamin C Face Toner,Mamaearth,Personal Care,39900,0,1,39900,200,False,200
+3073,Himalaya Diaper Rash Cream,Himalaya,Personal Care,8000,10,2,7200,20,False,20
+3074,Fogg Royal Fragrance Spray,Fogg,Personal Care,23000,0,4,23000,150,False,120
+3075,Dove Pink Rosa Beauty Bathing Bar,Dove,Personal Care,24500,9,6,22100,100,False,100
+3076,Dove Dryness Care Conditioner Frizzy & Dry Hair,Dove,Personal Care,9000,6,4,8400,80,False,80
+3077,Dettol Original Liquid Handwash Refill,Dettol,Personal Care,10900,3,0,10500,750,True,750
+3078,Parachute 100% Pure Coconut Oil,Parachute,Personal Care,12300,0,0,12300,300,True,300
+3079,Stayfree Secure Cottony Soft Cover Sanitary Pad (Regular) with Wings,Stayfree,Personal Care,3000,3,0,2900,406,True,7
+3080,Dabur Gulabari Premium Rose Water,Dabur,Personal Care,4800,2,0,4700,120,True,120
+3081,Parachute Advansed Gold Coconut Hair Oil,Parachute,Personal Care,21500,9,0,19400,400,True,400
+3083,Godrej No.1 Bathing Soap – Lime & Aloe Vera,Godrej,Personal Care,10000,16,0,8400,500,True,100
+3085,Whisper Bindazzz Nights XL + Sanitary Pad,Whisper,Personal Care,9000,0,0,9000,406,True,7
+3086,Whisper Choice Sanitary Pad ,Whisper,Personal Care,3200,9,0,2900,406,True,7
+3087,"Godrej No.1 Bathing Soap, Jasmine",Godrej,Personal Care,8400,0,0,8400,400,True,100
+3088,Gillette Venus Close & Clean Razor ,Gillette,Personal Care,24900,7,0,23000,58,True,1
+3089,Whisper Choice Regular Sanitary Pads,Whisper,Personal Care,9000,3,0,8700,58,True,20
+3090,Stayfree Secure Dry Cover Extra Large Sanitary Pad,Stayfree,Personal Care,4200,2,0,4100,406,True,7
+3092,Clean & Clear Morning Energy Lemon Face Wash,Clean & Clear,Personal Care,14500,9,0,13100,100,True,100
+3093,Bajaj Almond Drops Hair Oil,Bajaj Almond Drops Hair Oil,Personal Care,6700,10,0,6000,100,True,100
+3094,Bajaj Almond Drops Hair Oil Bottle,Bajaj Almond Drops Hair Oil,Personal Care,13000,7,0,12000,200,True,200
+3095,Whisper Bindazzz Night Sanitary Pads XL Plus,Whisper,Personal Care,18500,0,0,18500,870,True,15
+3096,Godrej Cinthol Lime Refreshing Deo Soap,Godrej,Personal Care,11600,0,0,11600,400,True,400
+3097,"MamyPoko Pants Standard Diapers, Extra Large (12 - 17 kg)",MamyPoko Pants,Personal Care,39900,7,0,36900,26,True,26
+3442,Surf Excel Stain Eraser,Surf Excel,Home & Cleaning,1800,0,1,1800,150,False,150
+3445,"Mortein Cockroach Killer Spray, Crawling insect killer with Deep-Reach Nozzle",Mortein,Home & Cleaning,18900,5,2,17900,425,False,425
+3446,Pril Perfect Lime Dishwash Liquid,Pril,Home & Cleaning,19000,7,4,17500,750,False,750
+3447,Dettol Antiseptic Disinfectant Liquid,Dettol,Home & Cleaning,6600,0,6,6600,125,False,125
+3448,Godrej Aer Power Pocket Berry Rush,Godrej,Home & Cleaning,5500,0,3,5500,10,False,10
+3449,Hit Cockroach Killer Spray ,Hit,Home & Cleaning,10100,2,4,9800,200,False,200
+3450,Vim Dishwash Liquid Gel Lemon,Vim Dishwash,Home & Cleaning,18500,5,1,17500,750,False,750
+3451,"Harpic Disinfectant Toilet Cleaner Liquid, Original - 1 L",Harpic,Home & Cleaning,17800,0,6,17800,1000,False,1
+3452,Odomos Mosquito Repellent Cream ,Odomos,Home & Cleaning,5000,8,6,4600,50,False,50
+3453,Harpic Disinfectant Bathroom Cleaner Liquid Lemon,Harpic,Home & Cleaning,18900,5,6,17900,1000,False,1
+3454,Eveready AA pack of 10 ,Eveready,Home & Cleaning,15000,4,6,14300,580,False,10
+3455,Cherry Blossom Liquid Wax Polish,Cherry Blossom,Home & Cleaning,9800,5,6,9300,75,False,75
+3456,Gala Scrubber Cleaner Home Everyday Scrub,Gala,Home & Cleaning,3500,2,6,3400,58,False,1
+3457,Hit Flower Lime Fragrance Insect Killer Spray,Hit,Home & Cleaning,18200,3,6,17600,400,False,400
+3458,Harpic Hygienic Toilet Cleaner Rim Block Jasmine,Harpic,Home & Cleaning,8200,6,4,7700,26,False,26
+3459,Om Bhakti - Pancha Deepa Oil ,Om Bhakti,Home & Cleaning,19900,10,6,17900,1000,False,1
+3460,Ariel Complete Detergent Washing Powder 500 g  + 200 g Free,Ariel,Home & Cleaning,13500,0,6,13500,500,False,500
+3461,Surf Excel Matic Top Load Detergent Powder,Surf Excel,Home & Cleaning,20000,6,1,18800,1000,False,1
+3462,Harpic Flushmatic In-Cistern Toilet Cleaner Blocks Marine,Harpic,Home & Cleaning,15400,7,4,14300,100,False,100
+3463,Eveready 1012 Carbon Zinc AAA Battery,Eveready,Home & Cleaning,15000,4,2,14300,580,False,10
+3464,Surf Excel Matic Front Load Detergent Liquid,Surf Excel,Home & Cleaning,22500,1,6,22100,1000,False,1
+3465,Origami Kitchen Towels 2 In 1 Quilted 2ply,Origami,Home & Cleaning,14000,10,6,12600,116,False,2
+3466,Oxi Green Phenyl - Pine ,Oxi Green,Home & Cleaning,8200,9,6,7400,1000,False,1
+3467,Surf Excel Easy Wash Detergent Liquid,Surf Excel,Home & Cleaning,17000,0,6,16900,1000,False,1
+3469,Chakaachak Mini Cloth Brush,Chakaachak,Home & Cleaning,4000,2,1,3900,58,False,1
+3470,Chakaachak Super Scrub Pad (Pack of 3),Chakaachak,Home & Cleaning,3500,2,2,3400,174,False,3
+3472,Om Bhakti Cow Dung Cakes ,Om Bhakti,Home & Cleaning,1600,0,6,1600,290,False,5
+3473,Dettol Antiseptic Liquid,Dettol,Home & Cleaning,3300,0,4,3300,60,False,60
+3474,Harpic Hygienic Toilet Cleaner Rim Block Citrus,Harpic,Home & Cleaning,8200,6,6,7700,26,False,26
+3475,Eveready Ultima Alkaline AA Cell Battery-6 Pc Pack,Eveready,Home & Cleaning,21000,10,6,18900,348,False,6
+3477,Ariel Matic Top Load Detergent Washing Powder,Ariel,Home & Cleaning,22500,0,6,22500,1000,False,1
+3478,Gala Cloth Poccha/Mop,Gala,Home & Cleaning,12500,9,6,11300,58,False,1
+3479,Chakaachak Floor Cleaning Pocha,Chakaachak,Home & Cleaning,5000,2,6,4900,58,False,1
+3480,Oxi Green Floor Cleaner - Floral,Oxi Green,Home & Cleaning,17900,10,6,16100,1000,False,1
+3481,"Godrej Aer Pocket, Bathroom Air Fragrance - Assorted Pack Of 3",Godrej,Home & Cleaning,16000,0,6,16000,30,False,30
+3482,Ariel Complete Detergent Washing Powder 1 kg + 500 g Free,Ariel,Home & Cleaning,28000,6,6,26300,1500,False,1
+3483,Chakaachak Sponge Scrubber (Pack of 2),Chakaachak,Home & Cleaning,4500,2,6,4400,116,False,2
+3484,Lizol Disinfectant Surface & Floor Cleaner Liquid Floral,Lizol,Home & Cleaning,10300,5,6,9700,500,False,500
+3485,Harpic Germ & Stain Blaster Disinfectant Toilet Cleaner Floral,Harpic,Home & Cleaning,14800,7,6,13700,750,False,750
+3486,Hit Lime Fresh Flying Insect Killer,Hit,Home & Cleaning,26900,0,6,26900,385,False,385
+3488,Godrej Ezee Liquid Detergent,Godrej,Home & Cleaning,17500,0,6,17500,1000,False,1
+3489,Odonil Air Fresher Buy 3 Get 1 Free,Odonil,Home & Cleaning,22500,5,3,21300,300,False,300
+3490,Godrej Aer Power Pocket - Long Lasting Bathroom Fragrance Fresh Blossom,Godrej,Home & Cleaning,5500,0,6,5500,10,False,10
+3492,Scotch Brite Scrub Pad,Scotch,Home & Cleaning,7500,9,6,6800,290,False,5
+3493,Shubh kart - Nirmal Eco Box Chandan Agarbatti - 100g,Shubh kart -,Home & Cleaning,6500,13,5,5600,100,False,100
+3494,Surf Excel Quick Wash,Surf Excel,Home & Cleaning,60000,8,1,54900,4000,False,4
+3496,Odonil Room Air Freshener Spray Lavender Mist,Odonil,Home & Cleaning,14900,5,4,14100,240,False,240
+3497,Chakaachak Mega Star Toilet Brush,Chakaachak,Home & Cleaning,11000,2,4,10700,58,False,1
+3498,Om Bhakti Wick for Diya - Cotton Long Batti ,Om Bhakti,Home & Cleaning,1900,0,4,1900,50,False,50
+3499,Origami Non-Woven Kitchen Towel,Origami,Home & Cleaning,19000,14,4,16200,80,False,80
+3500,Shubh kart - Nirmal 5 in 1 Agarbatti Zipper - 150g,Shubh kart -,Home & Cleaning,6500,13,6,5600,150,False,150
+3501,Harpic Lemon Bathroom Cleaner ,Harpic,Home & Cleaning,9500,9,6,8600,500,False,500
+3502,Scotch Brite Sponge Wipes,Scotch,Home & Cleaning,20000,0,2,20000,174,False,3
+3503,Godrej Aer Spray Fresh Lush Green,Godrej,Home & Cleaning,15000,16,2,12600,240,False,240
+3504,Oxi Green Phenyl Concentrate,Oxi Green,Home & Cleaning,20000,10,6,18000,1000,False,1
+3505,Oxi Green Max Force Green Concentrate,Oxi Green,Home & Cleaning,10700,10,3,9600,500,False,500
+3506,Godrej Aer Morning Misty Meadows Home Air Freshener,Godrej,Home & Cleaning,15000,0,4,14900,240,False,240
+3508,Origami Disposable Spoons,Origami,Home & Cleaning,8000,10,3,7200,1160,False,20
+3509,Pril Bar Tub,Pril,Home & Cleaning,5500,0,1,5500,500,False,500
+3510,Om Bhakti Wick for Diya - Cotton Flower Batti ,Om Bhakti,Home & Cleaning,1900,0,4,1900,60,False,60
+3511,Chakaachak Deluxe Dustpan Grey,Chakaachak,Home & Cleaning,6800,2,3,6600,58,False,1
+3512,Lizol Disinfectant Surface & Floor Cleaner Liquid Citrus,Lizol,Home & Cleaning,20500,8,3,18800,975,False,975
+3515,Good Knight Fabric Personal Mosquito Repellent Roll On,Good,Home & Cleaning,7500,0,3,7500,8,False,8
+3516,Gala Iron Bull Scrub Pad,Gala,Home & Cleaning,14000,10,6,12600,174,False,3
+3518,Chakaachak Dustpan Grey,Chakaachak,Home & Cleaning,7000,2,5,6800,58,False,1
+3519,Mortein PowerGard Rat Kill Cake,Mortein,Home & Cleaning,6400,6,6,6000,100,False,100
+3520,Odomos Mosquito Repellent Cream,Odomos,Home & Cleaning,2500,0,1,2500,23,False,25
+3521,Shubh kart - Nirmal Eco Box Sugandhi Mogra Agarbatti - 100g,Shubh kart -,Home & Cleaning,6500,13,6,5600,100,False,100
+3522,Cherry Blossom Wax Shoe Polish Black,Cherry Blossom,Home & Cleaning,6800,5,6,6400,40,False,40
+3523,Origami Paper Plates,Origami,Home & Cleaning,24000,15,5,20400,50,False,50
+3524,Gala Microfiber Magic Cloth 2-In-1,Gala,Home & Cleaning,17500,9,6,15800,58,False,1
+3526,Lizol Disinfectant Surface & Floor Cleaner Liquid Jasmine,Lizol,Home & Cleaning,10300,5,6,9700,500,False,500
+3527,Odonil Room Spray Air Freshener Citrus Fres,Odonil,Home & Cleaning,15000,12,4,13200,137,False,137
+3528,Scotch Brite Power Scrub Pad,Scotch,Home & Cleaning,5000,2,6,4900,58,False,1
+3529,Origami Good Karma Toilet Roll,Origami,Home & Cleaning,27500,14,6,23400,232,False,1
+3530,Shubh kart - Shubhkart Sambrani Cup Black 12n,Shubh kart -,Home & Cleaning,8000,6,4,7500,696,False,12
+3531,Gala Scrubber Pad,Gala,Home & Cleaning,7500,9,5,6800,290,False,5
+3532,Origami So Soft Tissue Roll Single - 340 Pulls 3 Ply,Origami,Home & Cleaning,8000,0,1,8000,58,False,1
+3533,Odomos lotion - Mosquito Repellent,Odomos,Home & Cleaning,9000,8,6,8200,120,False,120
+3534,Surf Excel Matic Front Load Detergent Powder,Surf Excel,Home & Cleaning,53000,4,6,50700,2000,False,2
+3537,Harpic Power Fresh 6 Toilet Cleaner Rim Block Floral Delight,Harpic,Home & Cleaning,18800,10,6,16900,35,False,35
+3538,Origami So Soft Tissue Roll 3 Ply,Origami,Home & Cleaning,39000,11,6,34700,696,False,12
+3539,Ariel Matic Front Load Detergent Washing Powder,Ariel,Home & Cleaning,80000,15,6,68000,3000,False,3
+3540,Gala Double Hockey Toilet Brush,Gala,Home & Cleaning,15000,10,6,13500,58,False,1
+3541,Surf Excel Detergent Bar Value Pack,Surf Excel,Home & Cleaning,11400,0,6,11400,800,False,800
+3542,Odonil Zipper Blissful Citrus,Odonil,Home & Cleaning,5500,0,1,5500,10,False,10
+3543,Eveready Base B22 9-Watt LED Bulb,Eveready,Home & Cleaning,15000,0,2,15000,58,False,1
+3544,Scotch Brite Sponge Wipe,Scotch,Home & Cleaning,33000,10,6,29700,290,False,5
+3546,Surf Excel Matic Powder Front Load ,Surf Excel,Home & Cleaning,81000,7,2,75000,4000,False,4
+3547,Scotch Brite Silver Sparks Scrub Pad,Scotch,Home & Cleaning,9000,10,6,8100,348,False,3
+3548,Airwick Room Air Freshener Spray Cool Water & Aloe Vera,Airwick,Home & Cleaning,16100,5,6,15200,245,False,245
+3549,Shubh kart - Surabhi Camphor Pouch 50g,Shubh kart -,Home & Cleaning,9500,9,6,8600,50,False,50
+3550,Pril Power Of Active Boosters,Pril,Home & Cleaning,10200,0,1,10200,400,False,400
+3551,Scotch Brite Tough Scrubber Brush,Scotch,Home & Cleaning,15000,6,6,14000,58,False,1
+3552,Mortein Dual All Insect Killer Spray,Mortein,Home & Cleaning,28000,10,6,25200,600,False,600
+3553,Lizol Double Concentrate Disinfectant Floor Cleaner Lavender,Lizol,Home & Cleaning,32500,10,6,29200,900,False,900
+3554,Eveready Ultima Alkaline Battery AAA,Eveready,Home & Cleaning,6800,0,6,6800,116,False,2
+3555,Shubh kart - Tejas Twisted Cotton Wicks 1000n,Shubh kart -,Home & Cleaning,3000,6,6,2800,1000,False,1000
+3556,Lizol Double Concentrate Disinfectant Floor Cleaner Citrus,Lizol,Home & Cleaning,65000,8,6,59800,1900,False,1
+3557,Surf Excel Matic Top Load,Surf Excel,Home & Cleaning,72000,9,4,64900,4000,False,4
+3558,Oxi Green Dish Wash Liquid - Lemon,Oxi Green,Home & Cleaning,10500,6,6,9800,500,False,500
+3559,Mangalam Camphor,Mangalam Camphor,Home & Cleaning,10000,10,6,9000,50,False,50
+3560,Cherry Blossom Liquid Wax Polish (Dark Tan),Cherry Blossom,Home & Cleaning,9800,5,6,9300,75,False,75
+3561,Gala EzeeSqueegee Wiper,Gala,Home & Cleaning,15000,10,6,13500,58,False,1
+3562,Lizol Disinfectant Surface & Floor Cleaner Liquid Pine,Lizol,Home & Cleaning,20500,8,6,18800,975,False,975
+3563,Philips Stellar Bright 16W Light Bulb,Philips,Home & Cleaning,39000,16,6,32400,58,False,1
+3564,Airwick EverFresh Gel Bathroom Air Freshener - Lavender Dew,Airwick,Home & Cleaning,7000,10,6,6300,50,False,50
+3565,Origami Cups Plain 100 units,Origami,Home & Cleaning,15500,14,5,13200,100,False,100
+3566,Airwick EverFresh Gel Bathroom Air Freshener - Citrus Splash,Airwick,Home & Cleaning,7000,10,6,6300,50,False,50
+3567,Ariel Matic Liquid Detergent Front Load,Ariel,Home & Cleaning,25000,0,6,25000,1000,False,1
+3568,Om Bhakti Gangajal Packed At Gangotri,Om Bhakti,Home & Cleaning,3000,3,6,2900,220,False,220
+3569,Odonil Air Freshner Lavender Meadows,Odonil,Home & Cleaning,7500,5,4,7100,75,False,75
+3570,Om Bhakti Haldi ,Om Bhakti,Home & Cleaning,1200,0,4,1200,15,False,15
+3571,Cherry Blossom Wax Shoe Polish Dark Tan,Cherry Blossom,Home & Cleaning,6800,5,6,6400,40,False,40
+3572,Dabur Odomos Naturals Mosquito Repellant Gel,Dabur,Home & Cleaning,7500,8,4,6900,80,False,80
+3573,Shubh kart - Nirmal sugandhi mogra wet dhoop zipper 20 sticks,Shubh kart -,Home & Cleaning,3000,6,6,2800,1160,False,20
+3574,Lizol Disinfectant Surface & Floor Cleaner Liquid Floral,Lizol,Home & Cleaning,20500,8,6,18800,975,False,975
+3575,Om Bhakti Wick for Diya - Ghee Cotton Wicks Big ,Om Bhakti,Home & Cleaning,18900,10,6,17000,30,False,30
+3577,Scotch Brite Kitchen Sink Brush,Scotch,Home & Cleaning,13500,9,5,12200,58,False,1
+3578,Odonil Room Air Freshener Spray - Lavender Mist,Odonil,Home & Cleaning,15000,12,1,13200,137,False,137
+3579,Godrej Aer Power Pocket - Long Lasting Bathroom Fragrance Lavender Bloom,Godrej,Home & Cleaning,5500,0,4,5500,10,False,10
+3580,Origami Good Karma Paper Serviettes ,Origami,Home & Cleaning,8000,10,6,7200,50,False,50
+3581,Scotch Magic Tape,Scotch,Home & Cleaning,11500,14,6,9800,58,False,1
+3583,Origami Kitchen Towels 4 in 1 60 Pulls 2 Ply,Origami,Home & Cleaning,26500,0,6,26500,58,False,1
+3585,Om Bhakti Wick for Diya - Ghee Cotton Wicks Small ,Om Bhakti,Home & Cleaning,13900,10,6,12500,30,False,30
+3586,Chakaachak Super Strong Scrub,Chakaachak,Home & Cleaning,2900,3,5,2800,58,False,1
+3588,Oxi Green Floor Cleaner - Citrus ,Oxi Green,Home & Cleaning,17900,10,6,16100,1000,False,1
+3589,Airwick Room Air Freshener Spray - Rose & Saffron,Airwick,Home & Cleaning,16100,5,5,15200,245,False,245
+3590,Origami Luxuria Kitchen Towel 300 Pulls Single,Origami,Home & Cleaning,32000,0,2,32000,58,False,1
+3591,Philips EyePro 10.5W Light Bulb,Philips,Home & Cleaning,22000,10,6,19800,58,False,1
+3592,Mangalam Camphor Tablet Jar,Mangalam Camphor,Home & Cleaning,28000,10,6,25200,100,False,100
+3593,Chakaachak Super Sponge Wipes (Pack of 3),Chakaachak,Home & Cleaning,14000,0,6,14000,174,False,3
+3594,Origami Good Karma Paper Serviettes - 100 napkins (1 ply),Origami,Home & Cleaning,7800,10,6,7000,58,False,1
+3596,Om Bhakti Camphor Big,Om Bhakti,Home & Cleaning,11900,10,6,10700,40,False,40
+3597,Om Bhakti Wick for Diya - Cotton Long Batti ,Om Bhakti,Home & Cleaning,2000,0,6,2000,75,False,75
+3598,Om Bhakti Camphor Small,Om Bhakti,Home & Cleaning,7900,10,6,7100,25,False,25
+3599,Ariel Matic Top Load Detergent Washing Powder,Ariel,Home & Cleaning,49900,0,1,49900,2000,False,2
+3600,Scotch Brite Multi-Purpose Sponge Wipes,Scotch,Home & Cleaning,70000,17,6,58100,580,False,10
+3602,Lizol Double Concentrate Disinfectant Floor Cleaner Citrus,Lizol,Home & Cleaning,32500,5,6,30800,900,False,900
+3603,Chakaachak Floor Pocha Large,Chakaachak,Home & Cleaning,5000,0,1,5000,58,False,1
+3604,Ariel Matic Front Load Liquid Detergent,Ariel,Home & Cleaning,22000,0,4,22000,1000,False,1
+3605,Harpic Power Fresh 6 Toilet Cleaner Rim Block Marine Splash,Harpic,Home & Cleaning,18800,10,4,16900,35,False,35
+3606,Chakaachak Dust Proof Broom,Chakaachak,Home & Cleaning,18000,2,6,17500,58,False,1
+3607,Cherry Blossom Liquid Shoe Polish Neutral ,Cherry Blossom,Home & Cleaning,0,0,1,0,75,False,75
+3608,Om Bhakti Kumkum ,Om Bhakti,Home & Cleaning,1200,0,6,1200,15,False,15
+3610,Chakaachak Power Scrub (Pack of 2),Chakaachak,Home & Cleaning,4200,2,6,4100,116,False,2
+3611,Om Bhakti Wick for Diya - Vanaspati Ghee Cotton Wicks Small ,Om Bhakti,Home & Cleaning,6900,11,6,6100,30,False,30
+3612,Whiskas Adult +1 year Salmon in Gravy,Whiskas,Home & Cleaning,25000,10,3,22500,85,False,1
+3613,Origami Paper Party Plates,Origami,Home & Cleaning,24000,0,6,24000,580,False,50
+3614,Gala Microfiber Multipurpose Cloth,Gala,Home & Cleaning,14000,7,6,12900,58,False,1
+3615,Ariel Matic Front Load Detergent Powder,Ariel,Home & Cleaning,26000,0,6,26000,1000,False,1
+3617,Vim Dishwash Bar,Vim Dishwash,Home & Cleaning,2300,4,0,2200,300,True,300
+3618,Dettol Effective Protection Antiseptic Liquid,Dettol,Home & Cleaning,11600,0,0,11600,250,True,250
+3619,Godrej Good Night Gold Flash Liquid Vapouriser,Godrej,Home & Cleaning,8900,0,0,8900,60,True,60
+3620,Rin Detergent Powder,Rin,Home & Cleaning,8600,2,0,8400,1000,True,1
+3621,Surf Excel Easy Wash Detergent Powder,Surf Excel,Home & Cleaning,13600,3,0,13100,1000,True,1
+3622,Rin Detergent Bar,Rin,Home & Cleaning,1000,0,0,1000,140,True,140
+3623,Odomos Mosquito Repellent Spray,Odomos,Home & Cleaning,9000,8,0,8200,100,True,100
+3624,Chakaachak Super Steel Scrubber,Chakaachak,Home & Cleaning,1200,8,0,1100,58,True,1
+3626,Gala No Dust Broom,Gala,Home & Cleaning,19000,7,0,17500,58,True,1
+3627,Chakaachak Eazo Grass Broom New ,Chakaachak,Home & Cleaning,10500,2,0,10200,58,True,1
+3628,Vim Dishwash Bar,Vim Dishwash,Home & Cleaning,4500,0,0,4500,600,True,600
+3629,Rin Fabric Whitener Detergent,Rin,Home & Cleaning,6900,10,0,6200,500,True,500
+3632,Surf Excel Quick Wash,Surf Excel,Home & Cleaning,20800,6,0,19500,1000,True,1
+3633,Scotch BOPP Packaging Tape,Scotch,Home & Cleaning,8000,15,0,6800,58,True,1
+3634,Origami Plates Plain,Origami,Home & Cleaning,25000,10,0,22500,100,True,100
+3636,Epigamia Fruit Yogurt Alphonso Mango,Epigamia,Health & Hygiene,4000,50,6,2000,75,False,75
+3637,Epigamia Fruit Yogurt Vanilla,Epigamia,Health & Hygiene,4000,50,6,2000,75,False,75
+3641,Durex Air Ultra Thin Condoms,Durex,Health & Hygiene,8200,0,6,8200,174,False,3
+3642,Durex Air Ultra Thin Condom,Durex,Health & Hygiene,24500,10,6,22000,580,False,10
+3643,Dabur Regular Hajmola,Dabur,Health & Hygiene,4500,6,6,4200,120,False,120
+3645,Zandu Balm,Zandu Balm,Health & Hygiene,4000,10,4,3600,8,False,8
+3646,Vicks Cough Drops Menthol,Vicks,Health & Hygiene,2000,0,6,2000,1160,False,20
+3647,Durex Extra Time Condoms,Durex,Health & Hygiene,22800,10,6,20500,580,False,10
+3648,Vicks Vaporub,Vicks,Health & Hygiene,8500,9,6,7700,25,False,25
+3651,Vicks VapoRub,Vicks,Health & Hygiene,14500,11,2,12900,50,False,50
+3652,Dabur Hajmola Imli Digestive Tablets,Dabur,Health & Hygiene,4500,6,6,4200,120,False,120
+3653,Dettol Antiseptic Liquid + Disinfectant Spray - Original,Dettol,Health & Hygiene,15900,10,6,14300,225,False,225
+3655,Patanjali Hing Goli,Patanjali,Health & Hygiene,6500,10,4,5800,100,False,100
+3656,Moov Fast Pain Relief Cream,Moov,Health & Hygiene,18900,15,6,16000,50,False,50
+3660,Savlon Surface Disinfectant Spray,Savlon,Health & Hygiene,16500,10,6,14800,170,False,170
+3661,Durex Extra Thin Condoms,Durex,Health & Hygiene,22800,10,6,20500,580,False,10
+3663,Eno Fruit Salt Lemon Flavour Energy Powder,Eno,Health & Hygiene,13000,10,6,11700,100,False,100
+3664,Moov Pain Relief Specialist Spray,Moov,Health & Hygiene,14900,5,5,14100,35,False,35
+3665,Savlon Germ Protection Wipes,Savlon,Health & Hygiene,18900,10,6,17000,72,False,72
+3670,Durex Extra Ribbed Condoms,Durex,Health & Hygiene,24500,10,2,22000,580,False,10
+3671,Eno Regular Fruit Salt Energy Powder,Eno,Health & Hygiene,13000,0,6,13000,100,False,100
+3672,Durex Extra Thin Bubblegum Condom,Durex,Health & Hygiene,15000,10,6,13500,580,False,10
+3673,Dabur Hajmola Pudina - Digestive Tablets,Dabur,Health & Hygiene,4500,6,6,4200,120,False,120
+3675,Kapiva Thar Aloe Vera Juice,Kapiva,Health & Hygiene,29900,15,6,25400,1000,False,1
+3678,Moov Pain Releiver Spray,Moov,Health & Hygiene,29000,15,6,24600,80,False,80
+3680,Durex Condoms Mutual Climax,Durex,Health & Hygiene,12000,0,6,12000,174,False,3
+3681,Durex Extra Dots Condoms,Durex,Health & Hygiene,22800,10,6,20500,580,False,10
+3682,Zandu Balm Ulter Power For Strong Headache Bodyache & Cold,Zandu Balm,Health & Hygiene,4500,8,6,4100,8,False,8
+3683,Dabur Hajmola Maha Candy - Aam+Imli,Dabur,Health & Hygiene,13000,5,1,12300,130,False,130
+3686,Dabur Chyawanprakash - Sugar Free,Dabur,Health & Hygiene,41500,7,6,38500,900,False,900
+3687,Zandu Balm,Zandu Balm,Health & Hygiene,8500,10,5,7600,25,False,25
+3688,Himalaya Cold Balm,Himalaya,Health & Hygiene,12500,9,6,11300,45,False,45
+3690,Kapiva Wild Amla Juice,Kapiva,Health & Hygiene,24900,14,6,21200,1000,False,1
+3691,Dabur Chyawanprash,Dabur,Health & Hygiene,34900,3,6,33800,950,False,1
+3695,Durex Mutual Climax Condoms,Durex,Health & Hygiene,36000,15,6,30600,580,False,10
+3697,Moov Cream Regular,Moov,Health & Hygiene,5000,6,4,4700,10,False,10
+3698,Moov Pain Relief Specialist,Moov,Health & Hygiene,7500,5,6,7100,15,False,15
+3699,Dabur Chyawanprakash Sugar Free,Dabur,Health & Hygiene,23500,5,6,22300,500,False,500
+3703,Savlon Clothes Disinfectant & Refreshing Spray Fresh Breeze,Savlon,Health & Hygiene,17500,10,6,15700,230,False,230
+3704,Dabur Chyawanprash Immunity Booster,Dabur,Health & Hygiene,19000,6,6,17700,500,False,500
+3705,Vicks Inhaler with Keychain,Vicks,Health & Hygiene,10500,9,4,9500,116,False,2
+3707,Dabur Ayurvedic Tulsi Drops (Immunity Booster),Dabur,Health & Hygiene,19500,6,6,18200,30,False,30
+3708,Organic India Wheat Grass,Organic India,Health & Hygiene,39500,20,4,31600,100,False,100
+3709,Organic India Organic Chyawanprash,Organic India,Health & Hygiene,49500,20,6,39600,500,False,500
+3710,Organic India Sugar Balance 60 Capsules Bottle,Organic India,Health & Hygiene,22500,0,6,22500,60,False,60
+3712,Dabur - Chyawanprash,Dabur,Health & Hygiene,9900,0,1,9900,250,False,25
+3713,Vicks BabyRub,Vicks,Health & Hygiene,10500,11,6,9300,25,False,25
+3715,Organic India Brahmi Bottle,Organic India,Health & Hygiene,20500,20,1,16400,60,False,60
+3716,Horlicks Protein Plus Chocolate,Horlicks,Health & Hygiene,27000,0,2,27000,200,False,200
+3717,Dabur Nature Care Isabgol - Double Action,Dabur,Health & Hygiene,14000,5,6,13300,100,False,100
+3718,Kapiva Wild Tulsi Giloy Juice |,Kapiva,Health & Hygiene,40000,15,1,34000,1000,False,1
+3719,Dabur Amla Juice,Dabur,Health & Hygiene,23500,15,6,19900,1000,False,1
+3720,Epigamia Fruit Yogurt Strawberry,Epigamia,Health & Hygiene,4000,50,0,2000,75,True,75
+3723,Eno Cooling Sachets - Cool Mint (6 Pieces Carton),Eno,Health & Hygiene,5400,11,0,4800,5,True,5
+3729,Dabur Honitus Herbal Cough Remedy Ayurvedic Syrup,Dabur,Health & Hygiene,10500,15,0,8900,100,True,100
+3733,Schweppes Soft Drink - Original Ginger Ale,Schweppes,Curated For You,5000,2,1,4900,300,False,300
+3734,Coolberg Cranberry Non Alcoholic Beer ,Coolberg,Curated For You,7900,25,6,5900,330,False,330
+3735,Schweppes Indian Tonic Water,Schweppes,Curated For You,5000,2,6,4900,300,False,300
+3736,Coolberg Peach  Non Alcoholic Beer,Coolberg,Curated For You,7900,25,6,5900,330,False,330
+3737,Pringles Sour Cream And Onion Potato Crisps,Pringles,Curated For You,10900,5,3,10300,107,False,110
+3738,Coolberg Malt Non Alcoholic Beer ,Coolberg,Curated For You,7900,25,6,5900,330,False,330
+3739,Coolberg Strawberry Non Alcoholic Beer ,Coolberg,Curated For You,7900,25,6,5900,330,False,330
+3740,Coolberg Mint Non Alcoholic Beer,Coolberg,Curated For You,7900,25,6,5900,330,False,330
+3741,4700BC Gourmet Popcorn - Himalayan Salt Caramel,4700BC,Curated For You,4900,2,6,4800,60,False,60
+3742,Coolberg Ginger Non Alcoholic Beer ,Coolberg,Curated For You,7900,25,6,5900,330,False,330
+3743,Pringles Original Potato Crisps,Pringles,Curated For You,10900,5,6,10300,107,False,110
+3745,4700BC Sour Cream & Wasabi Cheese Popcorn,4700BC,Curated For You,3900,2,6,3800,35,False,35
+3746,4700BC Microwave Popcorn - Cheese Bag,4700BC,Curated For You,8000,10,2,7200,94,False,94
+3747,4700BC Gourmet Popcorn - Sriracha Lime Cheese,4700BC,Curated For You,3900,15,6,3300,35,False,35
+3748,4700BC Microwave Popcorn - Butter,4700BC,Curated For You,7500,9,6,6800,85,False,85
+3754,4700BC Microwave Popcorn - BBQ Bag,4700BC,Curated For You,8000,15,6,6800,92,False,92
+3759,24 Mantra Flax Seed,24 Mantra,Curated For You,6500,7,6,6000,200,False,200
+3760,4700BC Himalayan Salt Caramel Popcorn,4700BC,Curated For You,17500,14,6,14900,125,False,125
+3764,4700BC Microwave Popcorn Natural,4700BC,Curated For You,7500,13,6,6500,85,False,85
+3765,Popular Essentials Flax Seeds,Popular Essentials,Curated For You,2500,0,6,2500,100,False,100
+3767,4700BC Gourmet Popcorn Himalayan Salt Caramel,4700BC,Curated For You,9900,15,6,8400,125,False,150
+3772,&Stirred Margarita - Lemon & Lime,&Stirred,Curated For You,5000,30,6,3500,125,False,125
+3774,Tong Garden Salted Pumpkins,Tong Garden,Curated For You,5000,2,6,4900,30,False,30
+3776,&Stirred Cosmopolitan - Cranberry & Orange,&Stirred,Curated For You,5000,30,6,3500,125,False,125
+3778,&Stirred Mojito - Lemon & Mint,&Stirred,Curated For You,5000,30,0,3500,125,True,125
