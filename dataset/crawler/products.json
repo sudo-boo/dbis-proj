@@ -1,0 +1,57 @@
+[
+    {
+        "search_phrase": "Zepto Go Pizza Cheese 140 rupees 200 gm not combo",
+        "image_urls": [
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-3001-3001,pr-true,f-auto,q-80/cms/product_variant/c83774fa-0dba-4000-9da6-63ca4eaf16ed/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-3001-3001,pr-true,f-auto,q-80/cms/product_variant/f7581add-269a-4712-85e9-1787d900f309/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-3001-3001,pr-true,f-auto,q-80/cms/product_variant/910653ce-a5e1-435d-9a78-492b1de734d7/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-3001-3001,pr-true,f-auto,q-80/cms/product_variant/caeeda3d-6cf2-4806-9739-7f8a89ac6a43/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/5cf62ca3-6589-4f04-a0d3-eedc630c50d5/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/8f0a782f-ed78-426e-93fb-8a067bf24844/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/d78d993e-b46c-4e98-86f9-21c6000e92cf/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-3001-3001,pr-true,f-auto,q-80/cms/product_variant/d7d3eac8-684c-4a41-a168-5103c6045420/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-900-900,pr-true,f-auto,q-80/cms/product_variant/fde970b3-8929-4b86-8aa5-f63602990774/Go-Pizza-Cheese.jpeg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-1210-700,pr-true,f-auto,q-80/inventory/IMAGE/c55e1c9f-8d21-4153-bf29-46892d57c616-Screenshot_2022-08-26_at_15.35.02/Go-Pizza-Cheese.png"
+        ],
+        "product_highlights": {
+            "Is Perishable": "Yes",
+            "Allergen Information": "Contains: Milk",
+            "Brand": "Gowardhan",
+            "Calorie Count": "153 kcal per serving",
+            "Dietary Preference": "Veg",
+            "Flavour": "Cheese",
+            "Ingredients": "Mozzarella Cheese and Cheddar Cheese (Made From Microbial Enzyme), Milk Solids, Emulsifier (INS 331, INS 339 (i), INS 452 (i)), Iodized Salt, Preservative (INS 200)",
+            "Key Features": "Perfect for creating stretchy cheese pulls, enhances pizza flavor with rich texture, ideal for pizzas and sandwiches, made from high-quality milk",
+            "Material Type Free": "Preservative-free",
+            "Nutrition Information": "Energy 153 kcal, Total Fat 12g, Saturated Fat 7.5g, Trans Fat 0.48g, Cholesterol 45mg, Sodium 500mg, Total Carbohydrates 1g, Sugar (as sucrose) 0g, Protein 9g, Vitamin-A 100mcg",
+            "Unit": "1 pc",
+            "Packaging Type": "Box",
+            "Product Type": "Cheese Blocks",
+            "Storage Instruction": "Store under refrigeration at 4?C. On opening, transfer the cheese along with the inner foil into an airtight container",
+            "Weight": "200 g"
+        },
+        "product_information": {},
+        "name": "Go Pizza Cheese",
+        "net_qty": "200 g",
+        "offer_price": null,
+        "mrp": "₹185",
+        "discount": null
+    },
+    {
+        "search_phrase": "Zepto The Laughing Cow Cheese Cubes 200 gm not combo",
+        "image_urls": [
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-1280,ar-1500-1500,pr-true,f-auto,q-80/inventory/product/698a243e-4110-4a30-a716-324a5f86abc4-5991/The-Laughing-Cow-Cheese-Cubes-200-g-Combo.jpg",
+            "https://cdn.zeptonow.com/production/ik-seo/tr:w-1210,ar-1210-700,pr-true,f-auto,q-80/inventory/IMAGE/c55e1c9f-8d21-4153-bf29-46892d57c616-Screenshot_2022-08-26_at_15.35.02/The-Laughing-Cow-Cheese-Cubes-200-g-Combo.png"
+        ],
+        "product_highlights": {
+            "Brand": "The Laughing Cow",
+            "Weight": "200 g x 2"
+        },
+        "product_information": {},
+        "name": "The Laughing Cow Cheese Cubes 200 g Combo",
+        "net_qty": "200 g X 2",
+        "offer_price": null,
+        "mrp": "₹330",
+        "discount": null
+    }
+]
