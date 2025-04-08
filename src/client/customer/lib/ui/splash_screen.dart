@@ -2,6 +2,7 @@
 
 import 'package:customer/commons/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:customer/data/repository/local_storage_manager.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -15,11 +16,23 @@ class SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    // Delay for 1.2 seconds, then navigate to home page
-    Future.delayed(const Duration(milliseconds: 1200), () {
+    // Delay for 1.2 seconds, then navigate to the appropriate page
+    Future.delayed(const Duration(milliseconds: 1200), () async {
+      // Fetch the user_email from SharedPreferences
+      saveUserEmail("dummy@dummy.com");
+      eraseUserData();
+      String? userEmail = await getUserEmail(); // Using getUserEmail function from local_storage_manager.dart
+
+
       // Check if the widget is still mounted before navigating
       if (mounted) {
-        Navigator.pushReplacementNamed(context, '/login');
+        if (userEmail != null && userEmail.isNotEmpty) {
+          // If user_email exists, navigate to /home
+          Navigator.pushReplacementNamed(context, '/home');
+        } else {
+          // If user_email does not exist, navigate to /login
+          Navigator.pushReplacementNamed(context, '/login');
+        }
       }
     });
   }

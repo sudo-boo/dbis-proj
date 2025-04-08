@@ -1,5 +1,6 @@
 // main.dart
 
+import 'package:customer/ui/cart_page.dart';
 import 'package:customer/ui/home_page.dart';
 import 'package:customer/ui/item_page.dart';
 import 'package:customer/ui/login_page.dart';
@@ -23,10 +24,10 @@ class MyApp extends StatelessWidget {
         "/login": (context) => const LoginPage(),
         "/home": (context) => HomePage(),
         "/item": (context) => ItemPage(),
+        "/cart": (context) => const CartPage(),
         // "/profile": (context) => ProfilePage(),
         // "/transaction": (context) => const TransactionPage(),
         // "/new-ride": (context) => QRCodeScanPage(),
-        // "/wallet": (context) => const WalletPage(),
         // "/ride-history": (context) => const RideHistoryPage(),
         // "/logout": (context) => const LogOutPage(),
       },
