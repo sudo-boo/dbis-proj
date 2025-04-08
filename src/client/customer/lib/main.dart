@@ -2,10 +2,13 @@
 
 import 'package:customer/ui/home_page.dart';
 import 'package:customer/ui/item_page.dart';
+import 'package:customer/ui/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/ui/splash_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
+  await dotenv.load(); // Load the .env file
   runApp(const MyApp());
 }
 
@@ -17,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "/": (context) => const SplashScreen(),
+        "/login": (context) => const LoginPage(),
         "/home": (context) => HomePage(),
         "/item": (context) => ItemPage(),
         // "/profile": (context) => ProfilePage(),
@@ -24,7 +28,6 @@ class MyApp extends StatelessWidget {
         // "/new-ride": (context) => QRCodeScanPage(),
         // "/wallet": (context) => const WalletPage(),
         // "/ride-history": (context) => const RideHistoryPage(),
-        // "/info": (context) => const InfoPage(),
         // "/logout": (context) => const LogOutPage(),
       },
       theme: ThemeData(
