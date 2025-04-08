@@ -1,6 +1,7 @@
 // main.dart
 
 import 'package:customer/ui/home_page.dart';
+import 'package:customer/ui/item_page.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/ui/splash_screen.dart';
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => const SplashScreen(),
         "/home": (context) => HomePage(),
+        "/item": (context) => ItemPage(),
         // "/profile": (context) => ProfilePage(),
         // "/transaction": (context) => const TransactionPage(),
         // "/new-ride": (context) => QRCodeScanPage(),

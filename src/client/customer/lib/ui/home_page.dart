@@ -12,8 +12,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // Instance of DataLoader to load data
-  final DataLoader dataLoader = DataLoader();
 
   // Function to print demo data
   void _printDemoData() async {
@@ -29,7 +27,7 @@ class _HomePageState extends State<HomePage> {
       //   print('Images: ${item.imageUrls?.join(', ')}');
       //   print('-----------------------------');
       // }
-      // DataLoader dataLoader = DataLoader();
+      DataLoader dataLoader = DataLoader();
 
       // Get item with product_id 208
       Item? item = await dataLoader.getSingleItem(208);
