@@ -23,6 +23,13 @@ const Item = sequelize.define('Item', {
             min: 0
         }
     },
+    quantity: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+            min: 0
+        }
+    },
     discount: {
         type: DataTypes.FLOAT,
         allowNull: false,
@@ -36,9 +43,9 @@ const Item = sequelize.define('Item', {
         allowNull: true
     },
     image_url: {
-        type: DataTypes.STRING,
+        type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: true,
-        defaultValue: process.env.IMAGE_NOT_FOUND_URL
+        defaultValue: []
     },
     rating: {
         type: DataTypes.FLOAT,

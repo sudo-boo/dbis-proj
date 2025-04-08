@@ -2,7 +2,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const sequelize = require('./config/database');
-const { Item, Item_Category, Vendor, Availability, User, Orders, Cart, Payments } = require('./models');
+const { Item, Item_Category, Vendor, Availability, Users, Orders, Cart, Payments } = require('./models');
 
 dotenv.config();
 const app = express();
@@ -21,7 +21,7 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
         await Item.sync({ force: true });
         await Vendor.sync({ force: true });
         await Availability.sync({ force: true });
-        await User.sync({ force: true });
+        await Users.sync({ force: true });
         await Cart.sync({ force: true });
         await Payments.sync({ force: true });
         await Orders.sync({ force: true });
@@ -32,6 +32,20 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
     }
 })();
 
+
+// const loginRouter = require('./routes/login');
+// const usersRouter = require('./routes/users');
+// const homeRouter = require('./routes/home');
+// const cartRouter = require('./routes/cart');
+const otpRouter = require('./routes/otp');
+
+
+
+// app.use('/login', loginRouter);
+// app.use('/users', usersRouter);
+// app.use('/home', homeRouter);
+// app.use('/cart', cartRouter);
+app.use('/otp', otpRouter);
 
 
 app.get('/', (req, res) => {

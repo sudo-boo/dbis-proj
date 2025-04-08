@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 require('dotenv').config();
 
-const User = sequelize.define('User', {
+const Users = sequelize.define('Users', {
     user_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -40,9 +40,9 @@ const User = sequelize.define('User', {
         allowNull: false
     },
 }, {
-    tableName: 'user',
+    tableName: 'users',
     timestamps: false
 });
 
 
-module.exports = User;
+module.exports = Users;

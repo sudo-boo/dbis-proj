@@ -2,7 +2,7 @@ const Availability = require('./Availability');
 const Item = require('./Item');
 const Item_Category = require('./Item_Category');
 const Vendor = require('./Vendor');
-const User = require('./User');
+const Users = require('./Users');
 const Orders = require('./Orders');
 const Cart = require('./Cart');
 const Payments = require('./Payments');
@@ -46,12 +46,12 @@ Item.hasMany(Availability, {
 
 
 //THINGS IN CART
-Cart.belongsTo(User, {
+Cart.belongsTo(Users, {
     foreignKey: 'user_id',
     targetKey: 'user_id'
 });
 
-User.hasMany(Cart, {
+Users.hasMany(Cart, {
     foreignKey: 'user_id',
     sourceKey: 'user_id'
 });
@@ -70,11 +70,11 @@ Item.hasMany(Cart, {
 
 
 // THINGS IN ORDERS
-Orders.belongsTo(User, {
+Orders.belongsTo(Users, {
     foreignKey: 'user_id',
     targetKey: 'user_id'
 });
-User.hasMany(Orders, {
+Users.hasMany(Orders, {
     foreignKey: 'user_id',
     sourceKey: 'user_id'
 });
@@ -96,7 +96,7 @@ module.exports = {
     Item_Category,
     Vendor,
     Availability,
-    User,
+    Users,
     Orders,
     Cart,
     Payments
