@@ -114,4 +114,9 @@ class DataLoader {
     List<Item> allItems = await loadDemoData();
     return allItems.firstWhere((item) => item.productId == productId);
   }
+
+  Future<List<Item>> getItemsWithCategory(String category) async {
+    List<Item> allItems = await loadDemoData();
+    return allItems.where((item) => item.category == category).toList();
+  }
 }

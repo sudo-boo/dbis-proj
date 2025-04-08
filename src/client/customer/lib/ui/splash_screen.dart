@@ -20,7 +20,7 @@ class SplashScreenState extends State<SplashScreen> {
     Future.delayed(const Duration(milliseconds: 1200), () async {
       // Fetch the user_email from SharedPreferences
       saveUserEmail("dummy@dummy.com");
-      eraseUserData();
+      // eraseUserData();
       String? userEmail = await getUserEmail(); // Using getUserEmail function from local_storage_manager.dart
 
 

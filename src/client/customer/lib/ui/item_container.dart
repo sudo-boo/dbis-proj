@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:customer/data/repository/demo_data_loader.dart';
 import 'package:customer/models/item.dart';
 import 'package:customer/ui/item_details_page.dart';
 
@@ -260,7 +259,7 @@ class _ItemCardState extends State<ItemCard> {
                   child: Row(
                     children: const [
                       Icon(Icons.star, color: Colors.green, size: 14),
-                      SizedBox(width: 2),
+                      // SizedBox(width: 2),
                       Text('4.6 (450)', style: TextStyle(fontSize: 10)),
                     ],
                   ),
