@@ -5,26 +5,26 @@ import 'dart:convert';
 class Item {
   int productId;
   String name;
-  String brand;
-  double mrp;
-  double discount;
-  Map<String, dynamic>? description;
-  String? imageUrl;
-  double? rating;
-  Map<String, dynamic>? highlights;
-  int? category;
+  String category;
+  List<String> imageUrls;
+  Map<String, String> productHighlights;
+  Map<String, String> productInformation;
+  String offerPrice;
+  String discount;
+  String netQty;
+  String mrp;
 
   Item({
     required this.productId,
     required this.name,
-    required this.brand,
-    required this.mrp,
+    required this.category,
+    required this.imageUrls,
+    required this.productHighlights,
+    required this.productInformation,
+    required this.offerPrice,
     required this.discount,
-    this.description,
-    this.imageUrl,
-    this.rating,
-    this.highlights,
-    this.category,
+    required this.netQty,
+    required this.mrp,
   });
 
   // Factory method to create an Item from a JSON object
@@ -32,18 +32,14 @@ class Item {
     return Item(
       productId: json['product_id'],
       name: json['name'],
-      brand: json['brand'],
-      mrp: json['mrp'].toDouble(),
-      discount: json['discount'].toDouble(),
-      description: json['description'] != null
-          ? jsonDecode(json['description'])
-          : null,
-      imageUrl: json['image_url'],
-      rating: json['rating']?.toDouble(),
-      highlights: json['highlights'] != null
-          ? jsonDecode(json['highlights'])
-          : null,
       category: json['category'],
+      imageUrls: List<String>.from(json['image_urls']),
+      productHighlights: Map<String, String>.from(json['product_highlights']),
+      productInformation: Map<String, String>.from(json['product_information']),
+      offerPrice: json['offer_price'],
+      discount: json['discount'] ?? '',
+      netQty: json['net_qty'],
+      mrp: json['mrp'] ?? '',
     );
   }
 
@@ -52,14 +48,14 @@ class Item {
     return {
       'product_id': productId,
       'name': name,
-      'brand': brand,
-      'mrp': mrp,
-      'discount': discount,
-      'description': description != null ? jsonEncode(description) : null,
-      'image_url': imageUrl,
-      'rating': rating,
-      'highlights': highlights != null ? jsonEncode(highlights) : null,
       'category': category,
+      'image_urls': imageUrls,
+      'product_highlights': productHighlights,
+      'product_information': productInformation,
+      'offer_price': offerPrice,
+      'discount': discount,
+      'net_qty': netQty,
+      'mrp': mrp,
     };
   }
 }
