@@ -68,7 +68,7 @@ class _ItemInRowsState extends State<ItemInRows> {
                   child: Text(
                     widget.category,
                     style: const TextStyle(
-                      fontSize: 20,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
                       color: Colors.green,
                     ),
@@ -79,7 +79,7 @@ class _ItemInRowsState extends State<ItemInRows> {
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.black54,
-                    fontSize: 14,
+                    fontSize: 18,
                   ),
                 ),
                 IconButton(

@@ -1,10 +1,12 @@
 // main.dart
 
 import 'package:customer/ui/cart_page.dart';
+import 'package:customer/ui/categories_page.dart';
 import 'package:customer/ui/home_page.dart';
 import 'package:customer/ui/item_in_columns.dart';
 import 'package:customer/ui/item_page.dart';
 import 'package:customer/ui/login_page.dart';
+import 'package:customer/ui/navigate.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/ui/splash_screen.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -44,6 +46,12 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(
               builder: (_) => ItemInColumns(category: category),
             );
+
+          case '/categories':
+            return MaterialPageRoute(builder: (_) => CategoriesPage());
+
+          case '/navbar':
+            return MaterialPageRoute(builder: (_) => NavigationBarPage());
 
           default:
             return MaterialPageRoute(
