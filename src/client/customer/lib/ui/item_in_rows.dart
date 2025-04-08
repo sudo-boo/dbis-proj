@@ -3,12 +3,16 @@ import 'package:customer/models/item.dart';
 import 'package:customer/ui/item_container.dart';
 import 'package:customer/data/repository/demo_data_loader.dart';
 import 'package:customer/ui/item_in_columns.dart';
-// import 'package:intl/intl.dart';
 
 class ItemInRows extends StatefulWidget {
   final String category;
+  final bool displayCategoryTitle;
 
-  const ItemInRows({super.key, required this.category});
+  const ItemInRows({
+    super.key,
+    required this.category,
+    required this.displayCategoryTitle,
+  });
 
   @override
   State<ItemInRows> createState() => _ItemInRowsState();
@@ -25,6 +29,7 @@ class _ItemInRowsState extends State<ItemInRows> {
     _loadItems();
   }
 
+  // Loads items based on the category
   Future<void> _loadItems() async {
     final loader = DataLoader();
     final items = await loader.getItemsWithCategory(widget.category);
@@ -44,7 +49,6 @@ class _ItemInRowsState extends State<ItemInRows> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
@@ -59,58 +63,60 @@ class _ItemInRowsState extends State<ItemInRows> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header Row with Category and See All
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0),
-            child: Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    widget.category,
-                    style: const TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green,
+
+          // Category title and "See All" button
+          if (widget.displayCategoryTitle) ...[
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      widget.category,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green,
+                      ),
                     ),
                   ),
-                ),
-                Text(
-                  'See All',
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black54,
-                    fontSize: 18,
+                  Text(
+                    'See All',
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54,
+                      fontSize: 14,
+                    ),
                   ),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.chevron_right),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => ItemInColumns(category: widget.category),
-                      ),
-                    );
-                  },
-                ),
-              ],
-            ),
-          ),
-
-          // Starting price
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4),
-            child: Text(
-              'Starting at just ₹$_minOfferPrice/Kg',
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 14,
-                color: Colors.black87,
+                  IconButton(
+                    icon: const Icon(Icons.chevron_right),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => ItemInColumns(category: widget.category),
+                        ),
+                      );
+                    },
+                  ),
+                ],
               ),
             ),
-          ),
 
-          // Horizontal item row
+            // Displaying the minimum offer price
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4),
+              child: Text(
+                'Starting at just ₹$_minOfferPrice/Kg',
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+          ],
+
           SizedBox(
             height: 270,
             child: ListView.builder(
@@ -119,7 +125,7 @@ class _ItemInRowsState extends State<ItemInRows> {
               padding: const EdgeInsets.symmetric(horizontal: 12.0),
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.only(right: 0.0),
+                  padding: const EdgeInsets.only(right: 12.0),
                   child: ItemCard(item: _items[index], x: 0.35),
                 );
               },

@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: categories
-              .map((category) => ItemInRows(category: category))
+              .map((category) => ItemInRows(category: category, displayCategoryTitle: true,))
               .toList(),
         ),
       ),
