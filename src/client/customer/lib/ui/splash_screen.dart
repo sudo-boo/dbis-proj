@@ -1,5 +1,6 @@
 // splash_screen.dart
 
+import 'package:customer/commons/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -29,7 +30,9 @@ class SplashScreenState extends State<SplashScreen> {
       backgroundColor: const Color(0xFF28282b),
       body: Center(
         child: Image.asset(
-          'assets/images/splash.jpeg',
+          "assets/images/splash.jpeg",
+          height: screenHeight(context),
+          fit: BoxFit.fitHeight,
         //   to add height
         ),
       ),
