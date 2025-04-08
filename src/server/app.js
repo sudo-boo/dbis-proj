@@ -38,6 +38,7 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
 // const homeRouter = require('./routes/home');
 // const cartRouter = require('./routes/cart');
 const otpRouter = require('./routes/otp');
+const profileRouter = require('./routes/profile');
 
 
 
@@ -46,6 +47,7 @@ const otpRouter = require('./routes/otp');
 // app.use('/home', homeRouter);
 // app.use('/cart', cartRouter);
 app.use('/otp', otpRouter);
+app.use('/profile', profileRouter);
 
 
 app.get('/', (req, res) => {
