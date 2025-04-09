@@ -7,6 +7,7 @@ import 'package:customer/ui/item_in_columns.dart';
 import 'package:customer/ui/item_page.dart';
 import 'package:customer/ui/login_page.dart';
 import 'package:customer/ui/navigate.dart';
+import 'package:customer/ui/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/ui/splash_screen.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -52,6 +53,9 @@ class MyApp extends StatelessWidget {
 
           case '/navbar':
             return MaterialPageRoute(builder: (_) => NavigationBarPage());
+
+          case '/profile':
+            return MaterialPageRoute(builder: (_) => ProfilePage());
 
           default:
             return MaterialPageRoute(

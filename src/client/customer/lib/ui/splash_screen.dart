@@ -28,7 +28,7 @@ class SplashScreenState extends State<SplashScreen> {
       if (mounted) {
         if (userEmail != null && userEmail.isNotEmpty) {
           // If user_email exists, navigate to /home
-          Navigator.pushReplacementNamed(context, '/cart');
+          Navigator.pushReplacementNamed(context, '/profile');
         } else {
           // If user_email does not exist, navigate to /login
           Navigator.pushReplacementNamed(context, '/login');
