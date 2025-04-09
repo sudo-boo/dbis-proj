@@ -187,7 +187,7 @@ product_id,name,brand,category,mrp,discountPercent,availableQuantity,discountedS
 279,Ceres Foods Fish Mustard Instant Liquid Masala,Ceres Foods,Cooking Essentials,22000,50,6,11000,200,False,200
 280,Everest Garam Masala,Everest,Cooking Essentials,15800,10,6,14200,200,False,200
 281,24 Mantra Organic Jowar Flour,24 Mantra,Cooking Essentials,7000,7,6,6500,500,False,500
-282,Maggi Coconut Milkpowder,Maggi,Cooking Essentials,10000,0,6,10000,100,False,100
+282,Maggi Coconut Milk powder,Maggi,Cooking Essentials,10000,0,6,10000,100,False,100
 283,On1y Pepper Grinder,On1y,Cooking Essentials,15900,9,1,14400,50,False,50
 284,Popular Essentials Rice Flour,Popular Essentials,Cooking Essentials,6000,0,3,6000,1000,False,1
 285,Sunfeast Yippee! Pasta Treat - Sour Cream Onion,Sunfeast,Cooking Essentials,2800,10,1,2500,65,False,65
