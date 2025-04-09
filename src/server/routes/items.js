@@ -7,9 +7,9 @@ const verifyToken = require('../middleware/auth');
 
 // get items by category (item_id, item_name, rating, price all three, image_urls)
 router.get('/items-by-category', verifyToken, async (req, res) => {
-    const { category_id, batch_no } = req.body;
+    const { category_id, request_quantity, batch_no } = req.body;
     const page = parseInt(batch_no) || 1;
-    const limit = 50;
+    const limit = request_quantity ? parseInt(request_quantity) : 50; // Default to 10 if not provided
     const offset = (page - 1) * limit;
 
     try {
