@@ -12,35 +12,41 @@ const Payments = require('./Payments');
 // THINGS IN ITEM
 Item.belongsTo(Item_Category, {
     foreignKey: 'category',
-    targetKey: 'category_id'
+    targetKey: 'category_id',
+    as: 'item_category'
 });
 
 Item_Category.hasMany(Item, {
     foreignKey: 'category',
-    sourceKey: 'category_id'
+    sourceKey: 'category_id',
+    as: 'item'
 });
 
 
 // THINGS IN AVAILABILITY
 Availability.belongsTo(Vendor, {
     foreignKey: 'vendor_id',
-    sourceKey: 'vendor_id'
+    sourceKey: 'vendor_id',
+    as: 'vendor'
 });
 
 Vendor.hasMany(Availability, {
     foreignKey: 'vendor_id',
-    sourceKey: 'vendor_id'
+    sourceKey: 'vendor_id',
+    as: 'availability'
 });
 
 
 Availability.belongsTo(Item, {
     foreignKey: 'product_id',
-    sourceKey: 'product_id'
+    sourceKey: 'product_id',
+    as: 'item'
 });
 
 Item.hasMany(Availability, {
     foreignKey: 'product_id',
-    sourceKey: 'product_id'
+    sourceKey: 'product_id',
+    as: 'availability'
 });
 
 
@@ -48,23 +54,27 @@ Item.hasMany(Availability, {
 //THINGS IN CART
 Cart.belongsTo(Users, {
     foreignKey: 'user_id',
-    targetKey: 'user_id'
+    targetKey: 'user_id',
+    as: 'user'
 });
 
 Users.hasMany(Cart, {
     foreignKey: 'user_id',
-    sourceKey: 'user_id'
+    sourceKey: 'user_id',
+    as: 'cart'
 });
 
 
 Cart.belongsTo(Item, {
     foreignKey: 'product_id',
-    targetKey: 'product_id'
+    targetKey: 'product_id',
+    as: 'item'
 });
 
 Item.hasMany(Cart, {
     foreignKey: 'product_id',
-    sourceKey: 'product_id'
+    sourceKey: 'product_id',
+    as: 'cart'
 });
 
 
@@ -72,22 +82,26 @@ Item.hasMany(Cart, {
 // THINGS IN ORDERS
 Orders.belongsTo(Users, {
     foreignKey: 'user_id',
-    targetKey: 'user_id'
+    targetKey: 'user_id',
+    as: 'users'
 });
 Users.hasMany(Orders, {
     foreignKey: 'user_id',
-    sourceKey: 'user_id'
+    sourceKey: 'user_id',
+    as: 'orders'
 });
 
 
 Orders.belongsTo(Payments, {
     foreignKey: 'payment_id',
-    targetKey: 'payment_id'
+    targetKey: 'payment_id',
+    as: 'payments'
 });
 
 Payments.hasMany(Orders, {
     foreignKey: 'payment_id',
-    sourceKey: 'payment_id'
+    sourceKey: 'payment_id',
+    as: 'orders'
 });
 
 
