@@ -17,14 +17,26 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
         await sequelize.authenticate();
         console.log('Connected to DB');
 
-        await Item_Category.sync({ force: true }); // Drop & recreate for now
-        await Item.sync({ force: true });
-        await Vendor.sync({ force: true });
-        await Availability.sync({ force: true });
-        await Users.sync({ force: true });
-        await Cart.sync({ force: true });
-        await Payments.sync({ force: true });
-        await Orders.sync({ force: true });
+
+        // Uncomment the following lines to force sync the models (this will drop existing tables)
+        // await Item_Category.sync({ force: true });
+        // await Item.sync({ force: true });
+        // await Vendor.sync({ force: true });
+        // await Availability.sync({ force: true });
+        // await Users.sync({ force: true });
+        // await Cart.sync({ force: true });
+        // await Payments.sync({ force: true });
+        // await Orders.sync({ force: true });
+        
+        // Sync models without dropping existing tables
+        await Item_Category.sync();
+        await Item.sync();
+        await Vendor.sync();
+        await Availability.sync();
+        await Users.sync();
+        await Cart.sync();
+        await Payments.sync();
+        await Orders.sync();
 
         console.log('Models synced');
     } catch (err) {
@@ -33,7 +45,38 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
 })();
 
 
-// const loginRouter = require('./routes/login');
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Middleware for authentication
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Routers
+const loginRouter = require('./routes/login');
 // const usersRouter = require('./routes/users');
 // const homeRouter = require('./routes/home');
 // const cartRouter = require('./routes/cart');
@@ -42,7 +85,7 @@ const profileRouter = require('./routes/profile');
 
 
 
-// app.use('/login', loginRouter);
+app.use('/login', loginRouter);
 // app.use('/users', usersRouter);
 // app.use('/home', homeRouter);
 // app.use('/cart', cartRouter);
@@ -50,6 +93,19 @@ app.use('/otp', otpRouter);
 app.use('/profile', profileRouter);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// Run the server
 app.get('/', (req, res) => {
     res.send(`Welcome to ${APP_NAME} running on port ${PORT}`);
 });
@@ -57,20 +113,3 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`${APP_NAME} is running on http://localhost:${PORT}`);
 });
-
-
-
-
-// Routes
-// app.post('/items', async (req, res) => {
-//     try {
-//         const item = await Item.create(req.body);
-//         res.status(201).json(item);
-//     } catch (err) {
-//         res.status(400).json({ error: err.message });
-//     }
-// });
-
-// app.listen(PORT, () => {
-//     console.log('Server running');
-// });
