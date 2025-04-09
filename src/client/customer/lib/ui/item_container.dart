@@ -12,21 +12,19 @@ class ItemCard extends StatefulWidget {
 }
 
 class _ItemCardState extends State<ItemCard> {
-  int quantity = 0;
-  bool notifyOn = false;
 
   void increment() {
-    if (quantity < 9) {
+    if (widget.item.cartQuantity < 9) {
       setState(() {
-        quantity++;
+        widget.item.cartQuantity++;
       });
     }
   }
 
   void decrement() {
-    if (quantity > 0) {
+    if (widget.item.cartQuantity > 0) {
       setState(() {
-        quantity--;
+        widget.item.cartQuantity--;
       });
     }
   }
@@ -66,7 +64,7 @@ class _ItemCardState extends State<ItemCard> {
                           AspectRatio(
                             aspectRatio: 1,
                             child: Opacity(
-                              opacity: item.inStock ? 1.0 : 0.5,
+                              opacity: item.inStock!=0 ? 1.0 : 0.5,
                               child: Image.network(
                                 item.imageUrls[0],
                                 fit: BoxFit.cover,
@@ -75,7 +73,7 @@ class _ItemCardState extends State<ItemCard> {
                               ),
                             ),
                           ),
-                          if (!item.inStock)
+                          if (item.inStock==0)
                             Positioned.fill(
                               child: Container(
                                 alignment: Alignment.center,
@@ -105,7 +103,7 @@ class _ItemCardState extends State<ItemCard> {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                         decoration: BoxDecoration(
-                          color: item.inStock ? Colors.yellow.shade500 : Colors.grey.shade200,
+                          color: item.inStock!=0 ? Colors.yellow.shade500 : Colors.grey.shade200,
                           borderRadius: BorderRadius.circular(4),
                           border: Border.all(color: Colors.black),
                         ),
@@ -155,12 +153,12 @@ class _ItemCardState extends State<ItemCard> {
                       child: SizedBox(
                         width: 80,
                         height: 32,
-                        child: item.inStock
-                            ? (quantity == 0
+                        child: item.inStock!=0
+                            ? (item.cartQuantity == 0
                             ? ElevatedButton(
                           onPressed: () {
                             setState(() {
-                              quantity = 1;
+                              item.cartQuantity = 1;
                             });
                           },
                           style: ElevatedButton.styleFrom(
@@ -181,34 +179,41 @@ class _ItemCardState extends State<ItemCard> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              InkWell(
+                              GestureDetector(
                                 onTap: () {
-                                  if (quantity == 1) {
+                                  if (item.cartQuantity == 1) {
                                     setState(() {
-                                      quantity = 0;
+                                      item.cartQuantity = 0;
                                     });
                                   } else {
                                     decrement();
                                   }
                                 },
-                                child: const Icon(Icons.remove, color: Colors.white, size: 16),
+                                child: const Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 4),
+                                  child: Icon(Icons.remove, color: Colors.white, size: 14),
+                                ),
                               ),
                               Text(
-                                '$quantity',
+                                '${item.cartQuantity}',
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
                                 ),
                               ),
-                              InkWell(
+                              GestureDetector(
                                 onTap: () {
-                                  if (quantity < 9) {
+                                  if (item.cartQuantity < item.inStock) {
                                     increment();
                                   }
                                 },
-                                child: const Icon(Icons.add, color: Colors.white, size: 16),
+                                child: const Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 4),
+                                  child: Icon(Icons.add, color: Colors.white, size: 14),
+                                ),
                               ),
                             ],
                           ),
@@ -216,7 +221,7 @@ class _ItemCardState extends State<ItemCard> {
                             : ElevatedButton.icon(
                           onPressed: () {
                             setState(() {
-                              notifyOn = !notifyOn;
+                              item.toNotify = !item.toNotify;
                             });
                           },
                           style: ElevatedButton.styleFrom(
@@ -230,10 +235,10 @@ class _ItemCardState extends State<ItemCard> {
                             textStyle: const TextStyle(fontSize: 14),
                           ),
                           icon: Icon(
-                            notifyOn ? Icons.notifications_off : Icons.notifications,
+                            item.toNotify ? Icons.notifications_off : Icons.notifications,
                             size: 16,
                           ),
-                          label: Text(notifyOn ? 'Turn off' : 'Notify'),
+                          label: Text(item.toNotify ? 'Turn off' : 'Notify'),
                         ),
                       ),
                   ),

@@ -12,7 +12,9 @@ class Item {
   String discount;
   String netQty;
   String mrp;
-  bool inStock;
+  int inStock;
+  bool toNotify;
+  int cartQuantity;
 
   Item({
     required this.productId,
@@ -26,6 +28,8 @@ class Item {
     required this.netQty,
     required this.mrp,
     required this.inStock,
+    required this.cartQuantity,
+    required this.toNotify,
   });
 
   // Factory method to create an Item from a JSON object
@@ -41,7 +45,9 @@ class Item {
       discount: json['discount'] ?? '',
       netQty: json['net_qty'],
       mrp: json['mrp'] ?? '',
-      inStock: false,
+      inStock: 10,
+      cartQuantity: 0,
+      toNotify: false,
     );
   }
 
@@ -59,6 +65,8 @@ class Item {
       'net_qty': netQty,
       'mrp': mrp,
       'inStock': inStock,
+      'cartQuantity': cartQuantity,
+      'toNotify': toNotify,
     };
   }
 }

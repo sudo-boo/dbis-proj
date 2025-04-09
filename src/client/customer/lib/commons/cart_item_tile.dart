@@ -47,7 +47,7 @@ class _CartItemTileState extends State<CartItemTile> {
 
           // Name of the product with two lines and net quantity below
           Expanded(
-            flex: 5,
+            flex: 4,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
