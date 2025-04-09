@@ -1,5 +1,3 @@
-// get-cart we will be given user_id and we have to give the cart(item, quantity, availability) take the nearest vendor and in radius 10km
-// if the nearest vendor does not have the item then take the next nearest vendor but in the nearest
 
 const express = require('express');
 
