@@ -1,11 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
-const { Item, Cart } = require('../models');
+const { Item, Cart, Vendor, Availability } = require('../models');
 
 const verifyToken = require('../middleware/auth');
 
-// get items by category (item_id, item_name, rating, price all three, image_urls)
+
+
+
+// get items by category
+
+const getDistanceFromLatLonInKm = require('../utils/getDistanceFromLatLonInKm');
+
 router.get('/items-by-category', verifyToken, async (req, res) => {
     const { category_id, request_quantity, batch_no, user_id } = req.body;
     const page = parseInt(batch_no) || 1;
@@ -34,6 +40,43 @@ router.get('/items-by-category', verifyToken, async (req, res) => {
             }
         });
 
+        // fetch the nearest vendor to the user
+        const vendors = await Vendor.findAll({
+            where: { category: category_id },
+            attributes: ['vendor_id', 'name', 'latitude', 'longitude'],
+        });
+        const user = await Users.findOne({
+            where: { user_id },
+            attributes: ['latitude', 'longitude'],
+        });
+        const userLatitude = user.latitude;
+        const userLongitude = user.longitude;
+        const nearbyVendors = vendors.map(vendor => {
+            const distance = getDistanceFromLatLonInKm(
+                userLatitude,
+                userLongitude,
+                vendor.latitude,
+                vendor.longitude
+            );
+            return { ...vendor, distance };
+        });
+        nearbyVendors.sort((a, b) => a.distance - b.distance);
+        const nearestVendor = nearbyVendors[0];
+
+        // to each of the item, append the stock available in availability table from the nearest vendor found
+        const availability = await Availability.findAll({
+            where: { vendor_id: nearestVendor.vendor_id },
+            attributes: ['product_id', 'quantity'],
+        });
+        items.forEach(item => {
+            const availabilityItem = availability.find(avail => avail.product_id === item.product_id);
+            if (availabilityItem) {
+                item.stock_available = availabilityItem.quantity;
+            } else {
+                item.stock_available = 0;
+            }
+        });
+
         res.json({
             page,
             category_id,
@@ -46,6 +89,9 @@ router.get('/items-by-category', verifyToken, async (req, res) => {
         res.status(500).json({ error: 'Something went wrong' });
     }
 });
+
+
+
 
 
 

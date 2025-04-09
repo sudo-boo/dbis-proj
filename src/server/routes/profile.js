@@ -27,6 +27,24 @@ router.get('/check-email', async (req, res) => {
     }
 });
 
+
+// get location in latitude and longitude
+router.get('/get-location', async (req, res) => {
+    const { latitude, longitude } = req.body;
+    try {
+        // Assuming you have a function to get location from latitude and longitude
+        const location = await getLocationFromLatLong(latitude, longitude);
+        return res.status(200).json({ location });
+    } catch (error) {
+        console.error('Error getting location:', error);
+        return res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
+
+
+
+
 router.post('/make-user', async (req, res) => {
     const { name, phone, email, latitude, longitude, address, password } = req.body;
 
