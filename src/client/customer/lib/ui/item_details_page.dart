@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:customer/ui/cart_page.dart';
 import 'package:customer/commons/item_in_rows.dart';
 import 'package:flutter/material.dart';
@@ -64,7 +65,20 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                     controller: _pageController,
                     itemCount: item.imageUrls.length,
                     itemBuilder: (context, index) {
-                      return Image.network(item.imageUrls[index], fit: BoxFit.cover);
+                      // return Image.network(item.imageUrls[index], fit: BoxFit.cover);
+                      return CachedNetworkImage(
+                        imageUrl: item.imageUrls[index],
+                        imageBuilder: (context, imageProvider) => Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: imageProvider,
+                                fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        placeholder: (context, url) => CircularProgressIndicator(),
+                        errorWidget: (context, url, error) => Icon(Icons.error),
+                      );
                     },
                   ),
                 ),

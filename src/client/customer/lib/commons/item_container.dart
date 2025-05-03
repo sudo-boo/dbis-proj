@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/models/item.dart';
 import 'package:customer/ui/item_details_page.dart';
@@ -65,11 +66,18 @@ class _ItemCardState extends State<ItemCard> {
                             aspectRatio: 1,
                             child: Opacity(
                               opacity: item.inStock!=0 ? 1.0 : 0.5,
-                              child: Image.network(
-                                item.imageUrls[0],
-                                fit: BoxFit.cover,
-                                errorBuilder: (context, error, stackTrace) =>
-                                const Icon(Icons.broken_image),
+                              child: CachedNetworkImage(
+                                imageUrl: item.imageUrls[0],
+                                imageBuilder: (context, imageProvider) => Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: imageProvider,
+                                        fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                placeholder: (context, url) => CircularProgressIndicator(),
+                                errorWidget: (context, url, error) => Icon(Icons.error),
                               ),
                             ),
                           ),
