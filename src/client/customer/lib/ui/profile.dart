@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:customer/apis/get_update_profile.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -8,10 +9,27 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  // call the API to get the user data
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
-  final TextEditingController addressController = TextEditingController();
+  final TextEditingController addressController = TextEditingController();  
+
+  void getuserdata() async {
+    final userData = await getUserProfile();
+    if (userData != null) {
+      usernameController.text = userData['username'] ?? '';
+      phoneController.text = userData['mobile'] ?? '';
+      emailController.text = userData['email'] ?? '';
+      addressController.text = userData['address'] ?? '';
+    }
+  }
+  
+  @override
+  void initState() {
+    super.initState();
+    getuserdata();
+  }
 
   @override
   void dispose() {
@@ -130,7 +148,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     final phone = phoneController.text;
                     final email = emailController.text;
                     final address = addressController.text;
-
+                    // Call the API to update the user profile
+                    updateUserProfile(email, username, phone, address);
                     print('Saved: $username, $phone, $email, $address');
 
                     ScaffoldMessenger.of(context).showSnackBar(

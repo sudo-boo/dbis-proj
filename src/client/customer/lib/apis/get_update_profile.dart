@@ -1,14 +1,16 @@
 // get_update_profile.dart
 
 import 'dart:convert';
+import 'package:customer/data/repository/local_storage_manager.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 // Function to get user profile data by email
-Future<Map<String, dynamic>?> getUserProfile(String email) async {
+Future<Map<String, dynamic>?> getUserProfile() async {
   try {
     String getProfileUrl = dotenv.env['GET_PROFILE_URL'] ?? '';
-
+    String? email = await getUserEmail();
+    
     if (getProfileUrl.isEmpty) {
       print("GET_PROFILE_URL not found in .env file.");
       return null;
