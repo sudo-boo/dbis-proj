@@ -1,3 +1,4 @@
+import 'package:customer/commons/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/models/item.dart';
 import 'package:customer/commons/item_container.dart';
@@ -118,7 +119,7 @@ class _ItemInRowsState extends State<ItemInRows> {
           ],
 
           SizedBox(
-            height: 270,
+            height: screenHeight(context) * 0.3,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: _items.length,
