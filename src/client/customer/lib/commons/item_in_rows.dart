@@ -119,7 +119,7 @@ class _ItemInRowsState extends State<ItemInRows> {
           ],
 
           SizedBox(
-            height: screenHeight(context) * 0.3,
+            height: screenHeight(context) * 0.4,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: _items.length,
