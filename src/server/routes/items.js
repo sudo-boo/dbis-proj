@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { Item, Cart, Vendor, Availability } = require('../models');
+const { Item, Cart, Vendor, Availability, Users } = require('../models');
 
 const verifyToken = require('../middleware/auth');
 
@@ -13,15 +13,16 @@ const verifyToken = require('../middleware/auth');
 // const getDistanceFromLatLonInKm = require('../commons/get_distance_in_km');
 const getNearestVendor = require('../commons/get_nearest_vendor');
 
-router.get('/items-by-category', verifyToken, async (req, res) => {
+router.post('/items-by-category', verifyToken, async (req, res) => {
     const { category_id, request_quantity, batch_no, user_id } = req.body;
+    console.log(category_id, request_quantity, batch_no, user_id);
     const page = parseInt(batch_no) || 1;
     const limit = request_quantity ? parseInt(request_quantity) : 50; // Default to 10 if not provided
     const offset = (page - 1) * limit;
 
     try {
         const items = await Item.findAll({
-            where: { category: category_id },
+            where: { category: parseInt(category_id) },
             limit,
             offset,
         });
@@ -51,7 +52,7 @@ router.get('/items-by-category', verifyToken, async (req, res) => {
         const userLongitude = user.longitude;
         const maxDistance = 10; // 10 km
 
-        const nearestVendor = (getNearestVendor(userLatitude, userLongitude, maxDistance))[0];
+        const nearestVendor = (await getNearestVendor(userLatitude, userLongitude, maxDistance))[0];
         if (!nearestVendor) {
             return res.status(404).json({ error: 'No vendors found nearby' });
         }
@@ -90,7 +91,7 @@ router.get('/items-by-category', verifyToken, async (req, res) => {
 
 
 // get details of a particular item (all things for that item)
-router.get('/item-details', verifyToken, async (req, res) => {
+router.post('/item-details', verifyToken, async (req, res) => {
     const { product_id, user_id } = req.body;
 
     try {

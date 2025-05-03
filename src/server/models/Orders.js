@@ -64,12 +64,17 @@ const Orders = sequelize.define('Orders', {
     },
     transaction_id: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
             model: 'payments',
             key: 'payment_id'
         }
-    }
+    },
+    status: {
+        type: DataTypes.ENUM('ordered', 'sent from warehouse', 'delivered'),
+        allowNull: false,
+        defaultValue: 'ordered'
+    },
 }, {
     tableName: 'orders',
     timestamps: false,

@@ -24,11 +24,8 @@ const Item = sequelize.define('Item', {
         }
     },
     quantity: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        validate: {
-            min: 0
-        }
+        type: DataTypes.STRING,
+        allowNull: false
     },
     discount: {
         type: DataTypes.FLOAT,

@@ -28,7 +28,7 @@ const getDistanceFromLatLonInKm = require('../commons/get_distance_in_km');
 const getNearestVendor = require('../commons/get_nearest_vendor');
 
 
-router.get('/get-cart', verifyToken, async (req, res) => {
+router.post('/get-cart', verifyToken, async (req, res) => {
     const { user_id, latitude, longitude } = req.body;
 
     try {
@@ -43,9 +43,13 @@ router.get('/get-cart', verifyToken, async (req, res) => {
 
         const userLatitude = parseFloat(latitude);
         const userLongitude = parseFloat(longitude);
+        await Users.update(
+            { latitude: userLatitude, longitude: userLongitude },
+            { where: { user_id } }
+        );
 
 
-        const nearestVendorIds = (getNearestVendor(userLatitude, userLongitude, 10, 10)).map(v => v.vendor_id);
+        const nearestVendorIds = (await getNearestVendor(userLatitude, userLongitude, 10, 10)).map(v => v.vendor_id);
 
         const cartItems = await Cart.findAll({
             where: { user_id },

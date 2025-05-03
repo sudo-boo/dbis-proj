@@ -148,17 +148,17 @@ router.post('/user/verify-otp', async (req, res) => {
                 const user = await Users.create({
                     name: null,
                     phone: null,
-                    email,
+                    email: email,
                     latitude : parseFloat(latitude),
                     longitude : parseFloat(longitude),
                     address: null,
                 });
                 const token = generateToken(user);
-                return res.json({message: 'Login successful', created_user: true, token: token });
+                return res.json({message: 'Login successful', created_user: true, token: token, user_id : user.user_id });
             }
 
             const token = generateToken(user);
-            return res.json({message: 'Login successful', created_user: false, token: token });
+            return res.json({message: 'Login successful', created_user: false, token: token, user_id : user.user_id });
         } else {
             res.status(400).json({ error: 'Invalid or expired OTP' });
         }
@@ -190,7 +190,7 @@ router.post('/vendor/verify-otp', async (req, res) => {
                 const user = await Vendor.create({
                     name: null,
                     phone: null,
-                    email,
+                    email: email,
                     location: {
                         type: 'Point',
                         coordinates: [parseFloat(latitude), parseFloat(longitude)] // [longitude, latitude]
@@ -200,11 +200,11 @@ router.post('/vendor/verify-otp', async (req, res) => {
                     address: null,
                 });
                 const token = generateToken(user);
-                return res.json({message: 'Login successful', created_user: true, token: token });
+                return res.json({message: 'Login successful', created_user: true, token: token, user_id : user.vendor_id });
             }
 
             const token = generateToken(user);
-            return res.json({message: 'Login successful', created_user: false, token: token });
+            return res.json({message: 'Login successful', created_user: false, token: token, user_id : user.vendor_id });
         } else {
             res.status(400).json({ error: 'Invalid or expired OTP' });
         }
@@ -236,7 +236,7 @@ router.post('/delivery/verify-otp', async (req, res) => {
                 const user = await deliveryBoy.create({
                     name: null,
                     phone: null,
-                    email,
+                    email: email,
                     location: {
                         type: 'Point',
                         coordinates: [parseFloat(latitude), parseFloat(longitude)] // [longitude, latitude]
@@ -245,11 +245,11 @@ router.post('/delivery/verify-otp', async (req, res) => {
                     address: null,
                 });
                 const token = generateToken(user);
-                return res.json({message: 'Login successful', created_user: true, token: token });
+                return res.json({message: 'Login successful', created_user: true, token: token, user_id : user.d_boy_id });
             }
 
             const token = generateToken(user);
-            return res.json({message: 'Login successful', created_user: false, token: token });
+            return res.json({message: 'Login successful', created_user: false, token: token, user_id : user.d_boy_id});
         } else {
             res.status(400).json({ error: 'Invalid or expired OTP' });
         }

@@ -1,20 +1,19 @@
-const Vendor = require('../models/Vendor');
+
 const { literal } = require('sequelize');
+const { deliveryBoy } = require('../models');
 
 // import { Op } from 'sequelize';
 
-async function getNearestVendor(userLatitude, userLongitude, maxDistance, l = 1) {
+async function getNearestDeliveryBoy(userLatitude, userLongitude, maxDistance, l = 1) {
 
     // fetch the nearest vendor to the user location whose distance must be lesser than maxDistance
-    userLatitude = parseFloat(userLatitude);
-    userLongitude = parseFloat(userLongitude);
-    vendors = await Vendor.findAll({
+    vendors = await deliveryBoy.findAll({
         attributes: [
-            'vendor_id',
+            'd_boy_id',
             'name',
             [literal(`ST_Y(location::geometry)`), 'latitude'],
             [literal(`ST_X(location::geometry)`), 'longitude'],
-            [literal(`ST_Distance(location, ST_SetSRID(ST_MakePoint(${userLongitude}, ${userLatitude}), 4326))`), 'distance']
+            [literal(`ST_Distance(location, ST_SetSRID(ST_MakePoint(${userLatitude}, ${userLongitude}), 4326))`), 'distance']
         ],
         where: literal(`
             ST_DWithin(
@@ -29,4 +28,4 @@ async function getNearestVendor(userLatitude, userLongitude, maxDistance, l = 1)
     return vendors;
 }
 
-module.exports = getNearestVendor;
+module.exports = getNearestDeliveryBoy;
