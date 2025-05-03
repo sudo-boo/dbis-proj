@@ -46,8 +46,8 @@ class _CartItemTileState extends State<CartItemTile> {
           const SizedBox(width: 8.0),
 
           // Name of the product with two lines and net quantity below
-          Expanded(
-            flex: 4,
+          Flexible(
+            flex: 4 ,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -73,35 +73,38 @@ class _CartItemTileState extends State<CartItemTile> {
           ),
 
           // Quantity setter (- and + buttons)
-          Expanded(
+          Flexible(
             flex: 4,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.remove, size: 20),
-                  onPressed: quantity > 1
-                      ? () {
-                    setState(() {
-                      quantity--;
-                    });
-                  }
-                      : null, // Disable the button if quantity is 1
-                ),
-                Text(
-                  '$quantity',
-                  style: const TextStyle(fontSize: 16.0),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.add, size: 20),
-                  onPressed: () {
-                    setState(() {
-                      quantity++;
-                    });
-                  },
-                ),
-              ],
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.remove, size: 20),
+                    onPressed: quantity > 1
+                        ? () {
+                      setState(() {
+                        quantity--;
+                      });
+                    }
+                        : null, // Disable the button if quantity is 1
+                  ),
+                  Text(
+                    '$quantity',
+                    style: const TextStyle(fontSize: 16.0),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.add, size: 20),
+                    onPressed: () {
+                      setState(() {
+                        quantity++;
+                      });
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
 

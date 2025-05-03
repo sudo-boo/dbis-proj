@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:customer/ui/item_in_rows.dart';
+import 'package:customer/commons/item_in_rows.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/commons/cart_item_tile.dart';

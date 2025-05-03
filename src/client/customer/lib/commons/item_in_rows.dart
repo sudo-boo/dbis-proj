@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:customer/models/item.dart';
-import 'package:customer/ui/item_container.dart';
+import 'package:customer/commons/item_container.dart';
 import 'package:customer/data/repository/demo_data_loader.dart';
 import 'package:customer/ui/item_in_columns.dart';
 

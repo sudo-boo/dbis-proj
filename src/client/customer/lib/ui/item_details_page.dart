@@ -1,5 +1,5 @@
 import 'package:customer/ui/cart_page.dart';
-import 'package:customer/ui/item_in_rows.dart';
+import 'package:customer/commons/item_in_rows.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:customer/models/item.dart';

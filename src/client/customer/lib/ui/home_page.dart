@@ -66,7 +66,7 @@
 // home_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:customer/ui/item_in_rows.dart';
+import 'package:customer/commons/item_in_rows.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
