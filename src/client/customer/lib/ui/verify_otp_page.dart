@@ -1,11 +1,14 @@
+import 'package:customer/apis/verify_email.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/commons/app_constants.dart';
 
 class VerifyOtpPage extends StatefulWidget {
   final String email;
+  final double latitude;
+  final double longitude;
   const VerifyOtpPage({
     super.key,
-    required this.email,
+    required this.email, required this.latitude, required this.longitude,
   });
 
   @override
@@ -37,6 +40,16 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
     if (_otpControllers[index].text.isEmpty && index > 0) {
       FocusScope.of(context).requestFocus(_focusNodes[index - 1]);
     }
+  }
+
+  Future<bool> _handleOTPVerification(String email, String otp) async {
+    bool isVerified = await verifyOtp(email, otp, widget.latitude.toString(), widget.longitude.toString());
+    if(isVerified){
+
+      return true;
+    }
+    return false;
+
   }
 
   @override
@@ -85,24 +98,24 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
 
               // Continue Button (TextButton style)
               TextButton(
-                onPressed: () {
-                  // Collect OTP input and handle verification
+                onPressed: () async {
                   String otp = _otpControllers.map((controller) => controller.text).join();
                   if (otp.length == 6) {
-                    // If OTP is entered, continue with verification
                     print('OTP entered: $otp');
-
-                    // for now just skip this
-                    if(otp == "111111"){
+                    if(await _handleOTPVerification(widget.email, otp)){
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text("OTP Verified")));
-                      Navigator.pushReplacementNamed(context, '/home');
-
+                        const SnackBar(content: Text("OTP Verified")),
+                      );
+                      Navigator.pushNamedAndRemoveUntil(context, '/navbar', (Route<dynamic> route) => false);
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text("Incorrect OTP, please try again")),
+                      );
                     }
                   } else {
-                    // If OTP is incomplete, show error message
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text("Please enter a valid OTP")));
+                      const SnackBar(content: Text("Please enter a valid OTP")),
+                    );
                   }
                 },
                 style: TextButton.styleFrom(
