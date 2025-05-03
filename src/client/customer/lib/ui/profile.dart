@@ -8,8 +8,8 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  final TextEditingController usernameController = TextEditingController(text: 'Krish');
-  final TextEditingController phoneController = TextEditingController(text: '9726974345');
+  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController addressController = TextEditingController();
 
@@ -51,7 +51,7 @@ class _ProfilePageState extends State<ProfilePage> {
             decoration: InputDecoration(
               filled: true,
               fillColor: Colors.purple.shade50,
-              hintText: label == 'Email Address' ? 'Enter your email' : '',
+              hintText: 'Enter your $label',
               hintStyle: const TextStyle(color: Colors.grey),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
@@ -69,44 +69,48 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      resizeToAvoidBottomInset: true, // Important for keyboard behavior
       body: SafeArea(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
-              child: Row(
-                children: [
-                  // Icon(Icons.arrow_back_ios, size: 20),
-                  // SizedBox(width: 4),
-                  // Text(
-                  //   'Profile',
-                  //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                  // ),
-                ],
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.only(bottom: 16), // Extra padding to avoid keyboard overlap
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+                      child: Row(
+                        children: [
+                          // AppBar content if any
+                        ],
+                      ),
+                    ),
+                    _buildLabeledTextField(
+                      label: 'Name',
+                      controller: usernameController,
+                    ),
+                    _buildLabeledTextField(
+                      label: 'Mobile Number',
+                      controller: phoneController,
+                      keyboardType: TextInputType.phone,
+                    ),
+                    _buildLabeledTextField(
+                      label: 'Email Address',
+                      controller: emailController,
+                      keyboardType: TextInputType.emailAddress,
+                    ),
+                    _buildLabeledTextField(
+                      label: 'Address',
+                      controller: addressController,
+                      maxLines: 3,
+                      keyboardType: TextInputType.multiline,
+                    ),
+                  ],
+                ),
               ),
             ),
-            _buildLabeledTextField(
-              label: 'Name',
-              controller: usernameController,
-            ),
-            _buildLabeledTextField(
-              label: 'Mobile Number',
-              controller: phoneController,
-              keyboardType: TextInputType.phone,
-            ),
-            _buildLabeledTextField(
-              label: 'Email Address',
-              controller: emailController,
-              keyboardType: TextInputType.emailAddress,
-            ),
-            _buildLabeledTextField(
-              label: 'Address',
-              controller: addressController,
-              maxLines: 3,
-              keyboardType: TextInputType.multiline,
-            ),
-            const Spacer(),
             Padding(
               padding: commonPadding,
               child: SizedBox(
