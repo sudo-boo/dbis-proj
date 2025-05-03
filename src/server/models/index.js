@@ -6,6 +6,7 @@ const Users = require('./Users');
 const Orders = require('./Orders');
 const Cart = require('./Cart');
 const Payments = require('./Payments');
+const deliveryBoy = require('./DeliveryBoy');
 
 // Define associations here
 
@@ -104,6 +105,30 @@ Payments.hasMany(Orders, {
     as: 'orders'
 });
 
+Orders.belongsTo(deliveryBoy, {
+    foreignKey: 'd_boy_id',
+    sourceKey: 'd_boy_id',
+    as : 'deliveryBoy'
+});
+
+deliveryBoy.hasMany(Orders, {
+    foreignKey: 'd_boy_id', 
+    sourceKey: 'd_boy_id',
+    as : 'orders' 
+});
+
+Orders.belongsTo(Vendor, {
+    foreignKey: 'vendor_id',
+    sourceKey: 'vendor_id',
+    as : 'vendor'
+});
+
+Vendor.hasMany(Orders, {
+    foreignKey: 'vendor_id', 
+    sourceKey: 'vendor_id',
+    as : 'vendor' 
+});
+
 
 module.exports = {
     Item,
@@ -113,5 +138,6 @@ module.exports = {
     Users,
     Orders,
     Cart,
-    Payments
+    Payments,
+    deliveryBoy
 };

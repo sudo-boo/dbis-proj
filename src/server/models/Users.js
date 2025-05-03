@@ -10,11 +10,11 @@ const Users = sequelize.define('Users', {
     },
     name: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     phone: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     email: {
         type: DataTypes.STRING,
@@ -33,11 +33,7 @@ const Users = sequelize.define('Users', {
     },
     address: {
         type: DataTypes.STRING,
-        allowNull: false
-    },
-    password: {
-        type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
 }, {
     tableName: 'users',

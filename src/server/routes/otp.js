@@ -32,7 +32,7 @@ class OtpRegister {
         if (!otpData) {
             return false;
         }
-        if (otpData.otp !== otp) {
+        if (otpData.otp != otp) {
             return false;
         }
         if (Date.now() > otpData.expiry) {
@@ -113,9 +113,22 @@ router.post('/get-otp', async (req, res) => {
 });
 
 
+const { Users, Vendor, deliveryBoy } = require('../models');
+
+
+const jwt = require('jsonwebtoken');
+
+function generateToken(user) {
+    return jwt.sign(
+      { id: user.user_id, username: user.name },
+      process.env.JWT_SECRET || 'supersecretkey',
+      { expiresIn: '1h' }
+    );
+  }
+
 // Route: /verify-otp
-router.post('/verify-otp', async (req, res) => {
-    const { email, otp } = req.body;
+router.post('/user/verify-otp', async (req, res) => {
+    const { email, otp, latitude, longitude } = req.body;
 
     if (!email || !otp) {
         return res.status(400).json({ error: 'Email and OTP are required' });
@@ -128,7 +141,24 @@ router.post('/verify-otp', async (req, res) => {
         if (isValid) {
             // OTP is valid, proceed with registration or login
             otpRegister.deleteOtp(email); // Remove OTP after successful verification
-            res.status(200).json({ message: 'OTP verified successfully' });
+
+            const user = await Users.findOne({ where: { email } });
+            if (!user) {
+                // return res.status(404).json({ message: 'User not found' });
+                const user = await Users.create({
+                    name: null,
+                    phone: null,
+                    email,
+                    latitude : parseFloat(latitude),
+                    longitude : parseFloat(longitude),
+                    address: null,
+                });
+                const token = generateToken(user);
+                return res.json({message: 'Login successful', created_user: true, token: token });
+            }
+
+            const token = generateToken(user);
+            return res.json({message: 'Login successful', created_user: false, token: token });
         } else {
             res.status(400).json({ error: 'Invalid or expired OTP' });
         }
@@ -137,6 +167,98 @@ router.post('/verify-otp', async (req, res) => {
         res.status(500).json({ error: 'Something went wrong' });
     }
 });
+
+
+router.post('/vendor/verify-otp', async (req, res) => {
+    const { email, otp, latitude, longitude } = req.body;
+
+    if (!email || !otp) {
+        return res.status(400).json({ error: 'Email and OTP are required' });
+    }
+
+    try {
+        // Verify OTP
+        const isValid = otpRegister.verifyOtp(email, otp);
+
+        if (isValid) {
+            // OTP is valid, proceed with registration or login
+            otpRegister.deleteOtp(email); // Remove OTP after successful verification
+
+            const user = await Vendor.findOne({ where: { email } });
+            if (!user) {
+                // return res.status(404).json({ message: 'User not found' });
+                const user = await Vendor.create({
+                    name: null,
+                    phone: null,
+                    email,
+                    location: {
+                        type: 'Point',
+                        coordinates: [parseFloat(latitude), parseFloat(longitude)] // [longitude, latitude]
+                    },
+                    opening_hours: {},
+                    available: false,
+                    address: null,
+                });
+                const token = generateToken(user);
+                return res.json({message: 'Login successful', created_user: true, token: token });
+            }
+
+            const token = generateToken(user);
+            return res.json({message: 'Login successful', created_user: false, token: token });
+        } else {
+            res.status(400).json({ error: 'Invalid or expired OTP' });
+        }
+    } catch (err) {
+        console.error('Error verifying OTP:', err);
+        res.status(500).json({ error: 'Something went wrong' });
+    }
+});
+
+
+router.post('/delivery/verify-otp', async (req, res) => {
+    const { email, otp, latitude, longitude } = req.body;
+
+    if (!email || !otp) {
+        return res.status(400).json({ error: 'Email and OTP are required' });
+    }
+
+    try {
+        // Verify OTP
+        const isValid = otpRegister.verifyOtp(email, otp);
+
+        if (isValid) {
+            // OTP is valid, proceed with registration or login
+            otpRegister.deleteOtp(email); // Remove OTP after successful verification
+
+            const user = await deliveryBoy.findOne({ where: { email } });
+            if (!user) {
+                // return res.status(404).json({ message: 'User not found' });
+                const user = await deliveryBoy.create({
+                    name: null,
+                    phone: null,
+                    email,
+                    location: {
+                        type: 'Point',
+                        coordinates: [parseFloat(latitude), parseFloat(longitude)] // [longitude, latitude]
+                    },
+                    available: false,
+                    address: null,
+                });
+                const token = generateToken(user);
+                return res.json({message: 'Login successful', created_user: true, token: token });
+            }
+
+            const token = generateToken(user);
+            return res.json({message: 'Login successful', created_user: false, token: token });
+        } else {
+            res.status(400).json({ error: 'Invalid or expired OTP' });
+        }
+    } catch (err) {
+        console.error('Error verifying OTP:', err);
+        res.status(500).json({ error: 'Something went wrong' });
+    }
+});
+
 
 
 

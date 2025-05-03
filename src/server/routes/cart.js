@@ -24,11 +24,12 @@ const verifyToken = require('../middleware/auth');
 
 // get the items in cart along with their availability from the nearest vendor in 10km radius
 
-const getDistanceFromLatLonInKm = require('../utils/getDistanceFromLatLonInKm');
+const getDistanceFromLatLonInKm = require('../commons/get_distance_in_km');
+const getNearestVendor = require('../commons/get_nearest_vendor');
 
 
 router.get('/get-cart', verifyToken, async (req, res) => {
-    const { user_id } = req.body;
+    const { user_id, latitude, longitude } = req.body;
 
     try {
         const user = await Users.findOne({
@@ -40,9 +41,11 @@ router.get('/get-cart', verifyToken, async (req, res) => {
             return res.status(404).json({ error: 'User not found' });
         }
 
-        const userLatitude = user.latitude;
-        const userLongitude = user.longitude;
+        const userLatitude = parseFloat(latitude);
+        const userLongitude = parseFloat(longitude);
 
+
+        const nearestVendorIds = (getNearestVendor(userLatitude, userLongitude, 10, 10)).map(v => v.vendor_id);
 
         const cartItems = await Cart.findAll({
             where: { user_id },
@@ -55,11 +58,14 @@ router.get('/get-cart', verifyToken, async (req, res) => {
                         {
                             model: Availability,
                             as: 'availability',
+                            where: {
+                                vendor_id: nearestVendorIds
+                            },
                             include: [
                                 {
                                     model: Vendor,
                                     as: 'vendor',
-                                    attributes: ['vendor_id', 'name', 'latitude', 'longitude'],
+                                    attributes: ['vendor_id', 'name', 'location'],
                                 }
                             ]
                         }]
@@ -78,11 +84,13 @@ router.get('/get-cart', verifyToken, async (req, res) => {
             const nearbyVendors = availabilities
                 .filter(a => a.quantity >= cartItem.quantity && a.vendor)
                 .map(a => {
+                    const loc = a.vendor.location;
+                    const [latitude, longitude] = loc.coordinates;
                     const distance = getDistanceFromLatLonInKm(
                         userLatitude,
                         userLongitude,
-                        a.vendor.latitude,
-                        a.vendor.longitude
+                        latitude,
+                        longitude
                     );
                     return { ...a, distance };
                 })

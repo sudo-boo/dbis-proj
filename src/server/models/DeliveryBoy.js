@@ -2,8 +2,8 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 require('dotenv').config();
 
-const Vendor = sequelize.define('Vendor', {
-    vendor_id: {
+const deliveryBoy = sequelize.define('deliveryBoy', {
+    d_boy_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
@@ -31,18 +31,14 @@ const Vendor = sequelize.define('Vendor', {
             isEmail: true
         }
     },
-    opening_hours: {
-        type: DataTypes.JSON,
-        allowNull: false
-    },
     available: {
         type: DataTypes.BOOLEAN,
         allowNull: false
     },
 }, {
-    tableName: 'vendor',
+    tableName: 'deliveryBoy',
     timestamps: false
 });
 
 
-module.exports = Vendor;
+module.exports = deliveryBoy;

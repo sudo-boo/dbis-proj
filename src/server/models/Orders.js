@@ -28,6 +28,22 @@ const Orders = sequelize.define('Orders', {
             min: 0
         }
     },
+    vendor_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'vendor',
+            key: 'vendor_id'
+        }
+    },
+    d_boy_id: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        references: {
+            model: 'deliveryBoy',
+            key: 'd_boy_id'
+        }
+    },
     order_date: {
         type: DataTypes.DATE,
         allowNull: false,

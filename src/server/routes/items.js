@@ -10,7 +10,8 @@ const verifyToken = require('../middleware/auth');
 
 // get items by category
 
-const getDistanceFromLatLonInKm = require('../utils/getDistanceFromLatLonInKm');
+// const getDistanceFromLatLonInKm = require('../commons/get_distance_in_km');
+const getNearestVendor = require('../commons/get_nearest_vendor');
 
 router.get('/items-by-category', verifyToken, async (req, res) => {
     const { category_id, request_quantity, batch_no, user_id } = req.body;
@@ -40,28 +41,20 @@ router.get('/items-by-category', verifyToken, async (req, res) => {
             }
         });
 
-        // fetch the nearest vendor to the user
-        const vendors = await Vendor.findAll({
-            where: { category: category_id },
-            attributes: ['vendor_id', 'name', 'latitude', 'longitude'],
-        });
+
+        // fetch the nearest vendor to the user location whose distance must be lesser than maxDistance
         const user = await Users.findOne({
             where: { user_id },
             attributes: ['latitude', 'longitude'],
         });
         const userLatitude = user.latitude;
         const userLongitude = user.longitude;
-        const nearbyVendors = vendors.map(vendor => {
-            const distance = getDistanceFromLatLonInKm(
-                userLatitude,
-                userLongitude,
-                vendor.latitude,
-                vendor.longitude
-            );
-            return { ...vendor, distance };
-        });
-        nearbyVendors.sort((a, b) => a.distance - b.distance);
-        const nearestVendor = nearbyVendors[0];
+        const maxDistance = 10; // 10 km
+
+        const nearestVendor = (getNearestVendor(userLatitude, userLongitude, maxDistance))[0];
+        if (!nearestVendor) {
+            return res.status(404).json({ error: 'No vendors found nearby' });
+        }
 
         // to each of the item, append the stock available in availability table from the nearest vendor found
         const availability = await Availability.findAll({
