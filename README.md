@@ -23,11 +23,44 @@ To run the server on a public URL/IP, we use ngrok. Basically, what it does is r
 │   │
 │   └── server/                # Backend Node.js
 │
-├── test/                      # Contains larger datasets and tests to
-│                              # Test the performance of the system
+├── dataset/                   # Contains larger datasets
 │
-├── Dockerfile                 # Dockerfile for containerizing the project
-├── README.md                  # Project overview and setup instructions
-└── .gitignore                 # Files and directories to ignore in Git
+├── misc/                      # Contains submissions at different stages
+│
+└── README.md                  # Project overview and directory structure
 
 ```
+
+
+### Clone the repository
+
+```bash
+git clone https://github.dev/sudo-boo/dbis-proj.git
+```
+
+### Run Backend
+
+Run the backend using:
+
+```bash
+node app.js
+```
+
+and then run the ngrok after successful running backend on port `5000`:
+
+```bash
+ngrok port 5000
+```
+
+and replace the `BASE_URL` in `.env` of each app in client with the new generated ngrok public url. 
+
+
+### Run frontend
+
+Build the individual apps using:
+
+```bash
+flutter build apk
+```
+
+in each respective directory.
