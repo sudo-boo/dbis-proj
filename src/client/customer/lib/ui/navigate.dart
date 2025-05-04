@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'categories_page.dart';
 import 'cart_page.dart';
+import 'profile.dart';
+import 'orders.dart';
 
 class NavigationBarPage extends StatefulWidget {
   const NavigationBarPage({super.key});
@@ -17,6 +19,8 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
     HomePage(),
     CategoriesPage(),
     CartPage(),
+    ProfilePage(),
+    CustomerOrderHistoryPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -49,6 +53,14 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_outlined),
             label: 'Cart',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outline),
+            label: 'Profile',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.history),
+            label: 'Orders',
           ),
         ],
       ),

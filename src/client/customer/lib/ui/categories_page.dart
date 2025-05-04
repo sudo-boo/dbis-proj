@@ -28,55 +28,77 @@ class CategoriesPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text("All Categories")),
-      body: GridView.builder(
-        padding: const EdgeInsets.all(12),
-        itemCount: entries.length,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3, // 3 per row like your screenshot
-          mainAxisSpacing: 12,
-          crossAxisSpacing: 12,
-          childAspectRatio: 0.8, // controls box height vs width
-        ),
-        itemBuilder: (context, index) {
-          final category = entries[index].key;
-          final imageUrl = entries[index].value;
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final double fullWidth = constraints.maxWidth;
+              const double spacing = 12;
+              final double cellWidth = (fullWidth - spacing * 2) / 3;
+              final double firstWidth = cellWidth * 2 + spacing;
 
-          return GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ItemInColumns(category: category),
-                ),
+              return Wrap(
+                spacing: spacing,
+                runSpacing: spacing,
+                children: List.generate(entries.length, (index) {
+                  final category = entries[index].key;
+                  final imageUrl = entries[index].value;
+                  final bool isFirst = index == 0;
+                  final bool isLast = index == entries.length - 1;
+                  final double itemWidth =
+                  isLast ? fullWidth : isFirst ? firstWidth : cellWidth;
+                  final double? itemHeight = isLast ? 100 : null;
+
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => ItemInColumns(category: category),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: itemWidth,
+                      height: itemHeight,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.2),
+                            blurRadius: 4,
+                            offset: const Offset(2, 2),
+                          ),
+                        ],
+                      ),
+                      padding: const EdgeInsets.all(8),
+                      child: imageUrl.isNotEmpty
+                          ? ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.network(
+                          imageUrl,
+                          fit: BoxFit.contain,
+                        ),
+                      )
+                          : Center(
+                        child: Text(
+                          category,
+                          style: TextStyle(
+                            fontSize: isLast ? 24 : 14,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                  );
+                }),
               );
             },
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                color: Colors.grey[100],
-              ),
-              padding: const EdgeInsets.all(8),
-              child: imageUrl.isNotEmpty
-                  ? ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.network(
-                  imageUrl,
-                  fit: BoxFit.contain, // Shows full image nicely
-                ),
-              )
-                  : Center(
-                child: Text(
-                  category,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-          );
-        },
+          ),
+        ),
       ),
     );
   }

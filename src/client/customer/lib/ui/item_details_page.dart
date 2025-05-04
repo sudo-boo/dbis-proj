@@ -1,8 +1,11 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:customer/ui/cart_page.dart';
-import 'package:customer/ui/item_in_rows.dart';
+import 'package:customer/commons/item_in_rows.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:customer/models/item.dart';
+
+import '../apis/cart.dart';
 
 class ItemDetailPage extends StatefulWidget {
   final Item item;
@@ -64,7 +67,24 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                     controller: _pageController,
                     itemCount: item.imageUrls.length,
                     itemBuilder: (context, index) {
-                      return Image.network(item.imageUrls[index], fit: BoxFit.cover);
+                      // return Image.network(item.imageUrls[index], fit: BoxFit.cover);
+                      return CachedNetworkImage(
+                        imageUrl: item.imageUrls[index].trim(),
+                        imageBuilder: (context, imageProvider) => Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: imageProvider,
+                                fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        placeholder: (context, url) => SizedBox(
+                          height: 30,
+                          width: 30,
+                          child: CircularProgressIndicator()
+                        ),
+                        errorWidget: (context, url, error) => Icon(Icons.error),
+                      );
                     },
                   ),
                 ),
@@ -94,7 +114,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                   onToggle: () => setState(() => showAllInfo = !showAllInfo),
                 ),
                 const SizedBox(height: 16),
-                ItemInRows(category: item.category, displayCategoryTitle: true),
+                // ItemInRows(category: item.category, displayCategoryTitle: true),
                 const SizedBox(height: 100),
               ],
             ),
@@ -184,7 +204,11 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
         )
             : item.cartQuantity == 0
             ? ElevatedButton(
-          onPressed: () {
+          onPressed: () async {
+            // Add item to cart when cartQuantity is 0
+            await addToCart(productId: item.productId.toString(), quantity: 1);
+
+            // Update the cart quantity after adding the item
             setState(() {
               item.cartQuantity = 1;
             });
@@ -243,10 +267,16 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                 children: [
                   IconButton(
                     icon: const Icon(Icons.remove, size: 20, color: Colors.white),
-                    onPressed: () {
-                      setState(() {
-                        if (item.cartQuantity > 0) item.cartQuantity--;
-                      });
+                    onPressed: () async {
+                      if (item.cartQuantity > 0) {
+                        setState(() {
+                          item.cartQuantity--;
+                        });
+                        await updateCart(
+                          productId: item.productId.toString(),
+                          quantity: item.cartQuantity,
+                        );
+                      }
                     },
                   ),
                   Text(
@@ -259,10 +289,23 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                   ),
                   IconButton(
                     icon: const Icon(Icons.add, size: 20, color: Colors.white),
-                    onPressed: () {
-                      setState(() {
-                        if (item.cartQuantity < 9) item.cartQuantity++;
-                      });
+                    onPressed: () async {
+                      if (item.cartQuantity == 0) {
+                        // Add item to cart first
+                        await addToCart(productId: item.productId.toString(), quantity: 1); // Add 1 item initially
+                        setState(() {
+                          item.cartQuantity = 1;
+                        });
+                      } else if (item.cartQuantity < item.inStock) {
+                        // Otherwise, just update cart quantity
+                        setState(() {
+                          item.cartQuantity++;
+                        });
+                        await updateCart(
+                          productId: item.productId.toString(),
+                          quantity: item.cartQuantity,
+                        );
+                      }
                     },
                   ),
                 ],
@@ -315,7 +358,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                         color: Colors.red,
                       ),
                       child: Text(
-                        item.offerPrice,
+                        "₹ ${item.offerPrice}",
                         style: const TextStyle(color: Colors.white),
                       ),
                     ),
@@ -332,7 +375,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                         color: Colors.yellow.shade700,
                       ),
                       child: Text(
-                        item.mrp,
+                        "₹ ${item.mrp}",
                         style: const TextStyle(
                           decoration: TextDecoration.lineThrough,
                           fontWeight: FontWeight.bold,
