@@ -86,7 +86,7 @@ router.post('/place-order', verifyToken, async (req, res) => {
             total_price: total_price,
             vendor_id: vendorId,
             d_boy_id: deliveryId,
-            order_date: now.getDate(),
+            order_date: now,
             order_time: currentTime,
             delivery_date: null,
             eta: eta1,
@@ -194,6 +194,8 @@ router.post('/get-orders', verifyToken, async (req, res) => {
     }
 });
 
+
+const Op = require('sequelize').Op;
 router.post('/get-active-orders', verifyToken, async (req, res) => {
     const { user_id } = req.body;
 
@@ -202,14 +204,21 @@ router.post('/get-active-orders', verifyToken, async (req, res) => {
             where: {
                 user_id,
                 status: {
-                    [or]: ['ordered', 'prepared', 'out for delivery']
+                    [Op.or]: ['ordered', 'prepared', 'out for delivery']
                 }
             },
-            attributes: ['order_id', 'items', 'total_price', 'order_date', 'order_time']
+            attributes: ['order_id', 'items', 'total_price', 'order_date', 'order_time', 'eta', 'status'],
         });
 
         if (!orders || orders.length === 0) {
             return res.status(404).json({ message: 'No active orders found' });
+        }
+
+        if (orders[0].status === 'out for delivery') {
+            const et = (getDistanceFromLatLonInKm(userLatitude, userLongitude, deliveryLatitude, deliveryLongitude))/30;
+            const eta1 = `${Math.floor(et).toString().padStart(2, '0')}:${Math.floor((et - Math.floor(et)) * 60).toString().padStart(2, '0')}:00`;
+            orders[0].eta = eta1;
+            await order[0].save();
         }
 
         res.status(200).json({ message: 'Active orders fetched successfully', orders });

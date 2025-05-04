@@ -172,5 +172,28 @@ router.post('/item-details', verifyToken, async (req, res) => {
 });
 
 
+// update items 
+router.post('/update-items', verifyToken, async (req, res) => {
+    const { vendor_id, product_id, quantity } = req.body;
+    try {
+        const item = await Availability.findOne({
+            where: { product_id, vendor_id }
+        });
+
+        if (!item) {
+            return res.status(404).json({ error: 'Item not found' });
+        }
+
+        item.quantity += quantity;
+        await item.save();
+
+        res.json({ message: 'Item updated successfully' });
+
+    } catch (err) {
+        console.error('Error updating item:', err);
+        res.status(500).json({ error: 'Something went wrong' });
+    }
+});
+
 
 module.exports = router;
