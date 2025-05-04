@@ -6,8 +6,8 @@ class Item {
   String name;
   String category;
   List<String> imageUrls;
-  Map<String, String> productHighlights;
-  Map<String, String> productInformation;
+  Map<String, dynamic> productHighlights;
+  Map<String, dynamic> productInformation;
   String offerPrice;
   String discount;
   String netQty;
@@ -15,6 +15,7 @@ class Item {
   int inStock;
   bool toNotify;
   int cartQuantity;
+  double rating;
 
   Item({
     required this.productId,
@@ -30,6 +31,7 @@ class Item {
     required this.inStock,
     required this.cartQuantity,
     required this.toNotify,
+    required this.rating
   });
 
   // Factory method to create an Item from a JSON object
@@ -39,8 +41,8 @@ class Item {
       name: json['name'],
       category: json['category'],
       imageUrls: List<String>.from(json['image_urls']),
-      productHighlights: Map<String, String>.from(json['product_highlights']),
-      productInformation: Map<String, String>.from(json['product_information']),
+      productHighlights: Map<String, dynamic>.from(json['product_highlights']),
+      productInformation: Map<String, dynamic>.from(json['product_information']),
       offerPrice: json['offer_price'],
       discount: json['discount'] ?? '',
       netQty: json['net_qty'],
@@ -48,6 +50,7 @@ class Item {
       inStock: 10,
       cartQuantity: 0,
       toNotify: false,
+      rating: 4.3
     );
   }
 

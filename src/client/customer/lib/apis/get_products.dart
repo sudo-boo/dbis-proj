@@ -1,13 +1,15 @@
 import 'dart:convert';
+import 'dart:math';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
+import '../models/category.dart';
+import '../models/item.dart';
 
-Future<void> getCategories({required String token}) async {
+Future<List<Category>> getCategories({required String token}) async {
   final String? endpoint = dotenv.env['GET_CATEGORIES_URL'];
 
   if (endpoint == null || endpoint.isEmpty) {
-    print('Error: GET_CATEGORIES_URL is not set in the .env file.');
-    return;
+    throw Exception('GET_CATEGORIES_URL is not set in the .env file.');
   }
 
   final Uri uri = Uri.parse(endpoint);
@@ -23,18 +25,26 @@ Future<void> getCategories({required String token}) async {
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
-      print('Categories JSON: $data');
+
+      // Assuming data is a List of category maps
+      if (data is List) {
+        return data.map((item) => Category.fromJson(item)).toList();
+      } else {
+        throw Exception('Unexpected data format. Expected a list.');
+      }
     } else {
-      print('Error ${response.statusCode}: ${response.body}');
+      throw Exception('Error ${response.statusCode}: ${response.body}');
     }
   } catch (e) {
-    print('Exception occurred: $e');
+    throw Exception('Exception occurred: $e');
   }
 }
 
-Future<void> getProductsByCategory({
+
+Future<List<Item>> getProductsByCategory({
   required String token,
   required String categoryId,
+  required String categoryName,
   required String requestQuantity,
   required String batchNo,
   required String userId,
@@ -42,19 +52,15 @@ Future<void> getProductsByCategory({
   final String? endpoint = dotenv.env['GET_PRODUCTS_BY_CATEGORY'];
 
   if (endpoint == null || endpoint.isEmpty) {
-    print('Error: API endpoint is not set in .env file.');
-    return;
+    throw Exception('GET_PRODUCTS_BY_CATEGORY is not set in the .env file.');
   }
 
-  // Prepare request body as JSON
   final Map<String, dynamic> requestBody = {
     'category_id': categoryId,
     'request_quantity': requestQuantity,
     'batch_no': batchNo,
     'user_id': userId,
   };
-
-  print('Request Body: $requestBody');
 
   try {
     final response = await http.post(
@@ -68,11 +74,83 @@ Future<void> getProductsByCategory({
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
-      print('Response JSON: $data');
+
+      // print(data);
+
+      // Check if the response contains the 'items' key
+      if (data['items'] is List) {
+        List<Item> items = [];
+
+        // Loop through the items and print the keys and values of each item
+        for (var item in data['items']) {
+          print('Item Keys and Values:');
+          for (var key in item.keys) {
+            print('$key: ${item[key]}');  // Print each key and its value
+          }
+        }
+
+
+        // Loop through each item in the 'items' list
+        for (var itemData in data['items']) {
+          // Parse and extract the necessary data from each item
+          int productId = itemData['product_id'] ?? 0;
+          String name = itemData['name'] ?? 'No Name';
+          String category = categoryName;
+
+          String netQty = itemData['quantity']?.toString() ?? '1';
+          String discount = (5 + Random().nextInt(16)).toString(); // Random int from 5 to 20
+
+          String mrp = itemData['mrp']?.toString() ?? '0';
+          String offerPrice = (double.parse(mrp) * (1 - double.parse(discount) / 100)).toStringAsFixed(2);
+
+
+          List<String> imageUrls = List<String>.from(itemData['image_url'] ?? []);
+          Map<String, dynamic> productHighlights = itemData['highlights'] ?? {};
+          Map<String, dynamic> productInformation = {};
+          if (itemData['description'] is String) {
+            try {
+              productInformation = jsonDecode(itemData['description']);
+            } catch (e) {
+              print("Failed to parse description: $e");
+            }
+          } else if (itemData['description'] is Map<String, dynamic>) {
+            productInformation = itemData['description'];
+          }
+
+          bool toNotify = false;
+          int inStock = itemData['stock_available'];
+          double rating = double.parse((4.1 + Random().nextDouble() * 0.9).toStringAsFixed(1));
+          int cartQuantity = 0;
+
+          // Create an Item object from the extracted data
+          Item item = Item(
+            productId: productId,
+            name: name,
+            category: category,
+            imageUrls: imageUrls,
+            productHighlights: productHighlights,
+            productInformation: productInformation,
+            offerPrice: offerPrice,
+            discount: discount,
+            netQty: netQty,
+            mrp: mrp,
+            inStock: inStock,
+            cartQuantity: cartQuantity,
+            toNotify: toNotify,
+            rating: rating
+          );
+
+          items.add(item); // Add the item to the list
+        }
+
+        return items; // Return the list of items
+      } else {
+        throw Exception('Unexpected response format: Expected "items" list');
+      }
     } else {
-      print('Error ${response.statusCode}: ${response.body}');
+      throw Exception('Error ${response.statusCode}: ${response.body}');
     }
   } catch (e) {
-    print('Exception occurred: $e');
+    throw Exception('Exception occurred: $e');
   }
 }

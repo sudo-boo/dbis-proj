@@ -67,7 +67,7 @@ class _ItemCardState extends State<ItemCard> {
                             child: Opacity(
                               opacity: item.inStock!=0 ? 1.0 : 0.5,
                               child: CachedNetworkImage(
-                                imageUrl: item.imageUrls[0],
+                                imageUrl: item.imageUrls[0].trim(),
                                 imageBuilder: (context, imageProvider) => Container(
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
@@ -76,7 +76,11 @@ class _ItemCardState extends State<ItemCard> {
                                     ),
                                   ),
                                 ),
-                                placeholder: (context, url) => CircularProgressIndicator(),
+                                placeholder: (context, url) => SizedBox(
+                                    height: 30,
+                                    width: 30,
+                                    child: CircularProgressIndicator()
+                                ),
                                 errorWidget: (context, url, error) => Icon(Icons.error),
                               ),
                             ),

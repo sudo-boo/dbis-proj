@@ -1,3 +1,4 @@
+import 'package:customer/data/repository/local_storage_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/apis/get_update_profile.dart';
 
@@ -40,7 +41,8 @@ class _ProfilePageState extends State<ProfilePage> {
     super.dispose();
   }
 
-  final EdgeInsets commonPadding = const EdgeInsets.symmetric(horizontal: 24, vertical: 12);
+  final EdgeInsets commonPadding = const EdgeInsets.symmetric(
+      horizontal: 24, vertical: 12);
 
   Widget _buildLabeledTextField({
     required String label,
@@ -75,7 +77,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide.none,
               ),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 16, vertical: 16),
             ),
           ),
         ],
@@ -83,28 +86,45 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
+  void _handleLogout() {
+    print('User logging out');
+    eraseUserData();
+    // Show a confirmation or navigate to login screen
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Logged out')),
+    );
+    Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      resizeToAvoidBottomInset: true, // Important for keyboard behavior
+      resizeToAvoidBottomInset: true,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: const Text(
+          'Edit Profile',
+          style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout, color: Colors.black87),
+            onPressed: _handleLogout,
+            tooltip: 'Logout',
+          ),
+        ],
+      ),
       body: SafeArea(
         child: Column(
           children: [
             Expanded(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.only(bottom: 16), // Extra padding to avoid keyboard overlap
+                padding: const EdgeInsets.only(bottom: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
-                      child: Row(
-                        children: [
-                          // AppBar content if any
-                        ],
-                      ),
-                    ),
                     _buildLabeledTextField(
                       label: 'Name',
                       controller: usernameController,
@@ -153,7 +173,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     print('Saved: $username, $phone, $email, $address');
 
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Profile saved successfully')),
+                      const SnackBar(
+                          content: Text('Profile saved successfully')),
                     );
                   },
                   child: const Text('Submit'),

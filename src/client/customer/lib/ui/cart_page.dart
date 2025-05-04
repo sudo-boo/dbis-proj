@@ -153,7 +153,7 @@ class _CartPageState extends State<CartPage> {
                             ],
                           ),
                           SizedBox(height: 12),
-                          ItemInRows(category: "Cooking Essentials", displayCategoryTitle: false),
+                          // ItemInRows(category: "Cooking Essentials", displayCategoryTitle: false),
                         ],
                       ),
                     ),

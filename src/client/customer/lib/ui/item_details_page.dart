@@ -67,7 +67,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                     itemBuilder: (context, index) {
                       // return Image.network(item.imageUrls[index], fit: BoxFit.cover);
                       return CachedNetworkImage(
-                        imageUrl: item.imageUrls[index],
+                        imageUrl: item.imageUrls[index].trim(),
                         imageBuilder: (context, imageProvider) => Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
@@ -76,7 +76,11 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                             ),
                           ),
                         ),
-                        placeholder: (context, url) => CircularProgressIndicator(),
+                        placeholder: (context, url) => SizedBox(
+                          height: 30,
+                          width: 30,
+                          child: CircularProgressIndicator()
+                        ),
                         errorWidget: (context, url, error) => Icon(Icons.error),
                       );
                     },
@@ -108,7 +112,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                   onToggle: () => setState(() => showAllInfo = !showAllInfo),
                 ),
                 const SizedBox(height: 16),
-                ItemInRows(category: item.category, displayCategoryTitle: true),
+                // ItemInRows(category: item.category, displayCategoryTitle: true),
                 const SizedBox(height: 100),
               ],
             ),

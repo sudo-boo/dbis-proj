@@ -32,7 +32,7 @@ class SplashScreenState extends State<SplashScreen> {
           // If user_email exists, navigate to /home
           print(userEmail);
           print(userToken);
-          if(await validateToken(userToken!)){
+          if(await validateToken(userToken)){
             Navigator.pushReplacementNamed(context, '/navbar');
           }
           else{

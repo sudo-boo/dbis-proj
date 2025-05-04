@@ -1,8 +1,9 @@
-import 'package:customer/data/repository/local_storage_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:customer/data/repository/local_storage_manager.dart';
 import 'package:customer/commons/item_in_rows.dart';
 
 import '../apis/get_products.dart';
+import '../models/category.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,61 +13,61 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<String> categories = const [
-    "Fruits & Vegetables",
-    "Cooking Essentials",
-    "Munchies",
-    "Dairy, Bread & Batter",
-    "Beverages",
-    "Packaged Food",
-    "Ice Cream & Desserts",
-    "Chocolates & Candies",
-    "Meats, Fish & Eggs",
-    "Biscuits",
-    "Personal Care",
-    "Paan Corner",
-    "Home & Cleaning",
-    "Health & Hygiene",
-    "Curated For You"
-  ];
+  List<Category> categories = [];
+  bool isLoading = true;
 
   @override
   void initState() {
     super.initState();
-    _callTheAPIs();
+    _populateCategories();
   }
 
-  void _callTheAPIs() async {
-    print("call function start");
+  Future<void> _populateCategories() async {
+    try {
+      print("call function start");
 
-    // Await the token and userId retrieval
-    String? token = await getUserToken();
-    String? userId = await getUserId();
+      String? token = await getUserToken();
+      String? userId = await getUserId();
 
-    if (token == null || userId == null) {
-      print("Token or User ID is null");
-      return;
+      if (token == null || userId == null) {
+        print("Token or User ID is null");
+        return;
+      }
+
+      print("Token: $token");
+      print("User ID: $userId");
+
+      final fetchedCategories = await getCategories(token: token);
+      setState(() {
+        categories = fetchedCategories;
+        isLoading = false;
+      });
+      print("Categories fetched: ${categories.length}");
+      for (var category in categories) {
+        print('Category ID: ${category.categoryId}, Name: ${category.name}');
+      }
+
+      // Example: Fetch products for the first category
+      if (categories.isNotEmpty) {
+        String categoryId = categories[1].categoryId.toString();
+        String categoryName = categories[1].name.toString();
+        String requestQuantity = '10';
+        String batchNo = '1';
+
+        await getProductsByCategory(
+          token: token,
+          categoryId: categoryId,
+          categoryName: categoryName,
+          requestQuantity: requestQuantity,
+          batchNo: batchNo,
+          userId: userId,
+        );
+      }
+    } catch (e) {
+      print("Error while calling APIs: $e");
+      setState(() => isLoading = false);
     }
-
-    print("Token: $token");
-    print("User ID: $userId");
-
-    await getCategories(token: token);
-    print("Categories fetched");
-
-    String categoryId = '1';
-    String requestQuantity = '10';
-    String batchNo = '1';
-
-    await getProductsByCategory(
-      token: token,
-      categoryId: categoryId,
-      requestQuantity: requestQuantity,
-      batchNo: batchNo,
-      userId: userId,
-    );
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -74,11 +75,14 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Home Page'),
       ),
-      body: SingleChildScrollView(
+      body: isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : SingleChildScrollView(
         child: Column(
           children: categories
               .map((category) => ItemInRows(
-            category: category,
+            category: category.categoryId.toString(),
+            categoryName: category.name,
             displayCategoryTitle: true,
           ))
               .toList(),
