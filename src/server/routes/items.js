@@ -86,6 +86,54 @@ router.post('/items-by-category', verifyToken, async (req, res) => {
 
 
 
+router.post('/items-by-category-vendor', verifyToken, async (req, res) => {
+    const { category_id, request_quantity, batch_no, vendor_id } = req.body;
+    console.log(category_id, request_quantity, batch_no, user_id);
+    const page = parseInt(batch_no) || 1;
+    const limit = request_quantity ? parseInt(request_quantity) : 50; // Default to 10 if not provided
+    const offset = (page - 1) * limit;
+
+    try {
+        const items = await Item.findAll({
+            where: { category: parseInt(category_id) },
+            limit,
+            offset,
+        });
+
+        // code to add the quantity of items in cart to the items
+        items.forEach(item => {
+                item.quantity = 0;
+        });
+
+        // to each of the item, append the stock available in availability table from the nearest vendor found
+        const availability = await Availability.findAll({
+            where: { vendor_id: vendor_id },
+            attributes: ['product_id', 'quantity'],
+        });
+        items.forEach(item => {
+            const availabilityItem = availability.find(avail => avail.product_id === item.product_id);
+            if (availabilityItem) {
+                item.dataValues.stock_available = availabilityItem.quantity;
+            } else {
+                item.dataValues.stock_available = 0;
+            }
+        });
+
+        res.json({
+            page,
+            category_id,
+            count: items.length,
+            items
+        });
+
+    } catch (err) {
+        console.error('Error fetching items by category:', err);
+        res.status(500).json({ error: 'Something went wrong' });
+    }
+});
+
+
+
 
 
 

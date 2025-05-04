@@ -10,7 +10,7 @@ const Vendor = sequelize.define('Vendor', {
     },
     name: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     location: {
         type: DataTypes.GEOGRAPHY('POINT', 4326),
@@ -18,11 +18,11 @@ const Vendor = sequelize.define('Vendor', {
     },
     address: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     phone: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     email: {
         type: DataTypes.STRING,
@@ -33,11 +33,11 @@ const Vendor = sequelize.define('Vendor', {
     },
     opening_hours: {
         type: DataTypes.JSON,
-        allowNull: false
+        allowNull: true
     },
     available: {
         type: DataTypes.BOOLEAN,
-        allowNull: false
+        allowNull: true
     },
 }, {
     tableName: 'vendor',

@@ -6,10 +6,11 @@ const router = express.Router();
 
 const verifyToken = require('../middleware/auth');
 
-const { Orders, Cart, Item, Users, deliveryBoy } = require('../models');
+const { Orders, Cart, Item, Users, deliveryBoy, Availability } = require('../models');
 const getNearestVendor = require('../commons/get_nearest_vendor');
 const getDistanceFromLatLonInKm = require('../commons/get_distance_in_km');
 const { or } = require('sequelize');
+const getNearestDeliveryBoy = require('../commons/get_nearest_delivery_boy');
 
 
 
@@ -50,22 +51,26 @@ router.post('/place-order', verifyToken, async (req, res) => {
         }
 
         // Get nearest vendor to the user
-        const userLatitude = parseFloat(user.latitude);
-        const userLongitude = parseFloat(user.longitude);
-        const vendor = (await getNearestVendor(userLatitude, userLongitude, 10))[0];
+        const userLatitude = parseFloat(user.longitude);
+        const userLongitude = parseFloat(user.latitude);
+        const vendor = (await getNearestVendor(userLongitude, userLatitude, 10))[0];
         if (!vendor) {
             return res.status(404).json({ message: 'No vendor found nearby' });
         }
         const vendorId = vendor.vendor_id;
-        const vendorLocation = vendor.location;
-        const vendorLatitude = vendorLocation.latitude;
-        const vendorLongitude = vendorLocation.longitude;
-        const delivery_boy = (await getNearestDeliveryBoy(userLatitude, userLongitude, 10))[0];
-        const deliveryId = delivery_boy.d_boy_id;
-        const deliveryLatitude = delivery_boy.location.latitude;
-        const deliveryLongitude = delivery_boy.location.longitude;
+        const vendorLatitude = vendor.getDataValue('latitude');
+        const vendorLongitude = vendor.getDataValue('longitude');
+        const delivery_boy = (await getNearestDeliveryBoy(userLongitude, userLatitude, 10))[0];
+        if (!delivery_boy) {
+            return res.status(400).json({error: "No delivery boy found nearby"});
+        }
+        const deliveryId = delivery_boy.getDataValue('d_boy_id');
+        const deliveryLatitude = delivery_boy.getDataValue('latitude');
+        const deliveryLongitude = delivery_boy.getDataValue('longitude');
 
         const now = new Date();
+        console.log(now);
+        console.log(now.getDate());
 
         const minutes1 = now.getMinutes().toString().padStart(2, '0');
         const seconds1 = now.getSeconds().toString().padStart(2, '0');
@@ -122,8 +127,9 @@ router.post('/place-order', verifyToken, async (req, res) => {
         }
 
         // change the availability of delivery boy to be unavailable
-        delivery_boy.availability = false;
-        await delivery_boy.save();
+        const d_boy = await deliveryBoy.findOne({ where: {d_boy_id: deliveryId}});
+        d_boy.available = false;
+        await d_boy.save();
 
         res.status(201).json({ message: 'Order placed successfully', order });
     } catch (error) {

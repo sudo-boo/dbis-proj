@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 require('dotenv').config();
 
-const deliveryBoy = sequelize.define('deliveryBoy', {
+const deliveryBoy = sequelize.define('delivery_boy', {
     d_boy_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -36,7 +36,7 @@ const deliveryBoy = sequelize.define('deliveryBoy', {
         allowNull: false
     },
 }, {
-    tableName: 'deliveryBoy',
+    tableName: 'delivery_boy',
     timestamps: false
 });
 

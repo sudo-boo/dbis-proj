@@ -19,7 +19,6 @@ router.post('/get-user-profile', verifyToken, async (req, res) => {
     try {
         const user = await Users.findOne({
             where: { email },
-            attributes: ['user_id', 'name', 'email', 'phone_number', 'latitude', 'longitude', 'address'],
         });
 
         if (!user) {
@@ -34,7 +33,6 @@ router.post('/get-user-profile', verifyToken, async (req, res) => {
 });
 
 // get vendor profile
-
 router.post('/get-vendor-profile', verifyToken, async (req, res) => {
     const {email} = req.body;
     
@@ -92,7 +90,7 @@ router.post('/update-user-profile', verifyToken, async (req, res) => {
         if (name)
         user.name = name;
         if (phone_number)
-        user.phone_number = phone_number;
+        user.phone = phone_number;
         if (latitude)
         user.latitude = latitude;
         if (longitude)
@@ -125,7 +123,7 @@ router.post('/update-vendor-profile', verifyToken, async (req, res) => {
         if (name)
         user.name = name;
         if (phone_number)
-        user.phone_number = phone_number;
+        user.phone = phone_number;
         if (address)
         user.address = address;
         if (availability)
@@ -156,7 +154,7 @@ router.post('/update-delivery-boy-profile', verifyToken, async (req, res) => {
         if (name)
         user.name = name;
         if (phone_number)
-        user.phone_number = phone_number;
+        user.phone = phone_number;
         if (address)
         user.address = address;
         if (availability)
