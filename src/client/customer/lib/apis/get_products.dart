@@ -81,13 +81,13 @@ Future<List<Item>> getProductsByCategory({
       if (data['items'] is List) {
         List<Item> items = [];
 
-        // Loop through the items and print the keys and values of each item
-        for (var item in data['items']) {
-          print('Item Keys and Values:');
-          for (var key in item.keys) {
-            print('$key: ${item[key]}');  // Print each key and its value
-          }
-        }
+        // // Loop through the items and print the keys and values of each item
+        // for (var item in data['items']) {
+        //   print('Item Keys and Values:');
+        //   for (var key in item.keys) {
+        //     print('$key: ${item[key]}');  // Print each key and its value
+        //   }
+        // }
 
 
         // Loop through each item in the 'items' list
@@ -100,9 +100,8 @@ Future<List<Item>> getProductsByCategory({
           String netQty = itemData['quantity']?.toString() ?? '1';
           String discount = (5 + Random().nextInt(16)).toString(); // Random int from 5 to 20
 
-          String mrp = itemData['mrp']?.toString() ?? '0';
-          String offerPrice = (double.parse(mrp) * (1 - double.parse(discount) / 100)).toStringAsFixed(2);
-
+          String mrp = (double.parse(itemData['mrp']!.toString()) * (1 + double.parse(discount) / 100)).toStringAsFixed(2);
+          String offerPrice = itemData['mrp']?.toString() ?? '0';
 
           List<String> imageUrls = List<String>.from(itemData['image_url'] ?? []);
           Map<String, dynamic> productHighlights = itemData['highlights'] ?? {};
@@ -120,7 +119,7 @@ Future<List<Item>> getProductsByCategory({
           bool toNotify = false;
           int inStock = itemData['stock_available'];
           double rating = double.parse((4.1 + Random().nextDouble() * 0.9).toStringAsFixed(1));
-          int cartQuantity = 0;
+          int cartQuantity = itemData['quantity'] ?? 0;
 
           // Create an Item object from the extracted data
           Item item = Item(

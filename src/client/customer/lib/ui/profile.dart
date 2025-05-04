@@ -1,6 +1,7 @@
-import 'package:customer/data/repository/local_storage_manager.dart';
 import 'package:flutter/material.dart';
-import 'package:customer/apis/get_update_profile.dart';
+import 'package:customer/apis/profile_apis.dart';
+import 'package:customer/data/repository/local_storage_manager.dart';
+import '../models/user.dart'; // Assuming this contains the API call for profile
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -10,26 +11,39 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  // call the API to get the user data
+  // Controllers for text fields
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
-  final TextEditingController addressController = TextEditingController();  
+  final TextEditingController addressController = TextEditingController();
 
-  void getuserdata() async {
-    final userData = await getUserProfile();
-    if (userData != null) {
-      usernameController.text = userData['username'] ?? '';
-      phoneController.text = userData['mobile'] ?? '';
-      emailController.text = userData['email'] ?? '';
-      addressController.text = userData['address'] ?? '';
+  // User profile data
+  UserProfile? userData;
+
+  // Fetch user profile data
+  void getUserData() async {
+    try {
+      UserProfile? profile = await getProfile();  // Call getProfile API to fetch data
+      if (profile != null) {
+        setState(() {
+          userData = profile;
+        });
+
+        // Populate the text controllers with the fetched data
+        usernameController.text = profile.name ?? '';
+        phoneController.text = profile.phone ?? '';
+        emailController.text = profile.email!;
+        addressController.text = profile.address ?? '';
+      }
+    } catch (e) {
+      print('Error fetching user data: $e');
     }
   }
-  
+
   @override
   void initState() {
     super.initState();
-    getuserdata();
+    getUserData();  // Fetch user data when the page initializes
   }
 
   @override
@@ -42,8 +56,10 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   final EdgeInsets commonPadding = const EdgeInsets.symmetric(
-      horizontal: 24, vertical: 12);
+      horizontal: 24, vertical: 12
+  );
 
+  // Widget for labeled text field
   Widget _buildLabeledTextField({
     required String label,
     required TextEditingController controller,
@@ -86,6 +102,7 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
+  // Handle logout action
   void _handleLogout() {
     print('User logging out');
     eraseUserData();
@@ -125,6 +142,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // Render the text fields for user data
                     _buildLabeledTextField(
                       label: 'Name',
                       controller: usernameController,
@@ -168,13 +186,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     final phone = phoneController.text;
                     final email = emailController.text;
                     final address = addressController.text;
+
                     // Call the API to update the user profile
                     updateUserProfile(email, username, phone, address);
-                    print('Saved: $username, $phone, $email, $address');
+                    saveIsProfileNotCreated(false);
 
+                    print('Saved: $username, $phone, $email, $address');
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text('Profile saved successfully')),
+                      const SnackBar(content: Text('Profile saved successfully')),
                     );
                   },
                   child: const Text('Submit'),

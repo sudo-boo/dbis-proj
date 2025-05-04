@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:customer/models/item.dart';
 
+import '../apis/cart.dart';
+
 class ItemDetailPage extends StatefulWidget {
   final Item item;
   const ItemDetailPage({super.key, required this.item});
@@ -202,7 +204,11 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
         )
             : item.cartQuantity == 0
             ? ElevatedButton(
-          onPressed: () {
+          onPressed: () async {
+            // Add item to cart when cartQuantity is 0
+            await addToCart(productId: item.productId.toString(), quantity: 1);
+
+            // Update the cart quantity after adding the item
             setState(() {
               item.cartQuantity = 1;
             });
@@ -261,10 +267,16 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                 children: [
                   IconButton(
                     icon: const Icon(Icons.remove, size: 20, color: Colors.white),
-                    onPressed: () {
-                      setState(() {
-                        if (item.cartQuantity > 0) item.cartQuantity--;
-                      });
+                    onPressed: () async {
+                      if (item.cartQuantity > 0) {
+                        setState(() {
+                          item.cartQuantity--;
+                        });
+                        await updateCart(
+                          productId: item.productId.toString(),
+                          quantity: item.cartQuantity,
+                        );
+                      }
                     },
                   ),
                   Text(
@@ -277,10 +289,23 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                   ),
                   IconButton(
                     icon: const Icon(Icons.add, size: 20, color: Colors.white),
-                    onPressed: () {
-                      setState(() {
-                        if (item.cartQuantity < 9) item.cartQuantity++;
-                      });
+                    onPressed: () async {
+                      if (item.cartQuantity == 0) {
+                        // Add item to cart first
+                        await addToCart(productId: item.productId.toString(), quantity: 1); // Add 1 item initially
+                        setState(() {
+                          item.cartQuantity = 1;
+                        });
+                      } else if (item.cartQuantity < item.inStock) {
+                        // Otherwise, just update cart quantity
+                        setState(() {
+                          item.cartQuantity++;
+                        });
+                        await updateCart(
+                          productId: item.productId.toString(),
+                          quantity: item.cartQuantity,
+                        );
+                      }
                     },
                   ),
                 ],
@@ -333,7 +358,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                         color: Colors.red,
                       ),
                       child: Text(
-                        item.offerPrice,
+                        "₹ ${item.offerPrice}",
                         style: const TextStyle(color: Colors.white),
                       ),
                     ),
@@ -350,7 +375,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                         color: Colors.yellow.shade700,
                       ),
                       child: Text(
-                        item.mrp,
+                        "₹ ${item.mrp}",
                         style: const TextStyle(
                           decoration: TextDecoration.lineThrough,
                           fontWeight: FontWeight.bold,

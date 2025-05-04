@@ -9,7 +9,6 @@ import 'package:http/http.dart' as http;
 Future<bool> getOtp(String email) async {
   try {
 
-    // Load the base URL and endpoint from the .env file
     String sendOtpUrl = dotenv.env['GET_OTP_URL'] ?? '';
     // print(sendOtpUrl);
 

@@ -1,11 +1,14 @@
+import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/models/item.dart';
 import 'package:customer/ui/item_details_page.dart';
+import '../apis/cart.dart';
 
 class ItemCard extends StatefulWidget {
   final Item item;
   final double x;
+
   const ItemCard({super.key, required this.item, required this.x});
 
   @override
@@ -13,21 +16,55 @@ class ItemCard extends StatefulWidget {
 }
 
 class _ItemCardState extends State<ItemCard> {
+  Timer? _debounce;
+
+  void _debouncedAddToCart(String productId, int quantity, int previousQuantity) {
+    if (_debounce?.isActive ?? false) _debounce!.cancel();
+
+    _debounce = Timer(const Duration(milliseconds: 500), () async {
+      if (previousQuantity == 0 && quantity > 0) {
+        await addToCart(productId: productId, quantity: quantity);
+      } else {
+        await updateCart(productId: productId, quantity: quantity);
+      }
+    });
+  }
+
+
 
   void increment() {
-    if (widget.item.cartQuantity < 9) {
+    if (widget.item.cartQuantity < widget.item.inStock) {
+      final previousQuantity = widget.item.cartQuantity;
       setState(() {
         widget.item.cartQuantity++;
       });
+      _debouncedAddToCart(
+        widget.item.productId.toString(),
+        widget.item.cartQuantity,
+        previousQuantity,
+      );
     }
   }
 
   void decrement() {
     if (widget.item.cartQuantity > 0) {
+      final previousQuantity = widget.item.cartQuantity;
       setState(() {
         widget.item.cartQuantity--;
       });
+      _debouncedAddToCart(
+        widget.item.productId.toString(),
+        widget.item.cartQuantity,
+        previousQuantity,
+      );
     }
+  }
+
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    super.dispose();
   }
 
   @override
@@ -35,6 +72,7 @@ class _ItemCardState extends State<ItemCard> {
     final screenWidth = MediaQuery.of(context).size.width;
     final item = widget.item;
     final x = widget.x;
+
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -65,27 +103,27 @@ class _ItemCardState extends State<ItemCard> {
                           AspectRatio(
                             aspectRatio: 1,
                             child: Opacity(
-                              opacity: item.inStock!=0 ? 1.0 : 0.5,
+                              opacity: item.inStock != 0 ? 1.0 : 0.5,
                               child: CachedNetworkImage(
                                 imageUrl: item.imageUrls[0].trim(),
                                 imageBuilder: (context, imageProvider) => Container(
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
-                                        image: imageProvider,
-                                        fit: BoxFit.cover,
+                                      image: imageProvider,
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
-                                placeholder: (context, url) => SizedBox(
-                                    height: 30,
-                                    width: 30,
-                                    child: CircularProgressIndicator()
+                                placeholder: (context, url) => const SizedBox(
+                                  height: 30,
+                                  width: 30,
+                                  child: CircularProgressIndicator(),
                                 ),
-                                errorWidget: (context, url, error) => Icon(Icons.error),
+                                errorWidget: (context, url, error) => const Icon(Icons.error),
                               ),
                             ),
                           ),
-                          if (item.inStock==0)
+                          if (item.inStock == 0)
                             Positioned.fill(
                               child: Container(
                                 alignment: Alignment.center,
@@ -115,14 +153,14 @@ class _ItemCardState extends State<ItemCard> {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                         decoration: BoxDecoration(
-                          color: item.inStock!=0 ? Colors.yellow.shade500 : Colors.grey.shade200,
+                          color: item.inStock != 0 ? Colors.yellow.shade500 : Colors.grey.shade200,
                           borderRadius: BorderRadius.circular(4),
                           border: Border.all(color: Colors.black),
                         ),
                         child: Row(
                           children: [
                             Text(
-                              item.offerPrice,
+                              "₹ ${item.offerPrice}",
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -130,7 +168,7 @@ class _ItemCardState extends State<ItemCard> {
                             ),
                             const SizedBox(width: 6),
                             Text(
-                              item.mrp,
+                              "₹ ${item.mrp}",
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12,
@@ -149,7 +187,7 @@ class _ItemCardState extends State<ItemCard> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Text(
-                            item.discount,
+                            "${item.discount}% off",
                             style: const TextStyle(color: Colors.white, fontSize: 10),
                           ),
                         ),
@@ -160,99 +198,112 @@ class _ItemCardState extends State<ItemCard> {
                   bottom: 5,
                   right: 5,
                   child: GestureDetector(
-                    behavior: HitTestBehavior.translucent, // Important
-                    onTap: () {}, // Prevent tap from propagating
-                      child: SizedBox(
-                        width: 80,
-                        height: 32,
-                        child: item.inStock!=0
-                            ? (item.cartQuantity == 0
-                            ? ElevatedButton(
-                          onPressed: () {
-                            setState(() {
-                              item.cartQuantity = 1;
-                            });
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            foregroundColor: Colors.green,
-                            side: const BorderSide(color: Colors.green),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            padding: EdgeInsets.zero,
-                            textStyle: const TextStyle(fontSize: 12),
-                          ),
-                          child: const Text('ADD'),
-                        )
-                            : Container(
-                          decoration: BoxDecoration(
-                            color: Colors.green,
+                    behavior: HitTestBehavior.translucent,
+                    onTap: () {},
+                    child: SizedBox(
+                      width: 80,
+                      height: 32,
+                      child: item.inStock != 0
+                          ? (item.cartQuantity == 0
+                          ? ElevatedButton(
+                        onPressed: () {
+                          final previousQuantity = item.cartQuantity;
+                          setState(() {
+                            item.cartQuantity = 1;
+                          });
+                          _debouncedAddToCart(
+                            item.productId.toString(),
+                            item.cartQuantity,
+                            previousQuantity,
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.green,
+                          side: const BorderSide(color: Colors.green),
+                          shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              GestureDetector(
-                                onTap: () {
-                                  if (item.cartQuantity == 1) {
-                                    setState(() {
-                                      item.cartQuantity = 0;
-                                    });
-                                  } else {
-                                    decrement();
-                                  }
-                                },
-                                child: const Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 4),
-                                  child: Icon(Icons.remove, color: Colors.white, size: 14),
-                                ),
-                              ),
-                              Text(
-                                '${item.cartQuantity}',
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () {
-                                  if (item.cartQuantity < item.inStock) {
-                                    increment();
-                                  }
-                                },
-                                child: const Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 4),
-                                  child: Icon(Icons.add, color: Colors.white, size: 14),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ))
-                            : ElevatedButton.icon(
-                          onPressed: () {
-                            setState(() {
-                              item.toNotify = !item.toNotify;
-                            });
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            foregroundColor: Colors.green,
-                            side: const BorderSide(color: Colors.green),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            padding: EdgeInsets.symmetric(horizontal: 4),
-                            textStyle: const TextStyle(fontSize: 14),
-                          ),
-                          icon: Icon(
-                            item.toNotify ? Icons.notifications_off : Icons.notifications,
-                            size: 16,
-                          ),
-                          label: Text(item.toNotify ? 'Turn off' : 'Notify'),
+                          padding: EdgeInsets.zero,
+                          textStyle: const TextStyle(fontSize: 12),
                         ),
+                        child: const Text('ADD'),
+                      )
+                          : Container(
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                if (item.cartQuantity == 1) {
+                                  final previousQuantity = item.cartQuantity;
+                                  setState(() {
+                                    item.cartQuantity = 0;
+                                  });
+                                  _debouncedAddToCart(
+                                    item.productId.toString(),
+                                    item.cartQuantity,
+                                    previousQuantity,
+                                  );
+
+                                } else {
+                                  decrement();
+                                }
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 4),
+                                child: Icon(Icons.remove, color: Colors.white, size: 14),
+                              ),
+                            ),
+                            Text(
+                              '${item.cartQuantity}',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                if (item.cartQuantity < item.inStock) {
+                                  increment();
+                                }
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 4),
+                                child: Icon(Icons.add, color: Colors.white, size: 14),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ))
+                          : ElevatedButton.icon(
+                        onPressed: () {
+                          setState(() {
+                            item.toNotify = !item.toNotify;
+                          });
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.green,
+                          side: const BorderSide(color: Colors.green),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          textStyle: const TextStyle(fontSize: 14),
+                        ),
+                        icon: Icon(
+                          item.toNotify ? Icons.notifications_off : Icons.notifications,
+                          size: 16,
+                        ),
+                        label: Text(item.toNotify ? 'Turn off' : 'Notify'),
                       ),
+                    ),
                   ),
                 ),
               ],
@@ -276,13 +327,12 @@ class _ItemCardState extends State<ItemCard> {
                   child: Row(
                     children: const [
                       Icon(Icons.star, color: Colors.green, size: 14),
-                      // SizedBox(width: 2),
                       Text('4.6 (450)', style: TextStyle(fontSize: 10)),
                     ],
                   ),
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),

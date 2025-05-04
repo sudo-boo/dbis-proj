@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:customer/models/item.dart';
 
-class OrderConfirmationTile extends StatelessWidget {
+class ReadOnlyCartItemTile extends StatelessWidget {
   final Item item;
   final int quantity;
 
-  const OrderConfirmationTile({
+  const ReadOnlyCartItemTile({
     super.key,
     required this.item,
     required this.quantity,
@@ -17,63 +17,71 @@ class OrderConfirmationTile extends StatelessWidget {
     double totalPrice = price * quantity;
 
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        color: Colors.purple.shade50,
-        border: Border.all(color: Colors.green.shade100, width: 1.2),
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.purple.shade100.withOpacity(0.2),
-            blurRadius: 4,
-            offset: const Offset(0, 2),
-          ),
-        ],
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10.0),
+        boxShadow: const [BoxShadow(blurRadius: 0)],
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Image thumbnail
+          // Image
           ClipRRect(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(8.0),
             child: Image.network(
-              item.imageUrls.isNotEmpty ? item.imageUrls[0] : '',
-              width: 50,
-              height: 50,
+              item.imageUrls.isNotEmpty ? item.imageUrls[0].trim() : '',
+              width: 50.0,
+              height: 50.0,
               fit: BoxFit.cover,
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 8.0),
 
-          // Product details and quantity
+          // Product Name and Net Qty
           Expanded(
+            flex: 4,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   item.name,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.deepPurple.shade800,
-                  ),
+                  style: const TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 4.0),
                 Text(
-                  'Quantity: $quantity',
-                  style: TextStyle(color: Colors.grey.shade700),
+                  item.netQty,
+                  style: const TextStyle(fontSize: 12.0, color: Colors.grey),
                 ),
               ],
             ),
           ),
+          const SizedBox(width: 8.0),
 
-          // Total price
-          Text(
-            '₹${totalPrice.toStringAsFixed(0)}',
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.green,
+          // Quantity Display (read-only)
+          Container(
+            width: 40,
+            alignment: Alignment.center,
+            child: Text(
+              'x$quantity',
+              style: const TextStyle(fontSize: 16.0),
+            ),
+          ),
+
+          // Price
+          Container(
+            width: 60,
+            alignment: Alignment.centerRight,
+            child: Text(
+              '₹${totalPrice.toStringAsFixed(0)}',
+              style: const TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.green,
+              ),
             ),
           ),
         ],

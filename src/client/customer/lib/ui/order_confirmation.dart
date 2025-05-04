@@ -1,4 +1,4 @@
-
+import 'package:customer/apis/orders_api.dart';
 import 'package:flutter/material.dart';
 import 'package:customer/models/order.dart';
 import 'package:customer/models/item.dart';
@@ -18,10 +18,10 @@ class OrderConfirmationPage extends StatelessWidget {
   final List<Item> items;
 
   const OrderConfirmationPage({
-    Key? key,
+    super.key,
     required this.order,
     required this.items,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,7 @@ class OrderConfirmationPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  ...items.map((it) => OrderConfirmationTile(
+                  ...items.map((it) => ReadOnlyCartItemTile(
                     item: it,
                     quantity: it.cartQuantity,
                   )),
@@ -77,6 +77,17 @@ class OrderConfirmationPage extends StatelessWidget {
                     'Total',
                     '₹${total.toStringAsFixed(0)}',
                     isBold: true,
+                  ),
+                  const SizedBox(height: 12),
+
+                  // Cash on delivery message
+                  const Text(
+                    'You have Cash on Delivery',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green,
+                    ),
                   ),
                 ],
               ),
@@ -155,6 +166,7 @@ class OrderConfirmationPage extends StatelessWidget {
   void _confirmOrder(BuildContext context, double total) {
     final now = DateTime.now();
     final formatted = DateFormat('dd MMM yyyy, hh:mm a').format(now);
+    placeOrder(context);
 
     showDialog(
       context: context,
@@ -169,6 +181,15 @@ class OrderConfirmationPage extends StatelessWidget {
             Text('Date: $formatted'),
             const SizedBox(height: 6),
             Text('Total Paid: ₹${total.toStringAsFixed(0)}'),
+            const SizedBox(height: 6),
+            // Cash on delivery message in dialog
+            const Text(
+              'Cash on Delivery',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.green,
+              ),
+            ),
           ],
         ),
         actions: [
@@ -178,7 +199,7 @@ class OrderConfirmationPage extends StatelessWidget {
               Navigator.of(context).popUntil((route) => route.isFirst);
               Navigator.of(context).pushNamedAndRemoveUntil(
                 '/',
-                (route) => false,
+                    (route) => false,
               );
             },
             child: const Text('OK'),

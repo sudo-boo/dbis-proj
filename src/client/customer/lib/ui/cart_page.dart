@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:customer/apis/cart.dart';
 import 'package:customer/commons/item_in_rows.dart';
 import 'package:customer/models/order.dart';
 import 'package:customer/ui/order_confirmation.dart';
@@ -16,24 +17,32 @@ class CartPage extends StatefulWidget {
 }
 
 class _CartPageState extends State<CartPage> {
-  List<Item> cartItems = []; // Store cart items
-  bool isLoading = true; // Track loading state
+  List<Item> cartItems = [];
+  bool isLoading = true;
 
-  // Load the cart items when the page is initialized
   @override
   void initState() {
     super.initState();
-    _loadCartItems();
+    _loadCartItems(); // Load cart from API
+    for(var i in cartItems){
+      print(i);
+    }
   }
 
-  // Load demo data from DataLoader class
   Future<void> _loadCartItems() async {
-    DataLoader dataLoader = DataLoader();
-    List<Item> items = await dataLoader.loadDemoData();
-    setState(() {
-      cartItems = items; // Update the cart items with the loaded data
-      isLoading = false; // Data is loaded, stop the loading indicator
-    });
+    try {
+      List<Item> items = await getCart(); // Fetch from API
+      setState(() {
+        cartItems = items;
+        isLoading = false;
+      });
+    } catch (e) {
+      print("Error loading cart: $e");
+      setState(() {
+        isLoading = false;
+      });
+      // Optionally show an error message to the user
+    }
   }
 
   @override
@@ -65,7 +74,7 @@ class _CartPageState extends State<CartPage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    decoration: BoxDecoration( 
+                    decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -153,7 +162,7 @@ class _CartPageState extends State<CartPage> {
                             ],
                           ),
                           SizedBox(height: 12),
-                          // ItemInRows(category: "Cooking Essentials", displayCategoryTitle: false),
+                          ItemInRows(category: "2", displayCategoryTitle: false, categoryName: "Cooking Essentials")
                         ],
                       ),
                     ),

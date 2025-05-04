@@ -1,7 +1,8 @@
+import 'dart:convert';
+import 'package:customer/data/repository/local_storage_manager.dart'; // For getting token and userId
 import 'package:flutter/material.dart';
-import 'package:customer/models/order.dart' as model_order;
-import 'package:customer/data/repository/demo_order_loader.dart';
-import 'package:customer/data/repository/demo_data_loader.dart';
+import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class CustomerOrderHistoryPage extends StatefulWidget {
   const CustomerOrderHistoryPage({super.key});
@@ -19,54 +20,73 @@ class _CustomerOrderHistoryPageState extends State<CustomerOrderHistoryPage> {
     _loadOrders();
   }
 
+  Future<List<_CustomerOrder>> getActiveOrders() async {
+    String? token = await getUserToken();
+    String? userId = await getUserId();
+
+    final url = Uri.parse(dotenv.env['GET_ACTIVE_ORDER']!); // Load from .env
+
+    final headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer $token',
+    };
+
+    final body = jsonEncode({
+      'user_id': userId,
+    });
+
+    try {
+      final response = await http.post(url, headers: headers, body: body);
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        print('Active Orders Response: $data');
+
+        if (data is Map<String, dynamic> && data.containsKey('orders')) {
+          List<dynamic> ordersJson = data['orders'];
+          return ordersJson.map<_CustomerOrder>((order) {
+            var rawItems = order['items'];
+            List<dynamic> itemsJson = rawItems is List ? rawItems : [];
+
+            List<_CustomerOrderItem> items = itemsJson.map<_CustomerOrderItem>((item) {
+              return _CustomerOrderItem(
+                name: item['name'] ?? "Product ${item['product_id']}",
+                quantity: item['quantity'],
+                price: (item['price'] as num).toDouble(),
+              );
+            }).toList();
+
+            return _CustomerOrder(
+              id: order['order_id'].toString(),
+              date: order['order_date'] ?? "Unknown date",
+              time: order['order_time'] ?? "Unknown time",
+              eta: order['eta'] ?? "Unknown ETA",
+              status: order['status'] ?? "Unknown",
+              totalPrice: (order['total_price'] as num).toDouble(),
+              items: items,
+            );
+          }).toList();
+        } else {
+          print("No 'orders' key found or unexpected response format.");
+          return [];
+        }
+      } else {
+        print('Failed to fetch active orders: ${response.statusCode}');
+        print(response.body);
+        return [];
+      }
+    } catch (e) {
+      print('Error fetching active orders: $e');
+      return [];
+    }
+  }
+
   Future<void> _loadOrders() async {
     print("Loading orders...");
-
-    final loader = OrderDataLoader();
-    final itemLoader = DataLoader();
-
-    List<model_order.Order> demoOrders = await loader.loadDemoData();
-    print("Demo orders loaded: ${demoOrders.length}");
-    print("Type of demoOrders: ${demoOrders.runtimeType}");
-
-    List<_CustomerOrder> uiOrders = [];
-    for (final backendOrder in demoOrders) {
-      print("Processing order: ${backendOrder.orderId}");
-      print("Type of backendOrder: ${backendOrder.runtimeType}");
-
-      final itemsFutures = backendOrder.products.entries.map((entry) async {
-        final productId = int.tryParse(entry.key) ?? 0;
-        final quantity = int.tryParse(entry.value) ?? 1;
-        final item = await itemLoader.getSingleItem(productId);
-        print("Processing item: ${item?.name ?? 'Unknown'}");
-
-        return _CustomerOrderItem(
-          name: item!.name,
-          quantity: quantity,
-          price: item.offerPrice.isNotEmpty
-              ? double.tryParse(item.offerPrice.replaceAll('₹', '').trim()) ?? 0.0
-              : 0.0,
-        );
-      }).toList();
-
-      final items = await Future.wait(itemsFutures);
-      final totalPrice = items.fold(0.0, (sum, item) => sum + (item.price * item.quantity));
-
-      print("Order ID: ${backendOrder.orderId}, Total price: $totalPrice");
-
-      uiOrders.add(_CustomerOrder(
-        id: backendOrder.orderId.toString(),
-        date: backendOrder.timeOfDelivery,
-        totalPrice: totalPrice,
-        items: items,
-      ));
-    }
-
-    print("Orders processed: ${uiOrders.length}");
-    print("Type of uiOrders: ${uiOrders.runtimeType}");
+    List<_CustomerOrder> orders = await getActiveOrders();
 
     setState(() {
-      _orders = uiOrders;
+      _orders = orders;
     });
   }
 
@@ -93,12 +113,15 @@ class _CustomerOrderHistoryPageState extends State<CustomerOrderHistoryPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "Order ID: ${order.id}",
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                  ),
+                  Text("Order ID: ${order.id}",
+                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                   const SizedBox(height: 4),
-                  Text("Date: ${order.date}", style: TextStyle(color: Colors.grey.shade600)),
+                  Text("Date: ${order.date} | Time: ${order.time}",
+                      style: TextStyle(color: Colors.grey.shade600)),
+                  const SizedBox(height: 4),
+                  Text("ETA: ${order.eta}", style: TextStyle(color: Colors.blue.shade700)),
+                  const SizedBox(height: 4),
+                  Text("Status: ${order.status}", style: TextStyle(fontWeight: FontWeight.w500)),
                   const SizedBox(height: 8),
                   Text("Total: ₹${order.totalPrice.toStringAsFixed(2)}",
                       style: TextStyle(fontSize: 15, color: Colors.green.shade800)),
@@ -140,12 +163,18 @@ class _CustomerOrderItem {
 class _CustomerOrder {
   final String id;
   final String date;
+  final String time;
+  final String eta;
+  final String status;
   final double totalPrice;
   final List<_CustomerOrderItem> items;
 
   _CustomerOrder({
     required this.id,
     required this.date,
+    required this.time,
+    required this.eta,
+    required this.status,
     required this.totalPrice,
     required this.items,
   });
