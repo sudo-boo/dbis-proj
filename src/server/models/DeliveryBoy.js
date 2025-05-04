@@ -2,15 +2,15 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 require('dotenv').config();
 
-const Vendor = sequelize.define('Vendor', {
-    vendor_id: {
+const deliveryBoy = sequelize.define('delivery_boy', {
+    d_boy_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
     name: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     location: {
         type: DataTypes.GEOGRAPHY('POINT', 4326),
@@ -18,11 +18,11 @@ const Vendor = sequelize.define('Vendor', {
     },
     address: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     phone: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     email: {
         type: DataTypes.STRING,
@@ -31,18 +31,14 @@ const Vendor = sequelize.define('Vendor', {
             isEmail: true
         }
     },
-    opening_hours: {
-        type: DataTypes.JSON,
-        allowNull: true
-    },
     available: {
         type: DataTypes.BOOLEAN,
-        allowNull: true
+        allowNull: false
     },
 }, {
-    tableName: 'vendor',
+    tableName: 'delivery_boy',
     timestamps: false
 });
 
 
-module.exports = Vendor;
+module.exports = deliveryBoy;

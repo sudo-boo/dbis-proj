@@ -28,6 +28,22 @@ const Orders = sequelize.define('Orders', {
             min: 0
         }
     },
+    vendor_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'vendor',
+            key: 'vendor_id'
+        }
+    },
+    d_boy_id: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        references: {
+            model: 'delivery_boy',
+            key: 'd_boy_id'
+        }
+    },
     order_date: {
         type: DataTypes.DATE,
         allowNull: false,
@@ -48,12 +64,17 @@ const Orders = sequelize.define('Orders', {
     },
     transaction_id: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
             model: 'payments',
             key: 'payment_id'
         }
-    }
+    },
+    status: {
+        type: DataTypes.ENUM('ordered', 'prepared', 'out for delivery', 'delivered'),
+        allowNull: false,
+        defaultValue: 'ordered'
+    },
 }, {
     tableName: 'orders',
     timestamps: false,

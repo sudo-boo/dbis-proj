@@ -2,7 +2,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const sequelize = require('./config/database');
-const { Item, Item_Category, Vendor, Availability, Users, Orders, Cart, Payments } = require('./models');
+const { Item, Item_Category, Vendor, Availability, Users, Orders, Cart, Payments, deliveryBoy } = require('./models');
 
 dotenv.config();
 const app = express();
@@ -22,6 +22,7 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
         // await Item_Category.sync({ force: true });
         // await Item.sync({ force: true });
         // await Vendor.sync({ force: true });
+        // await deliveryBoy.sync({ force: true });
         // await Availability.sync({ force: true });
         // await Users.sync({ force: true });
         // await Cart.sync({ force: true });
@@ -32,6 +33,7 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
         await Item_Category.sync();
         await Item.sync();
         await Vendor.sync();
+        await deliveryBoy.sync();
         await Availability.sync();
         await Users.sync();
         await Cart.sync();
@@ -76,7 +78,7 @@ app.use(bodyParser.json());
 
 
 // Routers
-const loginRouter = require('./routes/login');
+const orderRouter = require('./routes/order');
 const itemsRouter = require('./routes/items');
 const categoryRouter = require('./routes/category');
 // const usersRouter = require('./routes/users');
@@ -87,7 +89,7 @@ const profileRouter = require('./routes/profile');
 
 
 
-app.use('/login', loginRouter);
+app.use('/order', orderRouter);
 app.use('/items', itemsRouter);
 app.use('/category', categoryRouter);
 // app.use('/users', usersRouter);
