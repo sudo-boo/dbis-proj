@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:customer/models/item.dart';
 import 'package:customer/commons/item_container.dart';
-import 'package:customer/data/repository/demo_data_loader.dart';
+import 'package:customer/apis/get_products.dart';
+import 'package:customer/data/repository/local_storage_manager.dart';
 
 class ItemInColumns extends StatefulWidget {
   final String category;
@@ -34,17 +35,35 @@ class _ItemInColumnsState extends State<ItemInColumns> {
   Future<void> _loadMoreItems() async {
     setState(() => _isLoading = true);
 
-    final loader = DataLoader();
-    final allItems = await loader.getItemsWithCategory(widget.category);
+    try {
+      final token = await getUserToken();
+      final userId = await getUserId();
 
-    final nextItems = allItems.skip(_page * _itemsPerPage).take(_itemsPerPage).toList();
+      if (token == null || userId == null) {
+        print("Token or User ID is null");
+        setState(() => _isLoading = false);
+        return;
+      }
 
-    setState(() {
-      _items.addAll(nextItems);
-      _isLoading = false;
-      _page++;
-      if (nextItems.length < _itemsPerPage) _hasMore = false;
-    });
+      final items = await getProductsByCategory(
+        token: token,
+        categoryId: widget.category,
+        categoryName: widget.category,
+        requestQuantity: _itemsPerPage.toString(),
+        batchNo: (_page + 1).toString(),
+        userId: userId,
+      );
+
+      setState(() {
+        _items.addAll(items);
+        _isLoading = false;
+        _page++;
+        if (items.length < _itemsPerPage) _hasMore = false;
+      });
+    } catch (e) {
+      print("Error fetching items: $e");
+      setState(() => _isLoading = false);
+    }
   }
 
   @override
@@ -66,15 +85,15 @@ class _ItemInColumnsState extends State<ItemInColumns> {
       body: _items.isEmpty && _isLoading
           ? const Center(child: CircularProgressIndicator())
           : Padding(
-        padding: const EdgeInsets.only(bottom: 12), // Avoid bottom overflow
+        padding: const EdgeInsets.only(bottom: 12),
         child: GridView.builder(
           controller: _scrollController,
           padding: const EdgeInsets.all(12),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            childAspectRatio: 0.63, // Adjusted to give more height room
+            childAspectRatio: 0.63,
             crossAxisSpacing: 10,
-            mainAxisSpacing: 16, // More vertical spacing
+            mainAxisSpacing: 16,
           ),
           itemCount: _items.length + (_hasMore ? 1 : 0),
           itemBuilder: (context, index) {

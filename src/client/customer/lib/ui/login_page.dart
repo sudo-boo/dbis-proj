@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:customer/apis/verify_email.dart';
 import 'package:customer/ui/verify_otp_page.dart';
-import 'package:flutter/material.dart';
 import 'package:customer/commons/app_constants.dart';
 
 class LoginPage extends StatefulWidget {
@@ -14,6 +15,81 @@ class _LoginPageState extends State<LoginPage> {
   // Controller to handle the email input
   final TextEditingController _emailController = TextEditingController();
 
+  // This will hold the location information
+  String _locationMessage = "Getting location...";
+
+  // The function to request location
+  Future<Position?> _getCurrentLocation() async {
+    bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      // Ask the user to enable location services by opening location settings
+      setState(() {
+        _locationMessage = "Location services are disabled. Please turn them on.";
+      });
+
+      // Show a dialog to inform the user to turn on location services
+      await _showLocationDialog();
+
+      // Return null since location services are not enabled
+      return null;
+    }
+
+    // Request permission
+    LocationPermission permission = await Geolocator.requestPermission();
+    if (permission == LocationPermission.denied) {
+      setState(() {
+        _locationMessage = "Location permission denied. Please grant permission.";
+      });
+      return null;
+    }
+
+    // Get the current position
+    Position position = await Geolocator.getCurrentPosition(
+      desiredAccuracy: LocationAccuracy.high,
+    );
+    setState(() {
+      _locationMessage = 'Latitude: ${position.latitude}, Longitude: ${position.longitude}';
+    });
+
+    return position;
+  }
+
+  // Function to show a dialog asking the user to enable location services
+  Future<void> _showLocationDialog() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // The user must tap a button to dismiss the dialog.
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Location Services Disabled'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text('Location services are required to continue. Please enable them in the settings.'),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Open Settings'),
+              onPressed: () {
+                // Open location settings for the user
+                Geolocator.openLocationSettings();
+                Navigator.of(context).pop(); // Close the dialog
+              },
+            ),
+            TextButton(
+              child: Text('Cancel'),
+              onPressed: () {
+                Navigator.of(context).pop(); // Close the dialog without action
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   // The function that calls sendOtp API
   Future<void> _handleGetOtp() async {
     String email = _emailController.text.trim();
@@ -25,32 +101,53 @@ class _LoginPageState extends State<LoginPage> {
             const SnackBar(content: Text("Please enter your email"))
         );
       }
-    } else {
-      // Handle OTP generation or sending here
-      print('Email entered: $email');
-      print('Sending OTP');
+      return;
+    }
 
-      // Call sendOtp function and wait for the result
-      bool otpSendStatus = await sendOtp(email);
+    // Get current location
+    Position? position = await _getCurrentLocation();
 
-      if (mounted) {
-        if (otpSendStatus) {
-          // If OTP is sent successfully, navigate to VerifyOtpPage
-          ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text("OTP has been sent"))
-          );
+    // If the location is not available, show an error message
+    if (position == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Unable to get location"))
+      );
+      return;
+    }
 
-          // Navigate to the VerifyOtpPage
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => VerifyOtpPage(email: email)),
-          );
-        } else {
-          // If there is an error sending OTP, show an error message
-          ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text("Error in sending OTP"))
-          );
-        }
+    // Print the location details for debugging before proceeding
+    print('Location details - Latitude: ${position.latitude}, Longitude: ${position.longitude}');
+
+    // Handle OTP generation or sending here
+    print('Email entered: $email');
+    print('Sending OTP');
+
+    // Call sendOtp function and wait for the result
+    bool otpSendStatus = await getOtp(email);
+
+    if (mounted) {
+      if (otpSendStatus) {
+        // If OTP is sent successfully, navigate to VerifyOtpPage
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text("OTP has been sent"))
+        );
+
+        // Navigate to the VerifyOtpPage and pass the email and location
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => VerifyOtpPage(
+              email: email,
+              latitude: position.latitude,
+              longitude: position.longitude,
+            ),
+          ),
+        );
+      } else {
+        // If there is an error sending OTP, show an error message
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text("Error in sending OTP"))
+        );
       }
     }
   }
@@ -72,7 +169,7 @@ class _LoginPageState extends State<LoginPage> {
                   fontSize: 25,
                 ),
               ),
-              SizedBox(height: 50,),
+              SizedBox(height: 50),
 
               Padding(
                 padding: const EdgeInsets.all(10.0),

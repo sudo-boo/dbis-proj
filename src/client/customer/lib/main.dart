@@ -7,9 +7,11 @@ import 'package:customer/ui/item_in_columns.dart';
 import 'package:customer/ui/item_page.dart';
 import 'package:customer/ui/login_page.dart';
 import 'package:customer/ui/navigate.dart';
+import 'package:customer/ui/order_confirmation.dart';
 import 'package:customer/ui/profile.dart';
-import 'package:flutter/material.dart';
+import 'package:customer/ui/orders.dart';
 import 'package:customer/ui/splash_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
@@ -56,6 +58,18 @@ class MyApp extends StatelessWidget {
 
           case '/profile':
             return MaterialPageRoute(builder: (_) => ProfilePage());
+
+          case '/orders':
+            return MaterialPageRoute(builder: (_) => const CustomerOrderHistoryPage());
+
+          case OrderConfirmationPage.routeName:
+            final args = settings.arguments as OrderConfirmationArguments;
+            return MaterialPageRoute(
+              builder: (_) => OrderConfirmationPage(
+                order: args.order,
+                items: args.items,
+              ),
+            );
 
           default:
             return MaterialPageRoute(

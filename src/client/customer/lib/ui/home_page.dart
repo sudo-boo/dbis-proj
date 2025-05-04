@@ -1,93 +1,73 @@
-// // home_page.dart
-//
-// import 'package:flutter/material.dart';
-// import 'package:customer/data/repository/demo_data_loader.dart';
-// import 'package:customer/models/item.dart';
-//
-// class HomePage extends StatefulWidget {
-//   const HomePage({super.key});
-//
-//   @override
-//   State<HomePage> createState() => _HomePageState();
-// }
-//
-// class _HomePageState extends State<HomePage> {
-//
-//   // Function to print demo data
-//   void _printDemoData() async {
-//     try {
-//       // // Load demo data
-//       // List<Item> demoData = await dataLoader.loadDemoData();
-//       //
-//       // // Print the demo data to the console
-//       // for (var item in demoData) {
-//       //   print('Product Name: ${item.name}');
-//       //   print('Price: ₹${item.mrp}');
-//       //   print('Discount: ${item.discount}%');
-//       //   print('Images: ${item.imageUrls?.join(', ')}');
-//       //   print('-----------------------------');
-//       // }
-//       DataLoader dataLoader = DataLoader();
-//
-//       // Get item with product_id 208
-//       Item? item = await dataLoader.getSingleItem(208);
-//
-//       if (item != null) {
-//         print("Item found: ${item.name}");
-//       } else {
-//         print("Item not found");
-//       }
-//     } catch (e) {
-//       // Handle errors, e.g., data loading issues
-//       print('Error loading demo data: $e');
-//     }
-//   }
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('Home Page'),
-//       ),
-//       body: Center(
-//         child: Container(
-//           color: Colors.pinkAccent,
-//           child: TextButton(
-//             onPressed: _printDemoData,
-//             child: const Icon(Icons.adb_rounded),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-
-// home_page.dart
-
 import 'package:flutter/material.dart';
+import 'package:customer/data/repository/local_storage_manager.dart';
 import 'package:customer/commons/item_in_rows.dart';
 
-class HomePage extends StatelessWidget {
+import '../apis/get_products.dart';
+import '../models/category.dart';
+
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
-  final List<String> categories = const [
-    "Fruits & Vegetables",
-    "Cooking Essentials",
-    "Munchies",
-    "Dairy, Bread & Batter",
-    "Beverages",
-    "Packaged Food",
-    "Ice Cream & Desserts",
-    "Chocolates & Candies",
-    "Meats, Fish & Eggs",
-    "Biscuits",
-    "Personal Care",
-    "Paan Corner",
-    "Home & Cleaning",
-    "Health & Hygiene",
-    "Curated For You"
-  ];
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  List<Category> categories = [];
+  bool isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _populateCategories();
+  }
+
+  Future<void> _populateCategories() async {
+    try {
+      print("call function start");
+
+      String? token = await getUserToken();
+      String? userId = await getUserId();
+
+      if (token == null || userId == null) {
+        print("Token or User ID is null");
+        return;
+      }
+
+      print("Token: $token");
+      print("User ID: $userId");
+
+      final fetchedCategories = await getCategories(token: token);
+      setState(() {
+        categories = fetchedCategories;
+        isLoading = false;
+      });
+      print("Categories fetched: ${categories.length}");
+      for (var category in categories) {
+        print('Category ID: ${category.categoryId}, Name: ${category.name}');
+      }
+
+      // Example: Fetch products for the first category
+      if (categories.isNotEmpty) {
+        String categoryId = categories[1].categoryId.toString();
+        String categoryName = categories[1].name.toString();
+        String requestQuantity = '10';
+        String batchNo = '1';
+
+        await getProductsByCategory(
+          token: token,
+          categoryId: categoryId,
+          categoryName: categoryName,
+          requestQuantity: requestQuantity,
+          batchNo: batchNo,
+          userId: userId,
+        );
+      }
+    } catch (e) {
+      print("Error while calling APIs: $e");
+      setState(() => isLoading = false);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -95,10 +75,16 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home Page'),
       ),
-      body: SingleChildScrollView(
+      body: isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : SingleChildScrollView(
         child: Column(
           children: categories
-              .map((category) => ItemInRows(category: category, displayCategoryTitle: true,))
+              .map((category) => ItemInRows(
+            category: category.categoryId.toString(),
+            categoryName: category.name,
+            displayCategoryTitle: true,
+          ))
               .toList(),
         ),
       ),
