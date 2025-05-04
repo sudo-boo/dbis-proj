@@ -122,7 +122,7 @@ function generateToken(user) {
     return jwt.sign(
       { id: user.user_id, username: user.name },
       process.env.JWT_SECRET || 'supersecretkey',
-      { expiresIn: '1h' }
+      { expiresIn: '168h' }
     );
   }
 
@@ -260,7 +260,25 @@ router.post('/delivery/verify-otp', async (req, res) => {
 });
 
 
+router.post('/is-token-valid', async (req, res) => {
+    const { token } = req.body;
 
+    if (!token) {
+        return res.status(400).json({ error: 'Token is required' });
+    }
+
+    try {
+        jwt.verify(token, process.env.JWT_SECRET || 'supersecretkey', (err, decoded) => {
+            if (err) {
+                return res.status(401).json({ error: 'Invalid token' });
+            }
+            return res.json({ message: 'Token is valid', user_id: decoded.id });
+        });
+    } catch (err) {
+        console.error('Error verifying token:', err);
+        res.status(500).json({ error: 'Something went wrong' });
+    }
+});
 
 
 // Export the router

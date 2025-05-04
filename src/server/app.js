@@ -19,26 +19,26 @@ const APP_NAME = process.env.APP_NAME || 'My Express App';
 
 
         // Uncomment the following lines to force sync the models (this will drop existing tables)
-        await Item_Category.sync({ force: true });
-        await Item.sync({ force: true });
-        await Vendor.sync({ force: true });
-        await deliveryBoy.sync({ force: true });
-        await Availability.sync({ force: true });
-        await Users.sync({ force: true });
-        await Cart.sync({ force: true });
-        await Payments.sync({ force: true });
-        await Orders.sync({ force: true });
+        // await Item_Category.sync({ force: true });
+        // await Item.sync({ force: true });
+        // await Vendor.sync({ force: true });
+        // await deliveryBoy.sync({ force: true });
+        // await Availability.sync({ force: true });
+        // await Users.sync({ force: true });
+        // await Cart.sync({ force: true });
+        // await Payments.sync({ force: true });
+        // await Orders.sync({ force: true });
         
         // Sync models without dropping existing tables
-        // await Item_Category.sync();
-        // await Item.sync();
-        // await Vendor.sync();
-        // await deliveryBoy.sync();
-        // await Availability.sync();
-        // await Users.sync();
-        // await Cart.sync();
-        // await Payments.sync();
-        // await Orders.sync();
+        await Item_Category.sync();
+        await Item.sync();
+        await Vendor.sync();
+        await deliveryBoy.sync();
+        await Availability.sync();
+        await Users.sync();
+        await Cart.sync();
+        await Payments.sync();
+        await Orders.sync();
 
         console.log('Models synced');
     } catch (err) {

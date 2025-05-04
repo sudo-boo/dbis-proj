@@ -71,7 +71,7 @@ const Orders = sequelize.define('Orders', {
         }
     },
     status: {
-        type: DataTypes.ENUM('ordered', 'sent from warehouse', 'delivered'),
+        type: DataTypes.ENUM('ordered', 'prepared', 'out for delivery', 'delivered'),
         allowNull: false,
         defaultValue: 'ordered'
     },

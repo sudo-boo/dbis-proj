@@ -65,9 +65,9 @@ router.post('/items-by-category', verifyToken, async (req, res) => {
         items.forEach(item => {
             const availabilityItem = availability.find(avail => avail.product_id === item.product_id);
             if (availabilityItem) {
-                item.stock_available = availabilityItem.quantity;
+                item.dataValues.stock_available = availabilityItem.quantity;
             } else {
-                item.stock_available = 0;
+                item.dataValues.stock_available = 0;
             }
         });
 

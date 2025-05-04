@@ -2,7 +2,7 @@
 const { literal } = require('sequelize');
 const { deliveryBoy } = require('../models');
 
-// import { Op } from 'sequelize';
+const Op = require('sequelize').Op;
 
 async function getNearestDeliveryBoy(userLatitude, userLongitude, maxDistance, l = 1) {
 
@@ -15,13 +15,16 @@ async function getNearestDeliveryBoy(userLatitude, userLongitude, maxDistance, l
             [literal(`ST_X(location::geometry)`), 'longitude'],
             [literal(`ST_Distance(location, ST_SetSRID(ST_MakePoint(${userLatitude}, ${userLongitude}), 4326))`), 'distance']
         ],
-        where: literal(`
+        where: 
+        {
+            available: true,
+            [Op.and]: literal(`
             ST_DWithin(
                 location,
                 ST_SetSRID(ST_MakePoint(${userLatitude}, ${userLongitude}), 4326),
                 ${maxDistance * 1000}
             )
-        `),
+        `)},
         order: [[literal('distance'), 'ASC']],
         limit: l
     });

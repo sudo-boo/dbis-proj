@@ -6,7 +6,7 @@ const router = express.Router();
 
 const verifyToken = require('../middleware/auth');
 
-const { Orders, Cart, Item, Users } = require('../models');
+const { Orders, Cart, Item, Users, deliveryBoy } = require('../models');
 const getNearestVendor = require('../commons/get_nearest_vendor');
 const getDistanceFromLatLonInKm = require('../commons/get_distance_in_km');
 const { or } = require('sequelize');
@@ -14,7 +14,7 @@ const { or } = require('sequelize');
 
 
 // post request for placing order
-router.post('/placeOrder', verifyToken, async (req, res) => {
+router.post('/place-order', verifyToken, async (req, res) => {
     const { user_id} = req.body;
 
     try {
@@ -121,6 +121,10 @@ router.post('/placeOrder', verifyToken, async (req, res) => {
             }
         }
 
+        // change the availability of delivery boy to be unavailable
+        delivery_boy.availability = false;
+        await delivery_boy.save();
+
         res.status(201).json({ message: 'Order placed successfully', order });
     } catch (error) {
         console.error(error);
@@ -129,8 +133,42 @@ router.post('/placeOrder', verifyToken, async (req, res) => {
 });
 
 
-// get request for fetching all orders
-router.post('/getOrders', verifyToken, async (req, res) => {
+router.post('/update-eta', verifyToken, async (req, res) => {
+    const { order_id } = req.body;
+    try {
+        const order = await Orders.findOne({ where: { order_id } });
+        if (!order) {
+            return res.status(404).json({ message: 'Order not found' });
+        }
+        if (order.status !== 'out for delivery') {
+            return res.status(200).json({ message: 'Order is not out for delivery', eta: order.eta });
+        }
+        const user = await Users.findOne({ where: { vendor_id: order.vendor_id } });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        const userLatitude = parseFloat(user.latitude);
+        const userLongitude = parseFloat(user.longitude);
+        const delivery_boy = await deliveryBoy.findOne({ where: { d_boy_id: order.d_boy_id}});
+        const deliveryLatitude = delivery_boy.location.latitude;
+        const deliveryLongitude = delivery_boy.location.longitude;
+
+        const et = (getDistanceFromLatLonInKm(userLatitude, userLongitude, deliveryLatitude, deliveryLongitude))/30;
+        const eta1 = `${Math.floor(et).toString().padStart(2, '0')}:${Math.floor((et - Math.floor(et)) * 60).toString().padStart(2, '0')}:00`;
+        order.eta = eta1;
+        await order.save();
+        res.status(200).json({ message: 'ETA updated successfully', eta: order.eta });
+    }
+    catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Error updating ETA' });
+    }
+});
+
+
+
+// get request for fetching all orders for a user
+router.post('/get-orders', verifyToken, async (req, res) => {
     const { user_id } = req.body;
 
     try {
@@ -150,12 +188,36 @@ router.post('/getOrders', verifyToken, async (req, res) => {
     }
 });
 
+router.post('/get-active-orders', verifyToken, async (req, res) => {
+    const { user_id } = req.body;
+
+    try {
+        const orders = await Orders.findAll({
+            where: {
+                user_id,
+                status: {
+                    [or]: ['ordered', 'prepared', 'out for delivery']
+                }
+            },
+            attributes: ['order_id', 'items', 'total_price', 'order_date', 'order_time']
+        });
+
+        if (!orders || orders.length === 0) {
+            return res.status(404).json({ message: 'No active orders found' });
+        }
+
+        res.status(200).json({ message: 'Active orders fetched successfully', orders });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Error fetching active orders' });
+    }
+});
 
 
 
 
 // get request for fetching all orders for a vendor
-router.post('/getVendorOrders', verifyToken, async (req, res) => {
+router.post('/get-vendor-orders', verifyToken, async (req, res) => {
     const { vendor_id } = req.body;
 
     try {
@@ -177,7 +239,46 @@ router.post('/getVendorOrders', verifyToken, async (req, res) => {
 
 
 
+router.post('/vendor-change-status', verifyToken, async (req, res) => {
+    const { order_id, status } = req.body;
 
+    try {
+        const order = await Orders.findOne({ where: { order_id } });
+
+        if (!order) {
+            return res.status(404).json({ message: 'Order not found' });
+        }
+
+        order.status = status;
+        await order.save();
+
+        res.status(200).json({ message: 'Order status updated successfully', order });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Error updating order status' });
+    }
+});
+
+
+router.post('/delivery-boy-change-status', verifyToken, async (req, res) => {
+    const { order_id, status } = req.body;
+
+    try {
+        const order = await Orders.findOne({ where: { order_id } });
+
+        if (!order) {
+            return res.status(404).json({ message: 'Order not found' });
+        }
+
+        order.status = status;
+        await order.save();
+
+        res.status(200).json({ message: 'Order status updated successfully', order });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Error updating order status' });
+    }
+});
 
 
 
